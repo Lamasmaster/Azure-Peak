@@ -132,14 +132,14 @@
 	slot_flags = ITEM_SLOT_ARMOR
 	armor = ARMOR_CUIRASS
 	armor_class = ARMOR_CLASS_HEAVY
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL
+	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL + 100
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/cuirassed/iron
 	name = "iron mailled cuirass"
 	desc = "An iron cuirass underlaid with hauberk. While it falters against arrows and bolts, these interlinked layers are superb at warding off the blows."
 	icon_state = "icuirasshauberk"
 	item_state = "icuirasshauberk"
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_IRON
+	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL
 	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/cuirassed/ancient
@@ -147,7 +147,7 @@
 	desc = "An ancient cuirass underlaid with hauberk. While it falters against arrows and bolts, these interlinked layers are superb at warding off the blows."
 	icon_state = "ancientcuirasshauberk"
 	item_state = "ancientcuirasshauberk"
-	max_integrity = ARMOR_INT_CHEST_MEDIUM_DECREPIT
+	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL + 100
 	smeltresult = /obj/item/ingot/aaslag
 
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/cuirassed/ornate
