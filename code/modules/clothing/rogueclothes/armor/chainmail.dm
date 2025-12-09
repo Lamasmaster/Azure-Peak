@@ -79,17 +79,6 @@
 	icon_state = "ancienthauberk"
 	smeltresult = /obj/item/ingot/aaslag
 
-/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/ornate
-	slot_flags = ITEM_SLOT_ARMOR
-	armor_class = ARMOR_CLASS_HEAVY
-	armor = ARMOR_CUIRASS
-	name = "psydonic hauberk"
-	desc = "A beautiful steel cuirass, decorated with blessed silver fluting and worn atop thick chainmaille. While it falters against arrows and bolts, these interlinked layers are superb at warding off the blows of inhumen claws and axes. </br>'..the knowledge of evil, and the burden of carrying Psydonia's hope upon thine shoulders..' </br>... </br>With some blessed silver and a blacksmith's assistance, I can turn this hauberk into a set of full-plate armor."
-	icon_state = "ornatehauberk"
-	item_state = "ornatehauberk"
-	max_integrity = ARMOR_INT_CHEST_PLATE_PSYDON
-	smeltresult = /obj/item/ingot/silverblessed
-
 /obj/item/clothing/suit/roguetown/armor/chainmail/bikini
 	name = "chainmail corslet"	// corslet, from the old French 'cors' or bodice, with the diminutive 'let', used to describe lightweight military armor since 1500. Chosen here to replace 'bikini', an extreme anachronism.
 	desc = "For the daring, affording maille's protection with light weight."
@@ -133,3 +122,38 @@
 /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/graggar/Initialize()
 	. = ..()
 	AddComponent(/datum/component/cursed_item, TRAIT_HORDE, "ARMOR", "RENDERED ASUNDER")
+
+///Heavy
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/cuirassed
+	name = "mailled cuirass"
+	desc = "A steel cuirass underlaid with hauberk. While it falters against arrows and bolts, these interlinked layers are superb at warding off the blows."
+	icon_state = "cuirasshauberk"
+	item_state = "cuirasshauberk"
+	slot_flags = ITEM_SLOT_ARMOR
+	armor = ARMOR_CUIRASS
+	armor_class = ARMOR_CLASS_HEAVY
+	max_integrity = ARMOR_INT_CHEST_MEDIUM_STEEL
+
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/cuirassed/iron
+	name = "iron mailled cuirass"
+	desc = "An iron cuirass underlaid with hauberk. While it falters against arrows and bolts, these interlinked layers are superb at warding off the blows."
+	icon_state = "icuirasshauberk"
+	item_state = "icuirasshauberk"
+	max_integrity = ARMOR_INT_CHEST_MEDIUM_IRON
+	smeltresult = /obj/item/ingot/iron
+
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/cuirassed/ancient
+	name = "ancient mailled cuirass"
+	desc = "An ancient cuirass underlaid with hauberk. While it falters against arrows and bolts, these interlinked layers are superb at warding off the blows."
+	icon_state = "ancientcuirasshauberk"
+	item_state = "ancientcuirasshauberk"
+	max_integrity = ARMOR_INT_CHEST_MEDIUM_DECREPIT
+	smeltresult = /obj/item/ingot/aaslag
+
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/cuirassed/ornate
+	name = "psydonic hauberk"
+	desc = "A beautiful steel cuirass, decorated with blessed silver fluting and worn atop thick chainmaille. While it falters against arrows and bolts, these interlinked layers are superb at warding off the blows of inhumen claws and axes. </br>'..the knowledge of evil, and the burden of carrying Psydonia's hope upon thine shoulders..' </br>... </br>With some blessed silver and a blacksmith's assistance, I can turn this hauberk into a set of full-plate armor."
+	icon_state = "ornatehauberk"
+	item_state = "ornatehauberk"
+	max_integrity = ARMOR_INT_CHEST_PLATE_PSYDON
+	smeltresult = /obj/item/ingot/silverblessed
