@@ -31,7 +31,6 @@
 		TRAIT_GRABIMMUNE,
 		TRAIT_STRONGBITE,
 		TRAIT_LYCANRESILENCE,
-		TRAIT_CHUNKYFINGERS, //So they can no longer use weapons at all.
 	)
 	confess_lines = list(
 		"THE BEAST INSIDE ME!",
