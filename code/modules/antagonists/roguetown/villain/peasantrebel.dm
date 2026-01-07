@@ -45,6 +45,8 @@
 	if(.)
 		if(new_owner.assigned_role in GLOB.noble_positions)
 			return FALSE
+		if(new_owner.assigned_role in GLOB.retinue_positions)
+			return FALSE
 		if(new_owner.assigned_role in GLOB.garrison_positions)
 			return FALSE
 		if(new_owner.unconvertable)
@@ -104,6 +106,8 @@
 	if(!can_be_owned(candidate.mind))
 		return FALSE
 	if(candidate.mind.assigned_role in GLOB.noble_positions)
+		return FALSE
+	if(candidate.mind.assigned_role in GLOB.retinue_positions)
 		return FALSE
 	if(candidate.mind.assigned_role in GLOB.garrison_positions)
 		return FALSE

@@ -236,6 +236,7 @@
 		//departments/groups that don't have command staff would throw a javascript error since there's no corresponding reference for toggle_head()
 		var/list/headless_job_lists = list("Nobles" = GLOB.noble_positions,
 							"Courtiers" = GLOB.courtier_positions,
+							"Retinue" = GLOB.retinue_positions,
 							"Garrison" = GLOB.garrison_positions,
 							"Church" = GLOB.church_positions,
 							"WANDERERS" = GLOB.wanderer_positions,

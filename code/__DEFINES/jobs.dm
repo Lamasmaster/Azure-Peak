@@ -111,8 +111,7 @@
 #define JESTER		(1<<3)
 #define WIZARD		(1<<4)
 #define ARCHIVIST	(1<<5)
-#define PHYSICIAN 	(1<<6)
-#define SENESCHAL	(1<<7)
+#define SENESCHAL	(1<<6)
 
 #define RETINUE			(1<<2)
 
@@ -144,11 +143,12 @@
 #define GUILDMASTER (1<<1)
 #define GUILDSMAN  	(1<<2)
 #define TAILOR		(1<<3)
-#define APOTHECARY	(1<<4)
-#define INNKEEPER	(1<<5)
-#define NITEMASTER	(1<<6)
-#define CRIER		(1<<7)
+#define PHYSICIAN 	(1<<4)
+#define APOTHECARY	(1<<5)
+#define INNKEEPER	(1<<6)
+#define NITEMASTER	(1<<7)
 #define CLERK 		(1<<8)
+#define CRIER		(1<<9)
 
 #define PEASANTS		(1<<6)
 

@@ -1,7 +1,7 @@
 /datum/job/roguetown/knight
 	title = "Knight" //Back to proper knights.
 	flag = KNIGHT
-	department_flag = NOBLEMEN
+	department_flag = RETINUE
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 3

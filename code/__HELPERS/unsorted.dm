@@ -1601,12 +1601,13 @@ GLOBAL_LIST_INIT(duplicate_forbidden_vars,list(
 	var/list/categories = list(
 		"Nobles" = GLOB.noble_positions,
 		"Courtiers" = GLOB.courtier_positions,
+		"Retinue" = GLOB.retinue_positions,
 		"Garrison" = GLOB.garrison_positions,
 		"Church" = GLOB.church_positions,
-		"Inquisition" = GLOB.inquisition_positions,
-		"Yeoman" = GLOB.burgher_positions,
+		"Burgher" = GLOB.burgher_positions,
 		"Peasant" = GLOB.peasant_positions,
 		"Sidefolk" = GLOB.sidefolk_positions,
+		"Inquisition" = GLOB.inquisition_positions,
 		"Wanderer" = GLOB.wanderer_positions,
 	)
 

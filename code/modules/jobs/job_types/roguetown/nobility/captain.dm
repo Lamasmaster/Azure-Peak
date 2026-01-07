@@ -1,7 +1,7 @@
 /datum/job/roguetown/captain
 	title = "Knight Captain" //The Knight Captain is clearly not drawn from the ranks of guardsmen, or sergeants. They're drawn from the Knightly ranks and should be treated as such.
 	flag = CAPTAIN
-	department_flag = NOBLEMEN
+	department_flag = RETINUE
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1

@@ -13,6 +13,9 @@
 		for(var/X in GLOB.church_positions)
 			peopleiknow += X
 			peopleknowme += X
+		for(var/X in GLOB.retinue_positions)
+			peopleiknow += X
+			peopleknowme += X
 		for(var/X in GLOB.garrison_positions)
 			peopleiknow += X
 			peopleknowme += X
@@ -23,9 +26,6 @@
 			peopleiknow += X
 			peopleknowme += X
 		for(var/X in GLOB.sidefolk_positions)
-			peopleiknow += X
-			peopleknowme += X
-		for(var/X in GLOB.mercenary_positions)
 			peopleiknow += X
 			peopleknowme += X
 		for(var/X in GLOB.inquisition_positions)
