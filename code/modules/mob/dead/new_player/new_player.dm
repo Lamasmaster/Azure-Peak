@@ -554,7 +554,7 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 	omegalist += list(GLOB.burgher_positions)
 	omegalist += list(GLOB.peasant_positions)
 	omegalist += list(GLOB.wanderer_positions)
-	omegalist += list(GLOB.youngfolk_positions)
+	omegalist += list(GLOB.sidefolk_positions)
 
 	for(var/list/category in omegalist)
 		if(!SSjob.name_occupations[category[1]])
