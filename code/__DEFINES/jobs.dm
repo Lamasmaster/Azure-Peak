@@ -1,9 +1,9 @@
 
 #define ENGSEC			(1<<0)
 
-#define CAPTAIN			(1<<0)
+//#define CAPTAIN			(1<<0)
 #define HOS				(1<<1)
-#define WARDEN			(1<<2)
+//#define WARDEN			(1<<2)
 #define DETECTIVE		(1<<3)
 #define OFFICER			(1<<4)
 #define CHIEF			(1<<5)
@@ -100,212 +100,199 @@
 
 #define LORD		(1<<0)
 #define LADY		(1<<1)
-#define HAND		(1<<2)
-#define STEWARD		(1<<3)
-#define KNIGHT		(1<<4)
-#define GUARD_CAPTAIN		(1<<5)
-#define MARSHAL		(1<<6)
-#define HOSTAGE		(1<<7)
-#define SUITOR		(1<<8)
+#define PRINCE		(1<<3)
+#define SUITOR		(1<<4)
 
-#define GARRISON		(1<<1)
+#define COURTIERS		(1<<1)
 
-#define GUARDSMAN	(1<<0)
+#define HAND		(1<<0)
+#define STEWARD		(1<<1)
+#define COUNCILLOR	(1<<2)
+#define JESTER		(1<<3)
+#define WIZARD		(1<<4)
+#define ARCHIVIST	(1<<5)
+#define PHYSICIAN 	(1<<6)
+#define SENESCHAL	(1<<7)
+
+#define RETINUE			(1<<2)
+
+#define MARSHAL		(1<<0)
+#define CAPTAIN		(1<<1)
+#define KNIGHT		(1<<2)
+#define SQUIRE		(1<<3)
+
+#define GARRISON		(1<<3)
+
+#define SERGEANT	(1<<0)
 #define MANATARMS	(1<<1)
-#define SQUIRE		(1<<2)
-#define BOGGUARD	(1<<3)
-#define SERGEANT	(1<<4)
-#define SHERIFF		(1<<5)
+#define WARDEN		(1<<2)
+#define GUARDSMAN	(1<<3)
 
-#define CHURCHMEN		(1<<2)
+#define CHURCHMEN		(1<<4)
 
 #define PRIEST		(1<<0)
-#define MONK		(1<<1)
-#define GRAVEDIGGER	(1<<2)
-#define DRUID		(1<<3)
+#define MARTYR		(1<<1)
+#define TEMPLAR		(1<<2)
+#define KEEPER		(1<<3)
+#define DRUID		(1<<4)
+#define ACOLYTE		(1<<5)
+#define CHURCHLING	(1<<6)
 
-#define COURTIERS	(1<<3)
+#define BURGHERS		(1<<5)
 
-#define JESTER		(1<<0)
-#define WIZARD		(1<<1)
-#define PHYSICIAN 	(1<<2)
-#define BUTLER		(1<<3)
-#define COUNCILLOR	(1<<4)
-
-#define YEOMEN		(1<<4)
-
-#define BARKEEP		(1<<0)
-#define ARCHIVIST	(1<<1)
-#define ALCHEMIST	(1<<5)
-#define MERCHANT	(1<<8)
-#define SCRIBE		(1<<9)
-#define CRIER		(1<<10)
-#define KEEPER		(1<<11)
-
-#define PEASANTS	(1<<5)
-
-#define HUNTER		(1<<0)
-#define FARMER		(1<<1)
-#define FISHER		(1<<3)
-#define LUMBERJACK	(1<<4)
-#define MINER		(1<<5)
-#define COOK		(1<<6)
-#define KNAVEWENCH (1<<7)
-#define GRABBER		(1<<8)
-#define NITEMASTER	(1<<9)
-#define WENCH		(1<<10)
-#define BEGGAR		(1<<11)
-#define PILGRIM		(1<<13)
-#define VILLAGER	(1<<14)
-#define PRISONERR	(1<<15)
-#define PRISONERB	(1<<16)
-#define LUNATIC		(1<<17)
-#define MIGRANT		(1<<18)
-#define YOUNGFOLK	(1<<6)
-
-#define APPRENTICE	(1<<0)
-#define CHURCHLING	(1<<1)
-#define SERVANT		(1<<2)
-#define ORPHAN		(1<<3)
-#define PRINCE		(1<<4)
-#define SHOPHAND	(1<<5)
-#define CLERK 		(1<<6)
-#define MAGEAPPRENTICE	(1<<7)
-#define APOTHECARY	(1<<8)
-
-#define WANDERERS		(1<<7)
-
-#define VETERAN			(1<<1)
-#define WANDERER		(1<<2)
-#define ADVENTURER      (1<<3)
-#define BANDIT		    (1<<4)
-#define ASSASSIN		(1<<5)
-#define COURTAGENT	    (1<<6)
-#define WRETCH          (1<<7)
-#define TRADER			(1<<8)
-
-#define SLOP		(1<<9)
-
-#define TESTER		(1<<0)
-#define DEATHKNIGHT (1<<1)
-#define SKELETON	(1<<2)
-#define GOBLIN		(1<<3)
-#define VAMPIRE_SERVANT (1<<4)
-#define VAMPIRE_GUARD (1<<5)
-#define VAMPIRE_SPAWN (1<<6)
-
-#define INQUISITION (1<<10)
-
-#define PURITAN		(1<<0)
-#define ORTHODOXIST	(1<<1)
-#define ABSOLVER (1<<2)
-
-#define GUILDSMEN	(1<<11)
-
+#define MERCHANT	(1<<0)
 #define GUILDMASTER (1<<1)
 #define GUILDSMAN  	(1<<2)
 #define TAILOR		(1<<3)
+#define APOTHECARY	(1<<4)
+#define INNKEEPER	(1<<5)
+#define NITEMASTER	(1<<6)
+#define CRIER		(1<<7)
+#define CLERK 		(1<<8)
+
+#define PEASANTS		(1<<6)
+
+#define MAGEAPPRENTICE	(1<<0)
+#define SHOPHAND	(1<<1)
+#define SERVANT		(1<<2)
+#define COOK		(1<<3)
+#define TAPSTER 	(1<<4)
+#define WENCH		(1<<5)
+#define FARMER		(1<<6)
+#define VILLAGER	(1<<7)
+
+#define SIDEFOLK		(1<<7)
+
+#define VETERAN		(1<<0)
+#define LUNATIC		(1<<1)
+#define VAGABOND	(1<<2)
+#define ORPHAN		(1<<3)
+#define PILGRIM		(1<<4)
+#define MIGRANT		(1<<5)
+
+#define WANDERERS		(1<<8)
+
+#define ADVENTURER      (1<<0)
+#define TRADER			(1<<1)
+#define MERCENARY		(1<<2)
+#define COURTAGENT	    (1<<3)
+
+#define INQUISITION		(1<<9)
+
+#define PURITAN		(1<<0)
+#define ABSOLVER	(1<<1)
+#define ORTHODOXIST	(1<<2)
+
+#define ANTAGONIST		(1<<10)
+
+#define ASSASSIN	(1<<0)
+#define BANDIT		(1<<1)
+#define WRETCH		(1<<2)
+#define DEATHKNIGHT (1<<3)
+#define SKELETON	(1<<4)
+#define GOBLIN		(1<<5)
+#define VAMPIRE_SERVANT (1<<6)
+#define VAMPIRE_GUARD (1<<7)
+#define VAMPIRE_SPAWN (1<<8)
+
+#define SLOP			(1<<11)
+
+#define TESTER		(1<<0)
 
 #define JCOLOR_NOBLE "#aa83b9"
 #define JCOLOR_COURTIER "#81adc8"
-#define JCOLOR_CHURCH "#c0ba8d"
+#define JCOLOR_RETINUE "#4580a3"
 #define JCOLOR_SOLDIER "#b18484"
+#define JCOLOR_CHURCH "#c0ba8d"
 #define JCOLOR_YEOMAN "#819e82"
-#define JCOLOR_GUILD "#6e6259"
 #define JCOLOR_PEASANT "#b09262"
 #define JCOLOR_WANDERER  "#c86e3a"
 #define JCOLOR_INQUISITION "#FF0000"
+#define JCOLOR_ANTAGONIST  "#7a1212"
 
 // job display orders //
 
-// Nobles
+// Ducal Family
 #define JDO_LORD 1
 #define JDO_LADY 1.1
 #define JDO_PRINCE 1.2
 #define JDO_SUITOR 1.3
-#define JDO_HAND 2
-#define JDO_STEWARD 3
-#define JDO_CLERK 3.1
-#define JDO_MARSHAL 4
-#define JDO_COUNCILLOR 4.1
 
 // Courtiers
-#define JDO_MAGICIAN 5
-#define JDO_MAGEAPPRENTICE 5.1
-#define JDO_PHYSICIAN 6
-#define JDO_APOTHECARY 6.1
-#define JDO_JESTER 7
-#define JDO_BUTLER 7.1
+#define JDO_HAND 2
+#define JDO_STEWARD 2.1
+#define JDO_COUNCILLOR 2.2
+#define JDO_JESTER 2.3
+#define JDO_MAGICIAN 2.4
+#define JDO_ARCHIVIST 2.5
+#define JDO_PHYSICIAN 2.6
+#define JDO_SENESCHAL 2.7
+
+// Retinue - Manor
+#define JDO_MARSHAL 3
+#define JDO_CAPTAIN 3.1
+#define JDO_KNIGHT 3.2
+#define JDO_SQUIRE 3.3
+
+// Garrison - Town/Outside
+#define JDO_SERGEANT 4
+#define JDO_GUARD 4.1
+#define JDO_WARDEN 4.2
+#define JDO_TOWNGUARD 4.3
+
+// Pantheon Church
+#define JDO_PRIEST 5
+#define JDO_MARTYR 5.1
+#define JDO_TEMPLAR 5.2
+#define JDO_KEEPER 5.3
+#define JDO_DRUID 5.4
+#define JDO_ACOLYTE 5.5
+#define JDO_CHURCHLING 5.6
+
+// Town Burghers
+#define JDO_MERCHANT 6
+#define JDO_GUILDMASTER 6.1
+#define JDO_GUILDSMAN 6.2
+#define JDO_TAILOR 6.3
+#define JDO_INNKEEPER 6.4
+#define JDO_NITEMASTER 6.5
+#define JDO_CRIER 6.6
+#define JDO_APOTHECARY 6.7
+#define JDO_CLERK 6.8
+
+// Town Serfs - Peasants
+#define JDO_MAGEAPPRENTICE 7
+#define JDO_SHOPHAND 7.1
 #define JDO_SERVANT 7.2
+#define JDO_COOK 7.3
+#define JDO_TAPSTER 7.4
+#define JDO_WENCH 7.5
+#define JDO_SOILSON 7.6
+#define JDO_VILLAGER 7.7
 
-#define JDO_GUARD_CAPTAIN 8
-#define JDO_KNIGHT 8.1
-#define JDO_SQUIRE 8.2
-#define JDO_SERGEANT 8.3
-#define JDO_CASTLEGUARD 8.4
-#define JDO_GATEMASTER 8.5
-#define JDO_SHERIFF 8.6
-#define JDO_TOWNGUARD 8.7
-#define JDO_BOGGUARD 9.1
+// Sidefolk - MISC jobs that don't fit any of the other categories really
+#define JDO_VET 8
+#define JDO_LUNATIC 8.1
+#define JDO_VAGABOND 8.2
+#define JDO_VAGRANT 8.3
+#define JDO_PILGRIM 8.4
+#define JDO_MIGRANT 8.5
 
-#define JDO_PRIEST 10
-#define JDO_MARTYR 11
-#define JDO_TEMPLAR 12
-#define JDO_MONK 13
-#define JDO_DRUID 13.1
-#define JDO_CHURCHLING 14
-#define JDO_KEEPER 14.1
-#define JDO_GRAVEMAN 15
+// Wanderers
+#define JDO_ADVENTURER 9
+#define JDO_TRADER 9.1
+#define JDO_COURTAGENT 9.2
+#define JDO_MERCENARY 9.3
 
-#define JDO_MERCHANT 17
-#define JDO_SHOPHAND 17.1
-#define JDO_GRABBER 17.2
+// Inquisition
+#define JDO_PURITAN 10
+#define JDO_ORTHODOXIST 10.1
+#define JDO_ABSOLVER 10.2
 
-#define JDO_ARCHIVIST 18
-#define JDO_CRIER 18.1
-
-#define JDO_GUILDMASTER 19.1
-#define JDO_GUILDSMAN 19.2
-#define JDO_TAILOR 19.3
-
-#define JDO_BARKEEP 26
-#define JDO_COOK 27
-#define JDO_NITEMASTER 27.1
-#define JDO_KNAVEWENCH 27.2
-#define JDO_WENCH 27.3
-
-#define JDO_SOILSON 28
-
-#define JDO_VILLAGER 30
-#define JDO_ADVENTURER 30.1
-#define JDO_PILGRIM 30.2
-#define JDO_MIGRANT 32.3
-#define JDO_BANDIT 31.3
-#define JDO_COURTAGENT 30.3
-#define JDO_WRETCH 30.4
-#define JDO_ASSASSIN 30.5
-#define JDO_TRADER 30.6
-
-#define JDO_MERCENARY 31
-#define JDO_GRENZELHOFT 31.1
-#define JDO_DESERT_RIDER 31.2
-#define JDO_VET 31.4
-
-#define JDO_VAGRANT 33
-#define JDO_ORPHAN 34
-
-#define JDO_PRISONERR 35
-#define JDO_PRISONERB 35.1
-#define JDO_HOSTAGE 35.2
-#define JDO_LUNATIC 35.3
-
-#define JDO_CHIEFTAIN 36
-#define JDO_TRIBALCOOK 37
-#define JDO_TRIBALGUARD 38
-#define JDO_TRIBALSMITH 39
-#define JDO_PURITAN 40
-#define JDO_ORTHODOXIST 40.1
-#define JDO_ABSOLVER 40.2
+// Antagonists
+#define JDO_ASSASSIN 11
+#define JDO_BANDIT 11.1
+#define JDO_WRETCH 11.2
 
 #define BITFLAG_HOLY_WARRIOR (1<<0)
 #define BITFLAG_ROYALTY (1<<1)
@@ -380,8 +367,7 @@
 	/datum/job/roguetown/guildsmaster,\
 	/datum/job/roguetown/guildsman,\
 	/datum/job/roguetown/tailor,\
-	/datum/job/roguetown/merchant,\
-	/datum/job/roguetown/scribe
+	/datum/job/roguetown/merchant
 
 #define WANDERER_ROLES \
 	/datum/job/roguetown/pilgrim,\

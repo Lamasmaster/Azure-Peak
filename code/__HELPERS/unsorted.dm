@@ -1606,7 +1606,7 @@ GLOBAL_LIST_INIT(duplicate_forbidden_vars,list(
 		"Inquisition" = GLOB.inquisition_positions,
 		"Yeoman" = GLOB.yeoman_positions,
 		"Peasant" = GLOB.peasant_positions,
-		"Youngfolk" = GLOB.youngfolk_positions,
+		"Sidefolk" = GLOB.youngfolk_positions,
 		"Wanderer" = GLOB.wanderer_positions,
 	)
 

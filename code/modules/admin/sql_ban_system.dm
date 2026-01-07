@@ -253,8 +253,8 @@
 				break_counter++
 			output += "</div></div>"
 		var/list/long_job_lists = list("Peasants" = GLOB.peasant_positions,
-									"Yeomen" = GLOB.yeoman_positions,
-									"Youngfolk" = GLOB.youngfolk_positions,
+									"Burghers" = GLOB.yeoman_positions,
+									"Sidefolk" = GLOB.youngfolk_positions,
 									"Ghost and Other Roles" = list(ROLE_NECRO_SKELETON, ROLE_LICH_SKELETON),
 									"Antagonist Positions" = list(ROLE_MANIAC, ROLE_WEREWOLF,
 									ROLE_VAMPIRE, ROLE_NBEAST, ROLE_BANDIT,

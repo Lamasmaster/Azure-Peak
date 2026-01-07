@@ -1,6 +1,6 @@
 /datum/job/roguetown/butler // really need to re-name all these when the codebase isn't a fork and search will update for the peasants...
 	title = "Seneschal"
-	flag = BUTLER
+	flag = SENESCHAL
 	department_flag = COURTIERS
 	faction = "Station"
 	total_positions = 1
@@ -11,7 +11,7 @@
 	tutorial = "Servitude unto death; that is your motto. You are the manor's major-domo, commanding over the house servants and seeing to the administrative affairs, day to day of the estate. This role has style options for chief butlers and head maids."
 	outfit = /datum/outfit/job/roguetown/seneschal
 	advclass_cat_rolls = list(CTAG_SENESCHAL = 20)
-	display_order = JDO_BUTLER
+	display_order = JDO_SENESCHAL
 	give_bank_account = TRUE
 	min_pq = 3
 	max_pq = null

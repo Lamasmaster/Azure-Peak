@@ -1,7 +1,7 @@
 /datum/job/roguetown/orphan
 	title = "Vagabond"
-	flag = ORPHAN
-	department_flag = YOUNGFOLK
+	flag = VAGABOND
+	department_flag = SIDEFOLK
 	faction = "Station"
 	total_positions = 12
 	spawn_positions = 12
@@ -12,7 +12,7 @@
 	tutorial = "Dozens of people end up down on their luck in the kingdom of Psydonia every day. They sometimes make something of themselves but much more often die in the streets."
 
 	outfit = /datum/outfit/job/roguetown/orphan
-	display_order = JDO_ORPHAN
+	display_order = JDO_VAGABOND
 	show_in_credits = FALSE
 	min_pq = -30
 	max_pq = null

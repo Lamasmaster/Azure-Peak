@@ -3,7 +3,7 @@
 /datum/job/roguetown/guildsman
 	title = "Guildsman"
 	flag = GUILDSMAN
-	department_flag = YEOMEN
+	department_flag = BURGHERS
 	faction = "Station"
 	total_positions = 4
 	spawn_positions = 4

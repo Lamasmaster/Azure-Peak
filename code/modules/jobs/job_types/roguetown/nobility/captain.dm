@@ -1,6 +1,6 @@
 /datum/job/roguetown/captain
 	title = "Knight Captain" //The Knight Captain is clearly not drawn from the ranks of guardsmen, or sergeants. They're drawn from the Knightly ranks and should be treated as such.
-	flag = GUARD_CAPTAIN
+	flag = CAPTAIN
 	department_flag = NOBLEMEN
 	faction = "Station"
 	total_positions = 1
@@ -12,7 +12,7 @@
 	gracefully as knight of his royal majesty, and now you've grown into a role which many men can only dream of becoming. \
 	Veteran among knights, you lead the crown's knights to battle and organize the training squires. Obey the Marshal and the Crown. \
 	Lead your men to victory--and keep them in line--and you will see this realm prosper under a thousand suns."
-	display_order = JDO_GUARD_CAPTAIN
+	display_order = JDO_CAPTAIN
 	advclass_cat_rolls = list(CTAG_CAPTAIN = 20)
 
 	spells = list(/obj/effect/proc_holder/spell/self/convertrole/guard)

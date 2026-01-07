@@ -1,6 +1,6 @@
 /datum/job/roguetown/beggar
 	title = "Beggar"
-	flag = BEGGAR
+	flag = VAGABOND
 	department_flag = PEASANTS
 	faction = "Station"
 	total_positions = 0

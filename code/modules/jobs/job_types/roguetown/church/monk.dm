@@ -1,6 +1,6 @@
 /datum/job/roguetown/monk
 	title = "Acolyte"
-	flag = MONK
+	flag = ACOLYTE
 	department_flag = CHURCHMEN
 	faction = "Station"
 	total_positions = 6
@@ -12,7 +12,7 @@
 	outfit = /datum/outfit/job/roguetown/monk
 	tutorial = "Chores, some more chores- Even more chores.. Oh how the life of a humble acolyte is exhausting… You have faith, but even you know you gave up a life of adventure for that of the security in the Church. Assist the Bishop in their daily tasks, maybe today will be the day something interesting happens."
 
-	display_order = JDO_MONK
+	display_order = JDO_ACOLYTE
 	give_bank_account = TRUE
 	min_pq = 1 //A step above Churchling, should funnel new players to the churchling role to learn miracles at a more sedate pace
 	max_pq = null
