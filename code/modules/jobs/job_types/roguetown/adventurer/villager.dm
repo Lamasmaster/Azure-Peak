@@ -47,7 +47,7 @@
 	for(var/X in GLOB.peasant_positions)
 		peopleiknow += X
 		peopleknowme += X
-	for(var/X in GLOB.yeoman_positions)
+	for(var/X in GLOB.burgher_positions)
 		peopleiknow += X
 	for(var/X in GLOB.church_positions)
 		peopleiknow += X

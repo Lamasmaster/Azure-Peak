@@ -291,7 +291,7 @@
 		return FALSE
 	//only migrants and peasants
 	if(!(recruit.job in GLOB.peasant_positions) && \
-		!(recruit.job in GLOB.yeoman_positions) && \
+		!(recruit.job in GLOB.burgher_positions) && \
 		!(recruit.job in GLOB.wanderer_positions))
 		return FALSE
 	//need to see their damn face
