@@ -59,6 +59,26 @@ GLOBAL_LIST_INIT(nonhuman_positions, list(
 	"Cyborg",
 	ROLE_PAI))
 
+///////////////
+// ROGUETOWN //
+///////////////
+
+GLOBAL_LIST_INIT(leadership_positions, list( //Used for boldening text primarily
+	"Grand Duke",
+	"Hand",
+	"Court Magician",
+	"Marshal",
+	"Knight Captain",
+	"Sergeant",
+	"Bishop",
+	"Martyr",
+	"Merchant",
+	"Guildmaster",
+	"Head Physician",
+	"Innkeeper",
+	"Bathmaster",
+))
+
 GLOBAL_LIST_INIT(noble_positions, list(
 	"Grand Duke",
 	"Consort",

@@ -95,10 +95,10 @@
 
 #define WANDERERS			(1<<8)
 
-#define ADVENTURER      (1<<0)
-#define TRADER			(1<<1)
-#define MERCENARY		(1<<2)
-#define COURTAGENT	    (1<<3)
+#define ADVENTURER	(1<<0)
+#define TRADER		(1<<1)
+#define MERCENARY	(1<<2)
+#define COURTAGENT	(1<<3)
 
 #define INQUISITION			(1<<9)
 
@@ -108,15 +108,15 @@
 
 #define ANTAGONIST			(1<<10)
 
-#define ASSASSIN	(1<<0)
-#define BANDIT		(1<<1)
-#define WRETCH		(1<<2)
-#define DEATHKNIGHT (1<<3)
-#define SKELETON	(1<<4)
-#define GOBLIN		(1<<5)
+#define ASSASSIN		(1<<0)
+#define BANDIT			(1<<1)
+#define WRETCH			(1<<2)
+#define DEATHKNIGHT 	(1<<3)
+#define SKELETON		(1<<4)
+#define GOBLIN			(1<<5)
 #define VAMPIRE_SERVANT (1<<6)
-#define VAMPIRE_GUARD (1<<7)
-#define VAMPIRE_SPAWN (1<<8)
+#define VAMPIRE_GUARD 	(1<<7)
+#define VAMPIRE_SPAWN 	(1<<8)
 
 #define SLOP				(1<<11)
 
