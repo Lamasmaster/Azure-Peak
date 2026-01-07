@@ -16,7 +16,7 @@
 	job_traits = list(TRAIT_TRAINED_SMITH, TRAIT_SMITHING_EXPERT)
 
 	outfit = /datum/outfit/job/roguetown/guildsman
-	selection_color = JCOLOR_YEOMAN
+	selection_color = JCOLOR_BURGHER
 	display_order = JDO_GUILDSMAN
 	give_bank_account = TRUE
 	min_pq = 0

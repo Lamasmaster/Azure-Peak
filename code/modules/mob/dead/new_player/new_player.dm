@@ -556,6 +556,7 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 	omegalist += list(GLOB.sidefolk_positions)
 	omegalist += list(GLOB.wanderer_positions)
 	omegalist += list(GLOB.inquisition_positions)
+	omegalist += list(GLOB.antagonist_positions)
 
 	for(var/list/category in omegalist)
 		if(!SSjob.name_occupations[category[1]])
@@ -579,7 +580,7 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 			var/cat_name = ""
 			switch (SSjob.name_occupations[category[1]].department_flag)
 				if (NOBLEMEN)
-					cat_name = "Nobles"
+					cat_name = "Ducal Family"
 				if (COURTIERS)
 					cat_name = "Courtiers"
 				if (RETINUE)

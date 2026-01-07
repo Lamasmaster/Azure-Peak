@@ -1,7 +1,7 @@
 /datum/job/roguetown/hand
 	title = "Hand"
 	flag = HAND
-	department_flag = NOBLEMEN
+	department_flag = COURTIERS
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1

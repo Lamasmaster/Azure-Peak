@@ -13,6 +13,7 @@
 	bypass_lastclass = TRUE
 	bypass_jobban = FALSE
 	display_order = JDO_VILLAGER
+	selection_color = JCOLOR_PEASANT
 	give_bank_account = TRUE
 	min_pq = -15
 	max_pq = null

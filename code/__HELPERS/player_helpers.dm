@@ -9,6 +9,7 @@
 	valid_positions += GLOB.garrison_positions
 	valid_positions += GLOB.peasant_positions
 	valid_positions += GLOB.burgher_positions
+	valid_positions += GLOB.antagonist_positions
 
 
 	var/list/reopened_jobs = list()

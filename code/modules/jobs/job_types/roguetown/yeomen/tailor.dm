@@ -8,7 +8,7 @@
 	spawn_positions = 1
 	display_order = 6
 	min_pq = 0
-	selection_color = JCOLOR_YEOMAN
+	selection_color = JCOLOR_BURGHER
 	allowed_races = ACCEPTED_RACES
 	display_order = JDO_TAILOR
 	job_traits = list(TRAIT_SEWING_EXPERT)

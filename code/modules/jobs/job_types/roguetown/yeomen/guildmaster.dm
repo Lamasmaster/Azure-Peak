@@ -8,7 +8,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	min_pq = 0
-	selection_color = JCOLOR_YEOMAN
+	selection_color = JCOLOR_BURGHER
 
 	allowed_races = ACCEPTED_RACES
 
@@ -16,7 +16,7 @@
 	the Blacksmiths, the Artificers and the Architects. Other townspeople may look to you for guidance, but they are not under your control. You are an experienced smith and artificer, and can do their work easily. Protect the craftsmen's interests."
 
 	outfit = /datum/outfit/job/roguetown/guildmaster
-	selection_color = JCOLOR_YEOMAN
+	selection_color = JCOLOR_BURGHER
 	display_order = JDO_GUILDMASTER
 	give_bank_account = TRUE
 	min_pq = 5 // Higher PQ requirement as it is a leadership role. Not for total newbie.
