@@ -1,47 +1,3 @@
-
-#define ENGSEC			(1<<0)
-
-//#define CAPTAIN			(1<<0)
-#define HOS				(1<<1)
-//#define WARDEN			(1<<2)
-#define DETECTIVE		(1<<3)
-#define OFFICER			(1<<4)
-#define CHIEF			(1<<5)
-#define ENGINEER		(1<<6)
-#define ATMOSTECH		(1<<7)
-#define ROBOTICIST		(1<<8)
-#define AI_JF			(1<<9)
-#define CYBORG			(1<<10)
-
-
-#define MEDSCI			(1<<1)
-
-#define RD_JF			(1<<0)
-#define SCIENTIST		(1<<1)
-#define CHEMIST			(1<<2)
-#define CMO_JF			(1<<3)
-#define DOCTOR			(1<<4)
-#define GENETICIST		(1<<5)
-#define VIROLOGIST		(1<<6)
-
-
-#define CIVILIAN		(1<<2)
-
-#define HOP				(1<<0)
-#define BARTENDER		(1<<1)
-#define BOTANIST		(1<<2)
-//#define COOK			(1<<3) //This is redefined below, and is a ss13 leftover.
-#define JANITOR			(1<<4)
-#define CURATOR			(1<<5)
-#define QUARTERMASTER	(1<<6)
-#define CARGOTECH		(1<<7)
-//#define MINER			(1<<8) //This is redefined below, and is a ss13 leftover.
-#define LAWYER			(1<<9)
-#define CHAPLAIN		(1<<10)
-#define CLOWN			(1<<11)
-#define MIME			(1<<12)
-#define ASSISTANT		(1<<13)
-
 #define JOB_AVAILABLE 0
 #define JOB_UNAVAILABLE_GENERIC 1
 #define JOB_UNAVAILABLE_BANNED 2
@@ -59,51 +15,18 @@
 #define JOB_UNAVAILABLE_PQ 14
 
 #define DEFAULT_RELIGION "Christianity"
-#define DEFAULT_DEITY "Space Jesus"
+#define DEFAULT_DEITY "Zizus Psyst"
 
 #define JOB_DISPLAY_ORDER_DEFAULT 0
 
-#define JOB_DISPLAY_ORDER_ASSISTANT 1
-#define JOB_DISPLAY_ORDER_CAPTAIN 2
-#define JOB_DISPLAY_ORDER_HEAD_OF_PERSONNEL 3
-#define JOB_DISPLAY_ORDER_QUARTERMASTER 4
-#define JOB_DISPLAY_ORDER_CARGO_TECHNICIAN 5
-#define JOB_DISPLAY_ORDER_SHAFT_MINER 6
-#define JOB_DISPLAY_ORDER_BARTENDER 7
-#define JOB_DISPLAY_ORDER_COOK 8
-#define JOB_DISPLAY_ORDER_BOTANIST 9
-#define JOB_DISPLAY_ORDER_JANITOR 10
-#define JOB_DISPLAY_ORDER_CLOWN 11
-#define JOB_DISPLAY_ORDER_MIME 12
-#define JOB_DISPLAY_ORDER_CURATOR 13
-#define JOB_DISPLAY_ORDER_LAWYER 14
-#define JOB_DISPLAY_ORDER_CHAPLAIN 15
-#define JOB_DISPLAY_ORDER_CHIEF_ENGINEER 16
-#define JOB_DISPLAY_ORDER_STATION_ENGINEER 17
-#define JOB_DISPLAY_ORDER_ATMOSPHERIC_TECHNICIAN 18
-#define JOB_DISPLAY_ORDER_CHIEF_MEDICAL_OFFICER 19
-#define JOB_DISPLAY_ORDER_MEDICAL_DOCTOR 20
-#define JOB_DISPLAY_ORDER_CHEMIST 21
-#define JOB_DISPLAY_ORDER_GENETICIST 22
-#define JOB_DISPLAY_ORDER_VIROLOGIST 23
-#define JOB_DISPLAY_ORDER_RESEARCH_DIRECTOR 24
-#define JOB_DISPLAY_ORDER_SCIENTIST 25
-#define JOB_DISPLAY_ORDER_ROBOTICIST 26
-#define JOB_DISPLAY_ORDER_HEAD_OF_SECURITY 27
-#define JOB_DISPLAY_ORDER_WARDEN 28
-#define JOB_DISPLAY_ORDER_DETECTIVE 29
-#define JOB_DISPLAY_ORDER_SECURITY_OFFICER 30
-#define JOB_DISPLAY_ORDER_AI 31
-#define JOB_DISPLAY_ORDER_CYBORG 32
-
-#define NOBLEMEN		(1<<0)
+#define NOBLEMEN			(1<<0)
 
 #define LORD		(1<<0)
 #define LADY		(1<<1)
 #define PRINCE		(1<<3)
 #define SUITOR		(1<<4)
 
-#define COURTIERS		(1<<1)
+#define COURTIERS			(1<<1)
 
 #define HAND		(1<<0)
 #define STEWARD		(1<<1)
@@ -113,21 +36,21 @@
 #define ARCHIVIST	(1<<5)
 #define SENESCHAL	(1<<6)
 
-#define RETINUE			(1<<2)
+#define RETINUE				(1<<2)
 
 #define MARSHAL		(1<<0)
 #define CAPTAIN		(1<<1)
 #define KNIGHT		(1<<2)
 #define SQUIRE		(1<<3)
 
-#define GARRISON		(1<<3)
+#define GARRISON			(1<<3)
 
 #define SERGEANT	(1<<0)
 #define MANATARMS	(1<<1)
 #define WARDEN		(1<<2)
 #define GUARDSMAN	(1<<3)
 
-#define CHURCHMEN		(1<<4)
+#define CHURCHMEN			(1<<4)
 
 #define PRIEST		(1<<0)
 #define MARTYR		(1<<1)
@@ -137,7 +60,7 @@
 #define ACOLYTE		(1<<5)
 #define CHURCHLING	(1<<6)
 
-#define BURGHERS		(1<<5)
+#define BURGHERS			(1<<5)
 
 #define MERCHANT	(1<<0)
 #define GUILDMASTER (1<<1)
@@ -150,7 +73,7 @@
 #define CLERK 		(1<<8)
 #define CRIER		(1<<9)
 
-#define PEASANTS		(1<<6)
+#define PEASANTS			(1<<6)
 
 #define MAGEAPPRENTICE	(1<<0)
 #define SHOPHAND	(1<<1)
@@ -158,10 +81,10 @@
 #define COOK		(1<<3)
 #define TAPSTER 	(1<<4)
 #define WENCH		(1<<5)
-#define FARMER		(1<<6)
+#define SOILSON		(1<<6)
 #define VILLAGER	(1<<7)
 
-#define SIDEFOLK		(1<<7)
+#define SIDEFOLK			(1<<7)
 
 #define VETERAN		(1<<0)
 #define LUNATIC		(1<<1)
@@ -170,20 +93,20 @@
 #define PILGRIM		(1<<4)
 #define MIGRANT		(1<<5)
 
-#define WANDERERS		(1<<8)
+#define WANDERERS			(1<<8)
 
 #define ADVENTURER      (1<<0)
 #define TRADER			(1<<1)
 #define MERCENARY		(1<<2)
 #define COURTAGENT	    (1<<3)
 
-#define INQUISITION		(1<<9)
+#define INQUISITION			(1<<9)
 
 #define PURITAN		(1<<0)
 #define ABSOLVER	(1<<1)
 #define ORTHODOXIST	(1<<2)
 
-#define ANTAGONIST		(1<<10)
+#define ANTAGONIST			(1<<10)
 
 #define ASSASSIN	(1<<0)
 #define BANDIT		(1<<1)
@@ -195,22 +118,22 @@
 #define VAMPIRE_GUARD (1<<7)
 #define VAMPIRE_SPAWN (1<<8)
 
-#define SLOP			(1<<11)
+#define SLOP				(1<<11)
 
 #define TESTER		(1<<0)
 
 #define JCOLOR_NOBLE  "#007fff"
 #define JCOLOR_COURTIER "#aa83b9"
 #define JCOLOR_RETINUE "#597fb9"
-#define JCOLOR_SOLDIER "#173266"
+#define JCOLOR_GARRISON "#173266"
 #define JCOLOR_CHURCH "#b0955d"
 #define JCOLOR_BURGHER "#759259"
 #define JCOLOR_PEASANT "#685542"
-#define JCOLOR_SIDEFOLK "#a09571"
-#define JCOLOR_WANDERER  "#fffdd0"
+#define JCOLOR_SIDEFOLK "#aea176"
+#define JCOLOR_WANDERER  "#23763a"
 #define JCOLOR_INQUISITION "#6c6c6c"
 #define JCOLOR_ANTAGONIST  "#b8252c"
-
+// PUT THESE ON THE FIRST ROLE IN THE LIST BELOW (IE NOBLE ON LORD) TO GET DESIRED COLOUR OF THE DEPARTMENT SELECT
 // job display orders //
 
 // Ducal Family
@@ -286,7 +209,7 @@
 #define JDO_MERCENARY 9.3
 
 // Inquisition
-#define JDO_PURITAN 10
+#define JDO_INQUISITOR 10
 #define JDO_ORTHODOXIST 10.1
 #define JDO_ABSOLVER 10.2
 

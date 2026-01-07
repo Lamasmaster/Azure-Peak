@@ -1,5 +1,5 @@
 /datum/job/roguetown
-	display_order = JOB_DISPLAY_ORDER_CAPTAIN
+	display_order = JDO_LORD
 
 /datum/job/roguetown/New()
 	. = ..()

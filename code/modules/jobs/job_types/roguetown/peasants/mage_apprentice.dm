@@ -2,6 +2,7 @@
 	title = "Magicians Associate"
 	flag = MAGEAPPRENTICE
 	department_flag = PEASANTS
+	selection_color = JCOLOR_PEASANT	
 	faction = "Station"
 	total_positions = 4
 	spawn_positions = 4

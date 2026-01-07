@@ -5,7 +5,6 @@
 	faction = "Station"
 	total_positions = 0
 	spawn_positions = 0
-	selection_color = JCOLOR_SOLDIER
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = ACCEPTED_RACES // same as town guard
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)

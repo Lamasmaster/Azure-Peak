@@ -14,7 +14,7 @@
 	selection_color = JCOLOR_INQUISITION
 
 	outfit = /datum/outfit/job/roguetown/puritan
-	display_order = JDO_PURITAN
+	display_order = JDO_INQUISITOR
 	advclass_cat_rolls = list(CTAG_PURITAN = 20)
 	give_bank_account = 30
 	min_pq = 10
