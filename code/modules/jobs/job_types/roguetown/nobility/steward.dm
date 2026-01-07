@@ -1,7 +1,7 @@
 /datum/job/roguetown/steward
 	title = "Steward"
 	flag = STEWARD
-	department_flag = NOBLEMEN
+	department_flag = COUNCILLOR
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1

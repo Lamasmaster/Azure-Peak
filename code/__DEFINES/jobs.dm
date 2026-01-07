@@ -199,16 +199,17 @@
 
 #define TESTER		(1<<0)
 
-#define JCOLOR_NOBLE "#aa83b9"
-#define JCOLOR_COURTIER "#81adc8"
-#define JCOLOR_RETINUE "#4580a3"
-#define JCOLOR_SOLDIER "#b18484"
-#define JCOLOR_CHURCH "#c0ba8d"
-#define JCOLOR_YEOMAN "#819e82"
-#define JCOLOR_PEASANT "#b09262"
-#define JCOLOR_WANDERER  "#c86e3a"
-#define JCOLOR_INQUISITION "#FF0000"
-#define JCOLOR_ANTAGONIST  "#7a1212"
+#define JCOLOR_NOBLE  "#007fff"
+#define JCOLOR_COURTIER "#aa83b9"
+#define JCOLOR_RETINUE "#597fb9"
+#define JCOLOR_SOLDIER "#173266"
+#define JCOLOR_CHURCH "#b0955d"
+#define JCOLOR_BURGHER "#759259"
+#define JCOLOR_PEASANT "#685542"
+#define JCOLOR_SIDEFOLK "#a09571"
+#define JCOLOR_WANDERER  "#fffdd0"
+#define JCOLOR_INQUISITION "#6c6c6c"
+#define JCOLOR_ANTAGONIST  "#b8252c"
 
 // job display orders //
 
@@ -309,83 +310,3 @@
 #define ECONOMIC_DESTITUTE rand(0, 6)
 #define ECONOMIC_LETSGOGAMBLING pick(ECONOMIC_DESTITUTE, ECONOMIC_DESTITUTE, ECONOMIC_DESTITUTE, ECONOMIC_WORKING_CLASS, ECONOMIC_WORKING_CLASS, ECONOMIC_WORKING_CLASS, ECONOMIC_WORKING_CLASS, ECONOMIC_RICH)
 // END OF THE ECONOMY SECTION
-
-#define MANOR_ROLES \
-	/datum/job/roguetown/jester,\
-	/datum/job/roguetown/veteran,\
-	/datum/job/roguetown/clerk,\
-	/datum/job/roguetown/wapprentice,\
-	/datum/job/roguetown/servant,\
-	/datum/job/roguetown/butler,\
-	/datum/job/roguetown/apothecary,\
-	/datum/job/roguetown/magician
-
-#define NOBLE_ROLES \
-	/datum/job/roguetown/prince,\
-	/datum/job/roguetown/councillor,\
-	/datum/job/roguetown/physician,\
-	/datum/job/roguetown/marshal,\
-	/datum/job/roguetown/captain,\
-	/datum/job/roguetown/hand,\
-	/datum/job/roguetown/knight,\
-	/datum/job/roguetown/lady,\
-	/datum/job/roguetown/lord,\
-	/datum/job/roguetown/steward
-
-#define KING_QUEEN_ROLES \
-	/datum/job/roguetown/lady,\
-	/datum/job/roguetown/lord
-
-#define CHURCH_ROLES \
-	/datum/job/roguetown/churchling,\
-	/datum/job/roguetown/druid,\
-	/datum/job/roguetown/monk,\
-	/datum/job/roguetown/priest,\
-	/datum/job/roguetown/templar
-
-#define PEASANT_ROLES \
-	/datum/job/roguetown/villager,\
-	/datum/job/roguetown/nightmaiden,\
-	/datum/job/roguetown/beggar,\
-	/datum/job/roguetown/cook,\
-	/datum/job/roguetown/knavewench,\
-	/datum/job/roguetown/lunatic,\
-	/datum/job/roguetown/farmer,\
-	/datum/job/roguetown/orphan,\
-	/datum/job/roguetown/shophand,\
-	/datum/job/roguetown/bapprentice,\
-	/datum/job/roguetown/prisonerb,\
-	/datum/job/roguetown/hostage,\
-	/datum/job/roguetown/prisonerr
-
-#define YEOMEN_ROLES \
-	/datum/job/roguetown/keeper,\
-	/datum/job/roguetown/crier,\
-	/datum/job/roguetown/niteman,\
-	/datum/job/roguetown/archivist,\
-	/datum/job/roguetown/barkeep,\
-	/datum/job/roguetown/guildsmaster,\
-	/datum/job/roguetown/guildsman,\
-	/datum/job/roguetown/tailor,\
-	/datum/job/roguetown/merchant
-
-#define WANDERER_ROLES \
-	/datum/job/roguetown/pilgrim,\
-	/datum/job/roguetown/adventurer,\
-	/datum/job/roguetown/mercenary/desert_rider,\
-	/datum/job/roguetown/mercenary/grenzelhoft,\
-	/datum/job/roguetown/bandit,\
-	/datum/job/roguetown/wretch
-
-#define GARRISON_ROLES \
-	/datum/job/roguetown/bogguardsman,\
-	/datum/job/roguetown/sergeant,\
-	/datum/job/roguetown/gatemaster,\
-	/datum/job/roguetown/manorguard,\
-	/datum/job/roguetown/sheriff,\
-	/datum/job/roguetown/squire,\
-	/datum/job/roguetown/guardsman
-
-#define INQUISITION_ROLES \
-	/datum/job/roguetown/puritan,\
-	/datum/job/roguetown/orthodoxist

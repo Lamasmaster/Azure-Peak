@@ -1,7 +1,7 @@
 /datum/job/roguetown/physician
 	title = "Head Physician"
 	flag = PHYSICIAN
-	department_flag = NOBLEMEN
+	department_flag = BURGHERS
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1

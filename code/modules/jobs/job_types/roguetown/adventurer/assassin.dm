@@ -1,7 +1,7 @@
 /datum/job/roguetown/assassin
 	title = "Assassin"
 	flag = ASSASSIN
-	department_flag = PEASANTS
+	department_flag = ANTAGONIST
 	faction = "Station"
 	total_positions = 0
 	spawn_positions = 0

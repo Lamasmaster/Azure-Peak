@@ -582,6 +582,8 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 					cat_name = "Nobles"
 				if (COURTIERS)
 					cat_name = "Courtiers"
+				if (RETINUE)
+					cat_name = "Retinue"
 				if (GARRISON)
 					cat_name = "Garrison"
 				if (CHURCHMEN)
@@ -596,8 +598,8 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 					cat_name = "Wanderers"
 				if (INQUISITION)
 					cat_name = "Inquisition"
-			//	if (GOBLIN)
-			//		cat_name = "Goblins"
+				if (ANTAGONIST)
+					cat_name = "Antagonists"			
 
 			dat += "<fieldset style='width: 185px; border: 2px solid [cat_color]; display: inline'>"
 			dat += "<legend align='center' style='font-weight: bold; color: [cat_color]'>[cat_name]</legend>"
