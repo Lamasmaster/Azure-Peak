@@ -1,4 +1,4 @@
-/datum/job/roguetown/puritan
+/datum/job/roguetown/inquisitor
 	title = "Inquisitor"
 	flag = INQUISITOR
 	department_flag = INQUISITION
@@ -13,32 +13,32 @@
 	cmode_music = 'sound/music/inquisitorcombat.ogg'
 	selection_color = JCOLOR_INQUISITION
 
-	outfit = /datum/outfit/job/roguetown/puritan
+	outfit = /datum/outfit/job/roguetown/inquisitor
 	display_order = JDO_INQUISITOR
-	advclass_cat_rolls = list(CTAG_PURITAN = 20)
+	advclass_cat_rolls = list(CTAG_INQUISITION = 20)
 	give_bank_account = 30
 	min_pq = 10
 	max_pq = null
 	round_contrib_points = 2
 	job_subclasses = list(
-		/datum/advclass/puritan/inspector,
-		/datum/advclass/puritan/ordinator
+		/datum/advclass/inquisitor/inspector,
+		/datum/advclass/inquisitor/ordinator
 	)
 
-/datum/outfit/job/roguetown/puritan
+/datum/outfit/job/roguetown/inquisitor
 	name = "Inquisitor"
-	jobtype = /datum/job/roguetown/puritan
+	jobtype = /datum/job/roguetown/inquisitor
 	job_bitflag = BITFLAG_HOLY_WARRIOR	//Counts as church.
 	allowed_patrons = list(/datum/patron/old_god)
 
 //// The Inquisitor. Jack of all trades, master of none. Respectable assortment of skills, stats, and equipment; good at both subterfuge and combat. Functions very well on their own, and even better with a full sect.
 
-/datum/advclass/puritan/inspector
+/datum/advclass/inquisitor/inspector
 	name = "Inquisitor"
 	tutorial = "Investigators and diplomats, oft-selected from Confessors who've shown their aptitude in a variety of skills. A precise strike is all that's needed to forward the Orthodoxy's missive; whether it's struck with a diplomat's charm or a rapier's tip, however, is up to you."
-	outfit = /datum/outfit/job/roguetown/puritan/inspector
+	outfit = /datum/outfit/job/roguetown/inquisitor/inspector
 	subclass_languages = list(/datum/language/otavan)
-	category_tags = list(CTAG_PURITAN)
+	category_tags = list(CTAG_INQUISITION)
 	traits_applied = list(
 		TRAIT_STEELHEARTED,
 		TRAIT_DODGEEXPERT,
@@ -75,7 +75,7 @@
 		"Tome of Psydon" = /obj/item/book/rogue/bibble/psy
 	)
 
-/datum/outfit/job/roguetown/puritan/inspector/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/inquisitor/inspector/pre_equip(mob/living/carbon/human/H)
 	..()
 	has_loadout = TRUE
 	H.verbs |= /mob/living/carbon/human/proc/faith_test
@@ -110,7 +110,7 @@
 		)
 
 
-/datum/outfit/job/roguetown/puritan/inspector/choose_loadout(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/inquisitor/inspector/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/weapons = list("Psydonic Longsword", "Psydonic Rapier", "Daybreak (Whip)", "Stigmata (Halberd)", "Eucharist (Rapier)")
 	var/weapon_choice = input(H,"FLOURISH YOUR SILVER.", "WIELD THEM IN HIS NAME.") as anything in weapons
@@ -137,14 +137,14 @@
 
 ///The Inquisitor's 'martial' archetype. Portrayed similarly to a Hollywood knight; remarkably strong and skilled, but cripplingly slow and vulnerable to the environment. Superb for one-on-one clashes, but relies on a full sect - and a saiga - for maximum effectiveness.
 
-/datum/advclass/puritan/ordinator
+/datum/advclass/inquisitor/ordinator
 	name = "Ordinator"
 	tutorial = "Adjudicator-Sergeants, hailing from the neighboring Psydonic Orders. Oft-mistaken for golems due to the lethargy imposed by their blessed plate armor, these holy knights have forsaken every other pursuit for a singular purpose: to break the inhumen against their knee."
-	outfit = /datum/outfit/job/roguetown/puritan/ordinator
+	outfit = /datum/outfit/job/roguetown/inquisitor/ordinator
 	subclass_languages = list(/datum/language/otavan)
 	cmode_music = 'sound/music/combat_inqordinator.ogg'
 
-	category_tags = list(CTAG_PURITAN)
+	category_tags = list(CTAG_INQUISITION)
 	traits_applied = list(
 		TRAIT_STEELHEARTED,
 		TRAIT_HEAVYARMOR,
@@ -174,7 +174,7 @@
 		"Tome of Psydon" = /obj/item/book/rogue/bibble/psy
 	)
 
-/datum/outfit/job/roguetown/puritan/ordinator/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/inquisitor/ordinator/pre_equip(mob/living/carbon/human/H)
 	..()
 	has_loadout = TRUE
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
@@ -199,7 +199,7 @@
 		/obj/item/paper/inqslip/arrival/inq = 1
 		)
 
-/datum/outfit/job/roguetown/puritan/ordinator/choose_loadout(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/inquisitor/ordinator/choose_loadout(mob/living/carbon/human/H)
 	. = ..()
 	var/weapons = list("Psydonic Broadsword + Dagger", "Psydonic Poleaxe + Dagger", "Apocrypha (Greatsword) + Dagger", "Covenant And Creed (Broadsword + Shield)", "Covenant and Consecratia (Flail + Shield)")
 	var/weapon_choice = input(H,"CHOOSE YOUR RELIQUARY PIECE.", "WIELD THEM IN HIS NAME.") as anything in weapons
