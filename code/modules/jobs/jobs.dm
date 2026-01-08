@@ -205,16 +205,11 @@ GLOBAL_LIST_INIT(rogueantag_positions, list(
 	"Marshal",
 	"Knight Captain",
 	"Knight",
-	"Squire",
 	"Sergeant",
-	"Man at Arms",
-	"Warden",
-	"Watchman",
 	"Bishop",
 	"Martyr",
 	"Inquisitor",
 	"Absolver",
-	"Orthodoxist",
 ))
 
 //This list is used to prevent the duke from stripping nobility from certain jobs that aren't intrinsically a part of the town.
