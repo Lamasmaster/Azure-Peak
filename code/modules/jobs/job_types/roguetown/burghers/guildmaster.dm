@@ -8,7 +8,6 @@
 	total_positions = 1
 	spawn_positions = 1
 	min_pq = 0
-	selection_color = JCOLOR_BURGHER
 
 	allowed_races = ACCEPTED_RACES
 

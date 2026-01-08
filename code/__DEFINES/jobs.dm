@@ -48,17 +48,17 @@
 #define SERGEANT	(1<<0)
 #define MANATARMS	(1<<1)
 #define WARDEN		(1<<2)
-#define GUARDSMAN	(1<<3)
+#define WATCHMAN	(1<<3)
 
 #define CHURCHMEN			(1<<4)
 
-#define PRIEST		(1<<0)
+#define BISHOP		(1<<0)
 #define MARTYR		(1<<1)
 #define TEMPLAR		(1<<2)
 #define KEEPER		(1<<3)
 #define DRUID		(1<<4)
 #define ACOLYTE		(1<<5)
-#define CHURCHLING	(1<<6)
+#define SEXTON		(1<<6)
 
 #define BURGHERS			(1<<5)
 
@@ -69,7 +69,7 @@
 #define PHYSICIAN 	(1<<4)
 #define APOTHECARY	(1<<5)
 #define INNKEEPER	(1<<6)
-#define NITEMASTER	(1<<7)
+#define BATHMASTER	(1<<7)
 #define CLERK 		(1<<8)
 #define CRIER		(1<<9)
 
@@ -80,7 +80,7 @@
 #define SERVANT		(1<<2)
 #define COOK		(1<<3)
 #define TAPSTER 	(1<<4)
-#define WENCH		(1<<5)
+#define BATHWORKER	(1<<5)
 #define SOILSON		(1<<6)
 #define VILLAGER	(1<<7)
 
@@ -162,16 +162,16 @@
 #define JDO_SERGEANT 4
 #define JDO_GUARD 4.1
 #define JDO_WARDEN 4.2
-#define JDO_TOWNGUARD 4.3
+#define JDO_WATCHMAN 4.3
 
 // Pantheon Church
-#define JDO_PRIEST 5
+#define JDO_BISHOP 5
 #define JDO_MARTYR 5.1
 #define JDO_TEMPLAR 5.2
 #define JDO_KEEPER 5.3
 #define JDO_DRUID 5.4
 #define JDO_ACOLYTE 5.5
-#define JDO_CHURCHLING 5.6
+#define JDO_SEXTON 5.6
 
 // Town Burghers
 #define JDO_MERCHANT 6
@@ -179,7 +179,7 @@
 #define JDO_GUILDSMAN 6.2
 #define JDO_TAILOR 6.3
 #define JDO_INNKEEPER 6.4
-#define JDO_NITEMASTER 6.5
+#define JDO_BATHMASTER 6.5
 #define JDO_CRIER 6.6
 #define JDO_APOTHECARY 6.7
 #define JDO_CLERK 6.8

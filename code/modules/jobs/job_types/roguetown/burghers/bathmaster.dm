@@ -1,6 +1,6 @@
-/datum/job/roguetown/niteman
+/datum/job/roguetown/bathmaster
 	title = "Bathmaster"
-	flag = NITEMASTER
+	flag = BATHMASTER
 	department_flag = BURGHERS
 	faction = "Station"
 	total_positions = 1
@@ -9,8 +9,8 @@
 	allowed_races = ACCEPTED_RACES
 	tutorial = "You are renting out the bathhouse in a joint operation with the Innkeep. You provide security for the bathwenches and help them to find work--when you're not being a trouble-making rake that others suffer to tolerate."
 	allowed_sexes = list(MALE, FEMALE)
-	outfit = /datum/outfit/job/roguetown/niteman
-	display_order = JDO_NITEMASTER
+	outfit = /datum/outfit/job/roguetown/bathmaster
+	display_order = JDO_BATHMASTER
 	give_bank_account = 20
 	min_pq = 1
 	max_pq = null
@@ -32,7 +32,7 @@
 /datum/advclass/bathmaster
 	name = "Bathmaster"
 	tutorial = "You are renting out the bathhouse in a joint operation with the Innkeep. You provide security for the bathwenches and help them to find work--when you're not being a trouble-making rake that others suffer to tolerate."
-	outfit = /datum/outfit/job/roguetown/niteman/basic
+	outfit = /datum/outfit/job/roguetown/bathmaster/basic
 	category_tags = list(CTAG_BATHMOM)
 	subclass_languages = list(/datum/language/thievescant)
 	subclass_stats = list(
@@ -59,7 +59,7 @@
 		/datum/skill/craft/crafting = SKILL_LEVEL_NOVICE,
 	)
 
-/datum/outfit/job/roguetown/niteman/basic/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/bathmaster/basic/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
 	head = /obj/item/lockpick/goldpin/silver

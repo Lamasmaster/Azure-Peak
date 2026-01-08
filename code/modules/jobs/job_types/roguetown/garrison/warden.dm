@@ -1,4 +1,4 @@
-/datum/job/roguetown/bogguardsman
+/datum/job/roguetown/warden
 	title = "Warden"
 	flag = WARDEN
 	department_flag = GARRISON
@@ -15,7 +15,7 @@
 	display_order = JDO_WARDEN
 	whitelist_req = TRUE
 
-	outfit = /datum/outfit/job/roguetown/bogguardsman
+	outfit = /datum/outfit/job/roguetown/warden
 	advclass_cat_rolls = list(CTAG_WARDEN = 20)
 
 	give_bank_account = TRUE
@@ -26,11 +26,11 @@
 	cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg'
 	job_traits = list(TRAIT_OUTDOORSMAN, TRAIT_WOODSMAN, TRAIT_SURVIVAL_EXPERT)
 	job_subclasses = list(
-		/datum/advclass/bogguardsman/ranger,
-		/datum/advclass/bogguardsman/forester
+		/datum/advclass/warden/ranger,
+		/datum/advclass/warden/forester
 	)
 
-/datum/outfit/job/roguetown/bogguardsman
+/datum/outfit/job/roguetown/warden
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/warden
 	cloak = /obj/item/clothing/cloak/wardencloak
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
@@ -41,10 +41,10 @@
 	id = /obj/item/scomstone/bad/garrison
 	job_bitflag = BITFLAG_GARRISON
 
-/datum/advclass/bogguardsman/ranger
+/datum/advclass/warden/ranger
 	name = "Ranger"
 	tutorial = "You are a ranger, a hunter who volunteered to become a part of the wardens. You have experience using bows and daggers."
-	outfit = /datum/outfit/job/roguetown/bogguardsman/ranger
+	outfit = /datum/outfit/job/roguetown/warden/ranger
 	category_tags = list(CTAG_WARDEN)
 	traits_applied = list(TRAIT_DODGEEXPERT)
 	subclass_stats = list(
@@ -74,7 +74,7 @@
 		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE, // This should let them fry meat on fires.
 	)
 
-/datum/outfit/job/roguetown/bogguardsman/ranger/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/warden/ranger/pre_equip(mob/living/carbon/human/H)
 	..()
 	neck = /obj/item/clothing/neck/roguetown/coif
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
@@ -117,10 +117,10 @@
 	if(H.mind)
 		SStreasury.give_money_account(ECONOMIC_LOWER_MIDDLE_CLASS, H, "Savings.")
 
-/datum/advclass/bogguardsman/forester
+/datum/advclass/warden/forester
 	name = "Forester"
 	tutorial = "You are a forester, a woodsman who volunteered to become a part of the wardens. You have experience using axes and polearms."
-	outfit = /datum/outfit/job/roguetown/bogguardsman/forester
+	outfit = /datum/outfit/job/roguetown/warden/forester
 	category_tags = list(CTAG_WARDEN)
 	traits_applied = list(TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
@@ -153,7 +153,7 @@
 		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE, // This should let them fry meat on fires.
 	)
 
-/datum/outfit/job/roguetown/bogguardsman/forester/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/warden/forester/pre_equip(mob/living/carbon/human/H)
 	..()
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
