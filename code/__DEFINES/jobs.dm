@@ -102,7 +102,7 @@
 
 #define INQUISITION			(1<<9)
 
-#define PURITAN		(1<<0)
+#define INQUISITOR	(1<<0)
 #define ABSOLVER	(1<<1)
 #define ORTHODOXIST	(1<<2)
 
@@ -190,7 +190,7 @@
 #define JDO_SERVANT 7.2
 #define JDO_COOK 7.3
 #define JDO_TAPSTER 7.4
-#define JDO_WENCH 7.5
+#define JDO_BATHWORKER 7.5
 #define JDO_SOILSON 7.6
 #define JDO_VILLAGER 7.7
 

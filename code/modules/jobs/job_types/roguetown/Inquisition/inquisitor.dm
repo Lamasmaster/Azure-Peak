@@ -1,6 +1,6 @@
 /datum/job/roguetown/puritan
 	title = "Inquisitor"
-	flag = PURITAN
+	flag = INQUISITOR
 	department_flag = INQUISITION
 	faction = "Station"
 	total_positions = 1

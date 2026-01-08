@@ -68,7 +68,7 @@
 	..()
 	head = /obj/item/clothing/head/roguetown/cap
 	neck = /obj/item/clothing/neck/roguetown/collar
-	beltl = /obj/item/roguekey/bathworker
+	beltl = /obj/item/roguekey/nightmaiden
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	backl = /obj/item/storage/backpack/rogue/satchel
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
@@ -116,7 +116,7 @@
 
 /datum/outfit/job/roguetown/bathworker/concubine/pre_equip(mob/living/carbon/human/H)
 	..()
-	beltl = /obj/item/roguekey/bathworker
+	beltl = /obj/item/roguekey/nightmaiden
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(
@@ -169,7 +169,7 @@
 	name = "Courtesan"
 	tutorial = "Overcoming mind games, deceit and competition, you came into your own as one of the bathhouse's most prized moneymakers and socialites. Dressed in lavish gifts left behind by your patrons, not just anyone can have you. Under the matron, you do most of the social heavylifting and provide entertainment of all forms - behind a heavy price tag. "
 	outfit = /datum/outfit/job/roguetown/bathworker/courtesan
-	category_tags = list(CTAG_bathworker)
+	category_tags = list(CTAG_BATHWORKER)
 	traits_applied = list(TRAIT_KEENEARS, TRAIT_BEAUTIFUL)
 	subclass_stats = list(
 		STATKEY_SPD = 3,
@@ -211,7 +211,7 @@
 			id = /obj/item/clothing/ring/silver
 		if(96 to 100)
 			id = /obj/item/clothing/ring/diamond
-	beltl = /obj/item/roguekey/bathworker
+	beltl = /obj/item/roguekey/nightmaiden
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(
