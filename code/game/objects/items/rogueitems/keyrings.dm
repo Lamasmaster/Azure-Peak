@@ -231,10 +231,7 @@
 //Hand gets same as the lord
 
 /obj/item/storage/keyring/steward
-	keys = list(/obj/item/roguekey/manor, /obj/item/roguekey/steward, /obj/item/roguekey/graveyard)
-
-/obj/item/storage/keyring/councillor
-	keys = list(/obj/item/roguekey/manor, /obj/item/roguekey/graveyard) //Not sure about the random crypt access but we will see
+	keys = list(/obj/item/roguekey/manor, /obj/item/roguekey/steward)
 
 /obj/item/storage/keyring/archivist
 	keys = list(/obj/item/roguekey/manor, /obj/item/roguekey/archive, /obj/item/roguekey/university)
@@ -253,10 +250,10 @@
 	keys = list(/obj/item/roguekey/justiciary, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight, /obj/item/roguekey/dungeon, /obj/item/roguekey/garrison,  /obj/item/roguekey/armory, /obj/item/roguekey/sergeant, /obj/item/roguekey/warden)
 
 /obj/item/storage/keyring/knight_captain
-	keys = list(/obj/item/roguekey/justiciary, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight)
+	keys = list(/obj/item/roguekey/justiciary, /obj/item/roguekey/garrison, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight)
 
 /obj/item/storage/keyring/knight
-	keys = list(/obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight)
+	keys = list(/obj/item/roguekey/garrison, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight)
 
 /obj/item/storage/keyring/squire
 	keys = list(/obj/item/roguekey/walls, /obj/item/roguekey/manor)
@@ -282,7 +279,7 @@
 	keys = list(/obj/item/roguekey/priest, /obj/item/roguekey/church, /obj/item/roguekey/graveyard, /obj/item/roguekey/keeper)
 
 /obj/item/storage/keyring/keeper
-	keys = list(/obj/item/roguekey/keeper)
+	keys = list(/obj/item/roguekey/keeper, /obj/item/roguekey/keeper_inner)
 
 /obj/item/storage/keyring/acolyte //General access
 	keys = list(/obj/item/roguekey/church, /obj/item/roguekey/graveyard, /obj/item/roguekey/keeper)
