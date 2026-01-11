@@ -211,6 +211,10 @@ GLOBAL_LIST_EMPTY(loadout_items)
 	name = "Poncho"
 	path = /obj/item/clothing/cloak/poncho
 
+/datum/loadout_item/aproncook
+	name = "Apron, Cooking"
+	path = /obj/item/clothing/cloak/apron/cook
+
 //SHOES
 /datum/loadout_item/darkboots
 	name = "Dark Boots"
@@ -404,6 +408,7 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/eastshirt2
 	name = "White Foreign Shirt"
 	path = /obj/item/clothing/suit/roguetown/shirt/undershirt/eastshirt2
+
 //PANTS
 /datum/loadout_item/tights
 	name = "Cloth Tights"
@@ -750,3 +755,12 @@ GLOBAL_LIST_EMPTY(loadout_items)
 /datum/loadout_item/donator_dasfox/periapt
 	name = "Donator Item - Defiled Astratan Periapt"
 	path = /obj/item/clothing/neck/roguetown/psicross/astrata/dasfox
+
+/datum/loadout_item/donator_ryan
+	name = "Donator Item - Western Estates Caparison"
+	path = /obj/item/caparison/ryan
+	ckeywhitelist = list("ryan180602")
+
+/datum/loadout_item/donator_ryan/psy_helm
+	name = "Donator Kit - Unorthodoxist Psydonite Helm"
+	path = /obj/item/enchantingkit/ryan_psyhelm

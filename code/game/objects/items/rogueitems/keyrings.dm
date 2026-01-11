@@ -312,6 +312,30 @@
 /obj/item/storage/keyring/tailor
 	keys = list(/obj/item/roguekey/crafterguild, /obj/item/roguekey/tailor)
 
+/obj/item/storage/keyring/innfancyi // 3 Keys
+	name = "luxury room I keyring"
+	keys = list(/obj/item/roguekey/fancyroomi, /obj/item/roguekey/fancyroomi, /obj/item/roguekey/fancyroomi)
+
+/obj/item/storage/keyring/innfancyii
+	name = "luxury room II keyring"
+	keys = list(/obj/item/roguekey/fancyroomii, /obj/item/roguekey/fancyroomii, /obj/item/roguekey/fancyroomii)
+
+/obj/item/storage/keyring/innfancyiii
+	name = "luxury room III keyring"
+	keys = list(/obj/item/roguekey/fancyroomiii, /obj/item/roguekey/fancyroomiii, /obj/item/roguekey/fancyroomiii)
+
+/obj/item/storage/keyring/innfancyiv
+	name = "luxury room IV keyring"
+	keys = list(/obj/item/roguekey/fancyroomiv, /obj/item/roguekey/fancyroomiv, /obj/item/roguekey/fancyroomiv)
+
+/obj/item/storage/keyring/innfancyv
+	name = "luxury room V keyring"
+	keys = list(/obj/item/roguekey/fancyroomv, /obj/item/roguekey/fancyroomv, /obj/item/roguekey/fancyroomv)
+
+/obj/item/storage/keyring/innhunt // 4 keys
+	name = "HUNT room keyring"
+	keys = list(/obj/item/roguekey/roomhunt, /obj/item/roguekey/roomhunt, /obj/item/roguekey/roomhunt, /obj/item/roguekey/roomhunt)
+
 //////////////
 // PEASANTS //
 //////////////
