@@ -247,7 +247,7 @@
 /////////////
 
 /obj/item/storage/keyring/marshal //All access for Retinue / Garrison
-	keys = list(/obj/item/roguekey/justiciary, /obj/item/roguekey/royal, /obj/item/roguekey/heir /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight, /obj/item/roguekey/dungeon, /obj/item/roguekey/garrison,  /obj/item/roguekey/armory, /obj/item/roguekey/sergeant, /obj/item/roguekey/warden)
+	keys = list(/obj/item/roguekey/justiciary, /obj/item/roguekey/royal, /obj/item/roguekey/heir, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight, /obj/item/roguekey/dungeon, /obj/item/roguekey/garrison,  /obj/item/roguekey/armory, /obj/item/roguekey/sergeant, /obj/item/roguekey/warden)
 
 /obj/item/storage/keyring/knight_captain
 	keys = list(/obj/item/roguekey/justiciary, /obj/item/roguekey/royal, /obj/item/roguekey/heir, /obj/item/roguekey/garrison, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight)
