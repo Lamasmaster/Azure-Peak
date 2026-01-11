@@ -240,17 +240,17 @@
 	keys = list(/obj/item/roguekey/manor, /obj/item/roguekey/mage, /obj/item/roguekey/university)
 
 /obj/item/storage/keyring/seneschal //Housekeeper, more of a reason to attack them too by antags
-	keys = list(/obj/item/roguekey/manor, /obj/item/roguekey/garrison, /obj/item/roguekey/university)
+	keys = list(/obj/item/roguekey/manor, /obj/item/roguekey/royal, /obj/item/roguekey/heir, /obj/item/roguekey/garrison)
 
 /////////////
 // RETINUE //
 /////////////
 
 /obj/item/storage/keyring/marshal //All access for Retinue / Garrison
-	keys = list(/obj/item/roguekey/justiciary, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight, /obj/item/roguekey/dungeon, /obj/item/roguekey/garrison,  /obj/item/roguekey/armory, /obj/item/roguekey/sergeant, /obj/item/roguekey/warden)
+	keys = list(/obj/item/roguekey/justiciary, /obj/item/roguekey/royal, /obj/item/roguekey/heir /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight, /obj/item/roguekey/dungeon, /obj/item/roguekey/garrison,  /obj/item/roguekey/armory, /obj/item/roguekey/sergeant, /obj/item/roguekey/warden)
 
 /obj/item/storage/keyring/knight_captain
-	keys = list(/obj/item/roguekey/justiciary, /obj/item/roguekey/garrison, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight)
+	keys = list(/obj/item/roguekey/justiciary, /obj/item/roguekey/royal, /obj/item/roguekey/heir, /obj/item/roguekey/garrison, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight)
 
 /obj/item/storage/keyring/knight
 	keys = list(/obj/item/roguekey/garrison, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/knight)
