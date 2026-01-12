@@ -91,19 +91,14 @@
 	cost = 15
 	contains = list(/obj/item/reagent_containers/powder/spice)
 
-//////////////
+/////////////
 // UTILITY //
-//////////////
+/////////////
 
 /datum/supply_pack/rogue/Things/rubyband
 	name = "Matthian SCOMSTONE"
 	cost = 20
 	contains = list(/obj/item/mattcoin)
-
-/datum/supply_pack/rogue/Things/Dragonscale
-	name = "Dragonscale Necklace"
-	cost = 900
-	contains = list(/obj/item/clothing/neck/roguetown/blkknight)
 
 /datum/supply_pack/rogue/Things/smokebomb
 	name = "Smoke Bomb"
