@@ -62,6 +62,7 @@
 	H.change_stat(STATKEY_STR, 2)
 	H.change_stat(STATKEY_CON, 3)
 	H.change_stat(STATKEY_WIL, 3)
+	H.hallucination = INFINITY
 	ADD_TRAIT(H, TRAIT_NOPAINSTUN, TRAIT_GENERIC) //No crit resist - you can still get folded pretty easily if overwhelmed
 	if(H.mind)
 		var/weapons = list("THE FISTS OF JUSTICE ARE UNISEX!","JUSTICE DISPENSED THROUGH KNUCKLE AND BLADE!")
@@ -105,6 +106,7 @@
 	H.change_stat(STATKEY_INT, 3) 
 	H.change_stat(STATKEY_WIL, 3)
 	H.change_stat(STATKEY_PER, 3)
+	H.hallucination = INFINITY
 	wretch_select_bounty(H)
 
 /datum/outfit/job/roguetown/wretch/vigilante/proc/bullshit_equip(mob/living/carbon/human/H)
@@ -125,4 +127,5 @@
 	H.change_stat(STATKEY_SPD, 2)
 	H.change_stat(STATKEY_WIL, 1)
 	H.change_stat(STATKEY_INT, 4) //Hilarious
+	H.hallucination = INFINITY
 	wretch_select_bounty(H)

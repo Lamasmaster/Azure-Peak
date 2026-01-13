@@ -6,8 +6,6 @@
 	total_positions = 1
 	spawn_positions = 1
 	round_contrib_points = 2
-	var/list/traits_applied
-	traits_applied = list(TRAIT_PSYCHOSIS, TRAIT_NOSTINK, TRAIT_MANIAC_AWOKEN, TRAIT_HOMESTEAD_EXPERT) // Maniac_Awoken no longer has any function other than the flavor text and trait
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = ACCEPTED_RACES
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
@@ -22,7 +20,7 @@
 
 	cmode_music = 'sound/music/combat_bum.ogg'
 
-	job_traits = list(TRAIT_JESTERPHOBIA)
+	job_traits = list(TRAIT_PSYCHOSIS, TRAIT_NOSTINK, TRAIT_MANIAC_AWOKEN, TRAIT_HOMESTEAD_EXPERT, TRAIT_JESTERPHOBIA) // Maniac_Awoken no longer has any function other than the flavor text and trait
 
 	advclass_cat_rolls = list(CTAG_LUNATIC = 2)
 	job_subclasses = list(
@@ -55,6 +53,7 @@
 	..()
 	H.adjust_blindness(-3)
 	H.STALUC = rand(3, 8)
+	H.hallucination = INFINITY
 	armor = /obj/item/clothing/suit/roguetown/shirt/rags
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/vagrant
 	pants = /obj/item/clothing/under/roguetown/tights/vagrant
