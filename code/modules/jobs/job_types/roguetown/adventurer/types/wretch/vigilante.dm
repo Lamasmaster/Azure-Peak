@@ -7,6 +7,7 @@
 	cmode_music = 'sound/music/combatmaniac.ogg'
 	category_tags = list(CTAG_WRETCH)
 	traits_applied = list(TRAIT_DECEIVING_MEEKNESS, TRAIT_PERFECT_TRACKER)
+	vice_restrictions = list(/datum/charflaw/mind_broken)//Starts with this
 	maximum_possible_slots = 1 // There can only be one. 
 	extra_context = "This class is best experienced without preparation."
 	subclass_skills = list(

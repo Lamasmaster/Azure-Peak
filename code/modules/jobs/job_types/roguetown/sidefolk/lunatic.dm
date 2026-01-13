@@ -21,6 +21,7 @@
 	cmode_music = 'sound/music/combat_bum.ogg'
 
 	job_traits = list(TRAIT_PSYCHOSIS, TRAIT_NOSTINK, TRAIT_MANIAC_AWOKEN, TRAIT_HOMESTEAD_EXPERT, TRAIT_JESTERPHOBIA) // Maniac_Awoken no longer has any function other than the flavor text and trait
+	vice_restrictions = list(/datum/charflaw/mind_broken)//Starts with this
 
 	advclass_cat_rolls = list(CTAG_LUNATIC = 2)
 	job_subclasses = list(
