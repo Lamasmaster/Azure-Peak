@@ -295,7 +295,7 @@
 	add_random_deserter_cloak(H)
 	//Head Gear
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/full
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle
+	head = /obj/item/clothing/head/roguetown/helmet/kettle/slittled
 	//wrist Gear
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron

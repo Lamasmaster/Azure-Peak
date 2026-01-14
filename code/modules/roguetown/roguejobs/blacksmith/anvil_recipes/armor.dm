@@ -762,7 +762,7 @@
 	req_bar = /obj/item/ingot/steel
 	req_blade = /obj/item/blade/steel_plate
 	additional_items = list(/obj/item/ingot/steel)
-	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/knight/skettle
+	created_item = /obj/item/clothing/head/roguetown/helmet/kettle/slittled
 
 /datum/anvil_recipe/armor/steel/savoyard
 	name = "Savoyard Helmet, Steel (+1 Steel)"
