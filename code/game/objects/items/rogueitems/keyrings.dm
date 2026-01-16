@@ -242,6 +242,9 @@
 /obj/item/storage/keyring/seneschal //Housekeeper, more of a reason to attack them too by antags
 	keys = list(/obj/item/roguekey/manor, /obj/item/roguekey/royal, /obj/item/roguekey/heir, /obj/item/roguekey/garrison)
 
+/obj/item/storage/keyring/jester //Might infact be hilarious, might be horrid, who knows
+	keys = list(/obj/item/roguekey/manor, /obj/item/roguekey/university, /obj/item/roguekey/walls)
+
 /////////////
 // RETINUE //
 /////////////
@@ -287,6 +290,9 @@
 //////////////
 // BURGHERS //
 //////////////
+
+/obj/item/storage/keyring/apprentice
+	keys = list(/obj/item/roguekey/manor, /obj/item/roguekey/university)
 
 /obj/item/storage/keyring/merchant
 	keys = list(/obj/item/roguekey/merchant, /obj/item/roguekey/shop)
