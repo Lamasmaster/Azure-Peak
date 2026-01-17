@@ -138,19 +138,34 @@
 	cost = 100
 	contains = list(/obj/item/rogueweapon/huntingknife/idagger/silver)
 
-///////////
-// MAGIC //
-///////////
+//////////////////
+// ✨ MAGIC ✨ //
+//////////////////
 
 /datum/supply_pack/rogue/Mage/unfinbook
 	name = "Unfinished Spellbook"
 	cost = 10
 	contains = list(/obj/item/spellbook_unfinished)
 
-/datum/supply_pack/rogue/Mage/nomag
+/datum/supply_pack/rogue/Mage/ring_nomag
 	name = "Ring of Nullmagic"
 	cost = 200
 	contains = list(/obj/item/clothing/ring/active/nomag)
+
+/datum/supply_pack/rogue/Mage/ring_swiftness
+	name = "Ring of Swiftness"
+	cost = 250
+	contains = list(/obj/item/clothing/ring/statgemerald)
+
+/datum/supply_pack/rogue/Mage/ring_vitality
+	name = "Ring of Vitality"
+	cost = 250
+	contains = list(/obj/item/clothing/ring/statonyx)
+
+/datum/supply_pack/rogue/Mage/ring_wisdom
+	name = "Ring of Wisdom"
+	cost = 250
+	contains = list(/obj/item/clothing/ring/statamythortz)
 
 /datum/supply_pack/rogue/Mage/talkstone
 	name = "Talkstone"
