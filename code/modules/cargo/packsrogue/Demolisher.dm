@@ -17,26 +17,6 @@
 	cost = 30
 	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet/visored)
 
-/datum/supply_pack/rogue/Demolisher/hbascinet
-	name = "Hounskull Bascinet"
-	cost = 30
-	contains = list(/obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull)
-
-/datum/supply_pack/rogue/Demolisher/savoyard
-	name = "Savoyard Helmet"
-	cost = 20
-	contains = list(/obj/item/clothing/head/roguetown/helmet/heavy/guard)
-
-/datum/supply_pack/rogue/Demolisher/barhelmet
-	name = "Barred Helmet"
-	cost = 20
-	contains = list(/obj/item/clothing/head/roguetown/helmet/heavy/sheriff)
-
-/datum/supply_pack/rogue/Demolisher/armet
-	name = "Armet"
-	cost = 40
-	contains = list(/obj/item/clothing/head/roguetown/helmet/heavy/knight/armet)
-
 //////////
 // NECK //
 //////////
@@ -53,7 +33,7 @@
 
 /datum/supply_pack/rogue/Demolisher/sgorget
 	name = "Steel Gorget"
-	cost = 30
+	cost = 40
 	contains = list(/obj/item/clothing/neck/roguetown/gorget/steel)
 
 ///////////
@@ -65,53 +45,33 @@
 	cost = 20
 	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail)
 
-/datum/supply_pack/rogue/Demolisher/hauberk
-	name = "Hauberk"
-	cost = 30
-	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk)
-
 /datum/supply_pack/rogue/Demolisher/hgambeson
 	name = "Padded Gambeson"
 	cost = 20
 	contains = list(/obj/item/clothing/suit/roguetown/armor/gambeson/heavy)
 
-/datum/supply_pack/rogue/Demolisher/steelcuirass
-	name = "Steel Cuirass"
-	cost = 20
-	contains =  list(/obj/item/clothing/suit/roguetown/armor/plate/cuirass)
+/datum/supply_pack/rogue/Demolisher/hauberk
+	name = "Hauberk"
+	cost = 40
+	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk)
 
-/datum/supply_pack/rogue/Demolisher/scalemail
-	name = "Scalemail"
-	cost = 20
-	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/scale)
-
-/datum/supply_pack/rogue/Demolisher/flutedcuirass
-	name = "Fluted Cuirass"
-	cost = 30
-	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/cuirass/fluted)
-
-/datum/supply_pack/rogue/Demolisher/brigandine
+/datum/supply_pack/rogue/Demolisher/splintarmor
 	name = "Brigandine"
-	cost = 50
+	cost = 80
 	contains = list(/obj/item/clothing/suit/roguetown/armor/brigandine)
-
-/datum/supply_pack/rogue/Demolisher/lightbrigandine
-	name = "Light Brigandine"
-	cost = 30
-	contains = list(/obj/item/clothing/suit/roguetown/armor/brigandine/light)
 
 ///////////////////
 // WRISTS/GLOVES //
 ///////////////////
 
-/datum/supply_pack/rogue/Demolisher/splintarms
+/datum/supply_pack/rogue/Demolisher/splintbracers
 	name = "Brigandine Rerebraces"
-	cost = 10
+	cost = 20
 	contains = list(/obj/item/clothing/wrists/roguetown/splintarms)
 
 /datum/supply_pack/rogue/Demolisher/chaingauntlets
 	name = "Steel Chain Gauntlets"
-	cost = 10
+	cost = 20
 	contains = list(/obj/item/clothing/gloves/roguetown/chain)
 
 ///////////////
@@ -124,9 +84,9 @@
 	contains = list(/obj/item/clothing/under/roguetown/splintlegs)
 
 /datum/supply_pack/rogue/Demolisher/boots
-	name = "Light Plated Boots"
-	cost = 10
-	contains = list(/obj/item/clothing/shoes/roguetown/boots/armor/iron)
+	name = "Steel Boots"
+	cost = 30
+	contains = list(/obj/item/clothing/shoes/roguetown/boots/armor)
 
 /////////////
 // WEAPONS //
@@ -134,18 +94,13 @@
 
 /datum/supply_pack/rogue/Demolisher/mace
 	name = "Iron Mace"
-	cost = 10
+	cost = 20
 	contains = list(/obj/item/rogueweapon/mace)
 
 /datum/supply_pack/rogue/Demolisher/steelmace
 	name = "Steel Mace"
-	cost = 20
+	cost = 40
 	contains = list(/obj/item/rogueweapon/mace/steel)
-
-/datum/supply_pack/rogue/Demolisher/cudgel
-	name = "Cudgel"
-	cost = 20
-	contains = list(/obj/item/rogueweapon/mace/cudgel)
 
 /////////////
 //  BOMBS  //

@@ -61,44 +61,24 @@
 	cost = 10
 	contains = list(/obj/item/clothing/suit/roguetown/armor/leather)
 
-/datum/supply_pack/rogue/Mage/leather/studded
-	name = "Studded Leather Armor"
-	cost = 20
-	contains = list(/obj/item/clothing/suit/roguetown/armor/leather/studded)
-
-/datum/supply_pack/rogue/Mage/leather/heavy
-	name = "Hardened Leather Armor"
-	cost = 20
-	contains = list(/obj/item/clothing/suit/roguetown/armor/leather/heavy)
-
 ///////////////////
 // WRISTS/GLOVES //
 ///////////////////
 
 /datum/supply_pack/rogue/Mage/leather/Lbracers
 	name = "Leather Bracers"
-	cost = 5
+	cost = 10
 	contains = list(/obj/item/clothing/wrists/roguetown/bracers/leather)
 
 /datum/supply_pack/rogue/Mage/leather/hbracers
 	name = "Hardened Leather Bracers"
-	cost = 10
+	cost = 20
 	contains = list(/obj/item/clothing/wrists/roguetown/bracers/leather/heavy)
 
 /datum/supply_pack/rogue/Mage/leather/lgloves
 	name = "Leather Gloves"
-	cost = 5
+	cost = 10
 	contains = list(/obj/item/clothing/gloves/roguetown/leather)
-
-/datum/supply_pack/rogue/Mage/leather/hlgloves
-	name = "Heavy Leather Gloves"
-	cost = 10
-	contains = list(/obj/item/clothing/gloves/roguetown/angle)
-
-/datum/supply_pack/rogue/Mage/leather/flgloves
-	name = "Fingerless Leather Gloves"
-	cost = 10
-	contains = list(/obj/item/clothing/gloves/roguetown/fingerless_leather)
 
 ///////////////
 // LEGS/FEET //

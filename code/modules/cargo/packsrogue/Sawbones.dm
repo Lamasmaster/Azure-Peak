@@ -56,43 +56,28 @@
 	cost = 10
 	contains = list(/obj/item/clothing/suit/roguetown/armor/leather)
 
-/datum/supply_pack/rogue/Sawbones/leather/studded
-	name = "Studded Leather Armor"
-	cost = 20
-	contains = list(/obj/item/clothing/suit/roguetown/armor/leather/studded)
-
-/datum/supply_pack/rogue/Sawbones/leather/heavy
-	name = "Hardened Leather Armor"
-	cost = 20
-	contains = list(/obj/item/clothing/suit/roguetown/armor/leather/heavy)
-
 ///////////////////
 // WRISTS/GLOVES //
 ///////////////////
 
 /datum/supply_pack/rogue/Sawbones/leather/Lbracers
 	name = "Leather Bracers"
-	cost = 5
+	cost = 10
 	contains = list(/obj/item/clothing/wrists/roguetown/bracers/leather)
 
 /datum/supply_pack/rogue/Sawbones/leather/hbracers
 	name = "Hardened Leather Bracers"
-	cost = 10
+	cost = 20
 	contains = list(/obj/item/clothing/wrists/roguetown/bracers/leather/heavy)
 
 /datum/supply_pack/rogue/Sawbones/leather/lgloves
 	name = "Leather Gloves"
-	cost = 5
-	contains = list(/obj/item/clothing/gloves/roguetown/leather)
-
-/datum/supply_pack/rogue/Sawbones/leather/hlgloves
-	name = "Heavy Leather Gloves"
 	cost = 10
-	contains = list(/obj/item/clothing/gloves/roguetown/angle)
+	contains = list(/obj/item/clothing/gloves/roguetown/leather)
 
 /datum/supply_pack/rogue/Sawbones/leather/flgloves
 	name = "Fingerless Leather Gloves"
-	cost = 10
+	cost = 20
 	contains = list(/obj/item/clothing/gloves/roguetown/fingerless_leather)
 
 ///////////////
@@ -115,7 +100,7 @@
 
 /datum/supply_pack/rogue/Sawbones/rapier
 	name = "Rapier"
-	cost = 20
+	cost = 30
 	contains = list(/obj/item/rogueweapon/sword/rapier)
 
 /datum/supply_pack/rogue/Sawbones/estoc
@@ -158,12 +143,12 @@
 
 /datum/supply_pack/rogue/Sawbones/herozium
 	name = "Herozium"
-	cost = 40
+	cost = 60
 	contains = list(/obj/item/reagent_containers/powder/herozium)
 
 /datum/supply_pack/rogue/Sawbones/starsugar
 	name = "Starsugar"
-	cost = 40
+	cost = 60
 	contains = list(/obj/item/reagent_containers/powder/starsugar)
 
 /////////////////////
@@ -172,37 +157,37 @@
 
 /datum/supply_pack/rogue/Sawbones/strpot
 	name = "Strength Potion"
-	cost = 10
+	cost = 30
 	contains = list(/obj/item/reagent_containers/glass/bottle/alchemical/strpot)
 
 /datum/supply_pack/rogue/Sawbones/perpot
 	name = "Perception Potion"
-	cost = 10
+	cost = 30
 	contains = list(/obj/item/reagent_containers/glass/bottle/alchemical/perpot)
 
 /datum/supply_pack/rogue/Sawbones/intpot
 	name = "Intelligence Potion"
-	cost = 10
+	cost = 30
 	contains = list(/obj/item/reagent_containers/glass/bottle/alchemical/intpot)
 
 /datum/supply_pack/rogue/Sawbones/conpot
 	name = "Constitution Potion"
-	cost = 10
+	cost = 30
 	contains = list(/obj/item/reagent_containers/glass/bottle/alchemical/conpot)
 
 /datum/supply_pack/rogue/Sawbones/endpot
 	name = "Willpower Potion"
-	cost = 10
+	cost = 30
 	contains = list(/obj/item/reagent_containers/glass/bottle/alchemical/endpot)
 
 /datum/supply_pack/rogue/Sawbones/spdpot
 	name = "Speed Potion"
-	cost = 10
+	cost = 30
 	contains = list(/obj/item/reagent_containers/glass/bottle/alchemical/spdpot)
 
 /datum/supply_pack/rogue/Sawbones/lucpot
 	name = "Luck Potion"
-	cost = 10
+	cost = 30
 	contains = list(/obj/item/reagent_containers/glass/bottle/alchemical/lucpot)
 
 /datum/supply_pack/rogue/Sawbones/antidote

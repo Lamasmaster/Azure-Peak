@@ -37,14 +37,19 @@
 // NECK //
 //////////
 
-/datum/supply_pack/rogue/Iconoclast/coif/steel
+/datum/supply_pack/rogue/Iconoclast/coif
 	name = "Steel Coif"
 	cost = 20
 	contains = list(/obj/item/clothing/neck/roguetown/chaincoif)
 
+/datum/supply_pack/rogue/Iconoclast/coif/full
+	name = "Steel Coif - Full"
+	cost = 40
+	contains = list(/obj/item/clothing/neck/roguetown/chaincoif/full)
+
 /datum/supply_pack/rogue/Iconoclast/Bevor
 	name = "Bevor"
-	cost = 20
+	cost = 30
 	contains = list(/obj/item/clothing/neck/roguetown/bevor)
 
 /datum/supply_pack/rogue/Iconoclast/gorget
@@ -54,7 +59,7 @@
 
 /datum/supply_pack/rogue/Iconoclast/sgorget
 	name = "Steel Gorget"
-	cost = 30
+	cost = 40
 	contains = list(/obj/item/clothing/neck/roguetown/gorget/steel)
 
 ///////////
@@ -66,30 +71,25 @@
 	cost = 20
 	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail)
 
-/datum/supply_pack/rogue/Iconoclast/hauberk
-	name = "Hauberk"
-	cost = 30
-	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk)
-
 /datum/supply_pack/rogue/Iconoclast/hgambeson
 	name = "Padded Gambeson"
 	cost = 20
 	contains = list(/obj/item/clothing/suit/roguetown/armor/gambeson/heavy)
 
+/datum/supply_pack/rogue/Iconoclast/hauberk
+	name = "Hauberk"
+	cost = 40
+	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk)
+
 /datum/supply_pack/rogue/Iconoclast/halfplate
 	name = "Half-Plate"
-	cost = 30
+	cost = 80
 	contains = list(/obj/item/clothing/suit/roguetown/armor/plate)
 
-/datum/supply_pack/rogue/Iconoclast/brigandine
-	name = "Brigandine"
-	cost = 50
-	contains = list(/obj/item/clothing/suit/roguetown/armor/brigandine)
-
-/datum/supply_pack/rogue/Iconoclast/coatofplates
-	name = "Coat of plates"
-	cost = 50
-	contains = list(/obj/item/clothing/suit/roguetown/armor/brigandine/coatplates)
+/datum/supply_pack/rogue/Iconoclast/Fullplate
+	name = "Steel Full plate"
+	cost = 160
+	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/full)
 
 ///////////////////
 // WRISTS/GLOVES //
@@ -97,12 +97,12 @@
 
 /datum/supply_pack/rogue/Iconoclast/bracers
 	name = "Steel Bracers"
-	cost = 10
+	cost = 40
 	contains = list(/obj/item/clothing/wrists/roguetown/bracers)
 
 /datum/supply_pack/rogue/Iconoclast/plategaunt
 	name = "Plate Gauntlets"
-	cost = 20
+	cost = 50
 	contains = list(/obj/item/clothing/gloves/roguetown/plate)
 
 ///////////////
@@ -111,12 +111,12 @@
 
 /datum/supply_pack/rogue/Iconoclast/platechausses
 	name = "Plate Chausses"
-	cost = 40
+	cost = 80
 	contains = list(/obj/item/clothing/under/roguetown/platelegs)
 
 /datum/supply_pack/rogue/Iconoclast/boots
 	name = "Steel Boots"
-	cost = 10
+	cost = 30
 	contains = list(/obj/item/clothing/shoes/roguetown/boots/armor)
 
 /////////////
@@ -135,33 +135,18 @@
 
 /datum/supply_pack/rogue/Iconoclast/knuckles
 	name = "Steel Knuckles"
-	cost = 20
+	cost = 40
 	contains = list(/obj/item/rogueweapon/knuckles)
 
-/datum/supply_pack/rogue/Iconoclast/mace
-	name = "Iron Mace"
-	cost = 10
-	contains = list(/obj/item/rogueweapon/mace)
+/datum/supply_pack/rogue/Iconoclast/flail
+	name = "Iron Flail"
+	cost = 30
+	contains = list(/obj/item/rogueweapon/flail)
 
-/datum/supply_pack/rogue/Iconoclast/steelmace
-	name = "Steel Mace"
-	cost = 20
-	contains = list(/obj/item/rogueweapon/mace/steel)
-
-/datum/supply_pack/rogue/Iconoclast/cudgel
-	name = "Cudgel"
-	cost = 20
-	contains = list(/obj/item/rogueweapon/mace/cudgel)
-
-/datum/supply_pack/rogue/Iconoclast/billhook
-	name = "Billhook"
-	cost = 10
-	contains = list(/obj/item/rogueweapon/spear/billhook)
-
-/datum/supply_pack/rogue/Iconoclast/halberd
-	name = "Halberd"
-	cost = 10
-	contains = list(/obj/item/rogueweapon/halberd)
+/datum/supply_pack/rogue/Iconoclast/steelflail
+	name = "Steel Flail"
+	cost = 60
+	contains =  list(/obj/item/rogueweapon/flail/sflail)
 
 /////////////
 // SHIELDS //
@@ -169,10 +154,10 @@
 
 /datum/supply_pack/rogue/Iconoclast/Tshield
 	name = "Tower Shield"
-	cost = 10
+	cost = 30
 	contains = list(/obj/item/rogueweapon/shield/tower)
 
 /datum/supply_pack/rogue/Iconoclast/kiteshield
 	name = "Kite Shield"
-	cost = 20
+	cost = 40
 	contains = list(/obj/item/rogueweapon/shield/tower/metal)
