@@ -1250,9 +1250,9 @@
 	name = "dragonscale necklace" //Who the hell put a NECKLACE in the CLOAKS file?
 	desc = "A blacksteel chain, laced through a dozen of the Hoardmaster's golden teeth. Atuned to the beating heart of Psydonia's financial systems, its true strength can only be harnessed by those who covet wealth above all else."
 	icon_state = "bktrinket"
-	max_integrity = 666 //Exceptionally strong, can be purchased multiple times, and provides a flat +2 to the entire statblock. If it gets destroyed in a fight, that's fair game. Reduced from the original value of 100,000.
-	armor = ARMOR_DRAGONSCALE
-	prevent_crits = PREVENT_CRITS_NONE
+	max_integrity = ARMOR_INT_SIDE_STEEL //Steel gorget now.
+	armor = ARMOR_PLATE
+	prevent_crits = PREVENT_CRITS_ALL
 	blocksound = PLATEHIT
 	icon = 'icons/roguetown/clothing/special/blkknight.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
