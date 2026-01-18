@@ -32,7 +32,7 @@
 	cost = 20
 	contains = list(/obj/item/clothing/neck/roguetown/coif/padded)
 
-/datum/supply_pack/rogue/Knave/coif
+/datum/supply_pack/rogue/Knave/coifheavy
 	name = "Padded Coif - Heavy"
 	cost = 40
 	contains = list(/obj/item/clothing/neck/roguetown/coif/padded)
@@ -191,17 +191,17 @@
 	cost = 20
 	contains = list(/obj/item/quiver/arrows)
 
-/datum/supply_pack/rogue/Knave/quivers/arrows
+/datum/supply_pack/rogue/Knave/quivers/arrows/steel
 	name = "Quiver of Arrows - Bodkin"
 	cost = 50
 	contains = list(/obj/item/quiver/bodkin)
 
-/datum/supply_pack/rogue/Knave/quivers/arrows
+/datum/supply_pack/rogue/Knave/quivers/arrows/pyro
 	name = "Quiver of Arrows - Pyroclastic"
 	cost = 100
 	contains = list(/obj/item/quiver/pyroarrows)
 
-/datum/supply_pack/rogue/Knave/quivers/arrows
+/datum/supply_pack/rogue/Knave/quivers/arrows/poison
 	name = "Quiver of Arrows - Poison"
 	cost = 100
 	contains = list(/obj/item/quiver/poisonarrows)
@@ -211,7 +211,7 @@
 	cost = 30
 	contains = list(/obj/item/quiver/bolts)
 
-/datum/supply_pack/rogue/Knave/quivers/bolts
+/datum/supply_pack/rogue/Knave/quivers/bolts/pyro
 	name = "Quiver of Bolts - Pyroclastic"
 	cost = 100
 	contains = list(/obj/item/quiver/pyrobolts)

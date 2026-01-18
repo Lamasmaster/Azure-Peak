@@ -72,7 +72,7 @@
 	cost = 30
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/stampot)
 
-/datum/supply_pack/rogue/Things/stampot
+/datum/supply_pack/rogue/Things/stampotstrong
 	name = "Stamina Potion - Strong"
 	cost = 50
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/strongstampot)
@@ -145,7 +145,7 @@
 /////////////
 
 /datum/supply_pack/rogue/Things/rubyband
-	name = "Matthian SCOMSTONE"
+	name = "Matthiosian SCOMSTONE" //What is a MATTHIAN????
 	cost = 20
 	contains = list(/obj/item/mattcoin)
 
@@ -168,3 +168,17 @@
 	name = "Armor Plate"
 	cost = 50
 	contains = list(/obj/item/repair_kit/metal)
+
+//////////
+// FOOD //
+//////////
+
+/datum/supply_pack/rogue/Things/hardtack
+	name = "Hardtack"
+	cost = 10
+	contains = list(/obj/item/reagent_containers/food/snacks/rogue/crackerscooked)
+
+/datum/supply_pack/rogue/Things/coppiette
+	name = "Coppiette"
+	cost = 20
+	contains = list(/obj/item/reagent_containers/food/snacks/rogue/meat/coppiette)

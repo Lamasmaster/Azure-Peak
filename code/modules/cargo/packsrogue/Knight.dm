@@ -42,7 +42,7 @@
 	cost = 20
 	contains = list(/obj/item/clothing/neck/roguetown/chaincoif)
 
-/datum/supply_pack/rogue/Knight/coif/full
+/datum/supply_pack/rogue/Knight/coiffull
 	name = "Steel Coif - Full"
 	cost = 40
 	contains = list(/obj/item/clothing/neck/roguetown/chaincoif/full)
@@ -158,7 +158,7 @@
 	cost = 30
 	contains = list(/obj/item/rogueweapon/sword/long)
 
-/datum/supply_pack/rogue/Knight/lsword
+/datum/supply_pack/rogue/Knight/lswordkrieg
 	name = "Kriegmesser"
 	cost = 30
 	contains = list(/obj/item/rogueweapon/sword/long/kriegmesser)

@@ -15,7 +15,7 @@
 
 /datum/supply_pack/rogue/Sawbones/leather/Lhelmet
 	name = "Leather Helmet"
-	cost = 5
+	cost = 10
 	contains = list(/obj/item/clothing/head/roguetown/helmet/leather)
 
 //////////
@@ -43,7 +43,7 @@
 
 /datum/supply_pack/rogue/Sawbones/gambeson
 	name = "Gambeson"
-	cost = 5
+	cost = 10
 	contains = list(/obj/item/clothing/suit/roguetown/armor/gambeson)
 
 /datum/supply_pack/rogue/Sawbones/hgambeson
@@ -98,30 +98,25 @@
 // WEAPONS //
 /////////////
 
+/datum/supply_pack/rogue/Knave/daggerss
+	name = "Steel Dagger"
+	cost = 20
+	contains = list(/obj/item/rogueweapon/huntingknife/idagger/steel)
+
+/datum/supply_pack/rogue/Knave/parrydag
+	name = "Parry Dagger"
+	cost = 30
+	contains = list(/obj/item/rogueweapon/huntingknife/idagger/steel/parrying)
+
 /datum/supply_pack/rogue/Sawbones/rapier
 	name = "Rapier"
 	cost = 30
+	contains = list(/obj/item/rogueweapon/sword/short)
+
+/datum/supply_pack/rogue/Sawbones/rapier
+	name = "Rapier"
+	cost = 50
 	contains = list(/obj/item/rogueweapon/sword/rapier)
-
-/datum/supply_pack/rogue/Sawbones/estoc
-	name = "Estoc"
-	cost = 40
-	contains = list(/obj/item/rogueweapon/estoc)
-
-///////////
-// BOMBS //
-///////////
-
-/datum/supply_pack/rogue/Sawbones/botbomb
-	name = "Bottle bomb"
-	cost = 20
-	contains = list(/obj/item/bomb)
-
-
-/datum/supply_pack/rogue/Sawbones/surgery_bag
-	name = "Surgery Bag"
-	cost = 30
-	contains = list(/obj/item/storage/belt/rogue/surgery_bag/full/physician)
 
 /////////////
 // UTILITY //
@@ -136,6 +131,21 @@
 	name = "Glass bottle"
 	cost = 5
 	contains = list(/obj/item/reagent_containers/glass/bottle)
+
+/datum/supply_pack/rogue/Sawbones/heartblood
+	name = "Heartblood canister"
+	cost = 5
+	contains = list(/obj/item/heart_blood_canister/filled)
+
+/datum/supply_pack/rogue/Sawbones/cheele
+	name = "Cheele"
+	cost = 15
+	contains = list(/obj/item/natural/worms/leech/cheele)
+
+/datum/supply_pack/rogue/Sawbones/surgery_bag
+	name = "Surgery Bag"
+	cost = 30
+	contains = list(/obj/item/storage/belt/rogue/surgery_bag/full/physician)
 
 ///////////
 // DRUGS //
@@ -200,10 +210,10 @@
 	cost = 100
 	contains = list(/obj/item/reagent_containers/glass/bottle/rogue/poison)
 
-/datum/supply_pack/rogue/Sawbones/heartblood
-	name = "Heartblood canister"
-	cost = 5
-	contains = list(/obj/item/heart_blood_canister/filled)
+/datum/supply_pack/rogue/Sawbones/poison
+	name = "Rotcure Potion"
+	cost = 250
+	contains = list(/obj/item/reagent_containers/glass/bottle/alchemical/rogue/rotcure)
 
 /////////////////
 // PROSTHETICS //

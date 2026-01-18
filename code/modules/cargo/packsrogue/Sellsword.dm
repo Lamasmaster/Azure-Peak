@@ -8,6 +8,11 @@
 // HEAD //
 //////////
 
+/datum/supply_pack/rogue/Sellsword/sallet
+	name = "Sallet"
+	cost = 30
+	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet)
+
 /datum/supply_pack/rogue/Sellsword/visoredsallet
 	name = "Visored Sallet"
 	cost = 50

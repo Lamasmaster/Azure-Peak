@@ -8,14 +8,9 @@
 // HEAD //
 //////////
 
-/datum/supply_pack/rogue/Brigand/kettle
-	name = "Kettle Helmet"
-	cost = 30
-	contains = list(/obj/item/clothing/head/roguetown/helmet/kettle)
-
 /datum/supply_pack/rogue/Brigand/bascinet
 	name = "Bascinet"
-	cost = 50
+	cost = 30
 	contains = list(/obj/item/clothing/head/roguetown/helmet/bascinet)
 
 /datum/supply_pack/rogue/Brigand/pbascinet
@@ -28,16 +23,6 @@
 	cost = 50
 	contains = list(/obj/item/clothing/head/roguetown/helmet/bascinet/pigface/hounskull)
 
-/datum/supply_pack/rogue/Brigand/sallet
-	name = "Sallet"
-	cost = 30
-	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet)
-
-/datum/supply_pack/rogue/Brigand/visoredsallet
-	name = "Visored Sallet"
-	cost = 50
-	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet/visored)
-
 //////////
 // NECK //
 //////////
@@ -47,7 +32,7 @@
 	cost = 20
 	contains = list(/obj/item/clothing/neck/roguetown/chaincoif)
 
-/datum/supply_pack/rogue/Brigand/coif/full
+/datum/supply_pack/rogue/Brigand/coiffull
 	name = "Steel Coif - Full"
 	cost = 40
 	contains = list(/obj/item/clothing/neck/roguetown/chaincoif/full)
@@ -148,11 +133,6 @@
 // WEAPONS //
 /////////////
 
-/datum/supply_pack/rogue/Brigand/cudgel
-	name = "Cudgel"
-	cost = 20
-	contains = list(/obj/item/rogueweapon/mace/cudgel)
-
 /datum/supply_pack/rogue/Brigand/steelmace
 	name = "Steel Mace"
 	cost = 40
@@ -237,7 +217,7 @@
 	cost = 20
 	contains = list(/obj/item/rogueweapon/shield/tower)
 
-/datum/supply_pack/rogue/Brigand/heatshield
+/datum/supply_pack/rogue/Brigand/ironshield
 	name = "Iron Shield"
 	cost = 40
 	contains = list(/obj/item/rogueweapon/shield/iron)

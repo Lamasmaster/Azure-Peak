@@ -10,27 +10,27 @@
 
 /datum/supply_pack/rogue/Iconoclast/sallet
 	name = "Sallet"
-	cost = 20
+	cost = 30
 	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet)
 
 /datum/supply_pack/rogue/Iconoclast/visoredsallet
 	name = "Visored Sallet"
-	cost = 30
+	cost = 50
 	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet/visored)
 
 /datum/supply_pack/rogue/Iconoclast/savoyard
 	name = "Savoyard Helmet"
-	cost = 20
+	cost = 60
 	contains = list(/obj/item/clothing/head/roguetown/helmet/heavy/guard)
 
 /datum/supply_pack/rogue/Iconoclast/barhelmet
 	name = "Barred Helmet"
-	cost = 20
+	cost = 60
 	contains = list(/obj/item/clothing/head/roguetown/helmet/heavy/sheriff)
 
 /datum/supply_pack/rogue/Iconoclast/armet
 	name = "Armet"
-	cost = 40
+	cost = 60
 	contains = list(/obj/item/clothing/head/roguetown/helmet/heavy/knight/armet)
 
 //////////
@@ -42,7 +42,7 @@
 	cost = 20
 	contains = list(/obj/item/clothing/neck/roguetown/chaincoif)
 
-/datum/supply_pack/rogue/Iconoclast/coif/full
+/datum/supply_pack/rogue/Iconoclast/coiffull
 	name = "Steel Coif - Full"
 	cost = 40
 	contains = list(/obj/item/clothing/neck/roguetown/chaincoif/full)

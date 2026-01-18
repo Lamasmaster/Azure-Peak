@@ -20,7 +20,7 @@
 
 /datum/supply_pack/rogue/Mage/leather/Lhelmet
 	name = "Leather Helmet"
-	cost = 5
+	cost = 10
 	contains = list(/obj/item/clothing/head/roguetown/helmet/leather)
 
 //////////
