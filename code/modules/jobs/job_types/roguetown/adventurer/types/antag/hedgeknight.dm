@@ -58,7 +58,7 @@
 	H.set_blindness(0)
 	switch(weapon_choice)//Knight Captain equivalent pmuch
 		if("Flameberge")
-			beltr = /obj/item/rogueweapon/greatsword/grenz/flamberg
+			beltr = /obj/item/rogueweapon/greatsword/grenz/flamberge
 			backl = /obj/item/rogueweapon/scabbard/gwstrap
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
 		if("Great Mace")
