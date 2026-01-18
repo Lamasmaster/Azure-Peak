@@ -39,7 +39,7 @@
 	..()
 	belt = /obj/item/storage/belt/rogue/leather/black
 	pants = /obj/item/clothing/under/roguetown/splintlegs/iron
-	shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt/random
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/copper
 	head = /obj/item/clothing/head/roguetown/roguehood/black

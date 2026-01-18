@@ -59,16 +59,18 @@
 	switch(weapon_choice)//Knight Captain equivalent pmuch
 		if("Flameberge")
 			beltr = /obj/item/rogueweapon/greatsword/grenz/flamberg
-			backl = 
+			backl = /obj/item/rogueweapon/scabbard/gwstrap
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
 		if("Great Mace")
 			beltr = /obj/item/rogueweapon/mace/goden/steel
 			H.adjust_skillrank_up_to(/datum/skill/combat/maces, 5, TRUE)
 		if("Poleaxe")
 			beltr = /obj/item/rogueweapon/greataxe/steel/knight
+			backl = /obj/item/rogueweapon/scabbard/gwstrap
 			H.adjust_skillrank_up_to(/datum/skill/combat/axes, 5, TRUE)
 		if("Eagle's Beak")
 			r_hand = /obj/item/rogueweapon/eaglebeak
+			backl = /obj/item/rogueweapon/scabbard/gwstrap
 			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 5, TRUE) //This will NOT have any far reaching consequences
 
 	if(!istype(H.patron, /datum/patron/inhumen/matthios))
