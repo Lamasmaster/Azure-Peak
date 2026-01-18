@@ -183,6 +183,21 @@
 	cost = 150
 	contains = list(/obj/item/rogueweapon/greatsword/grenz/flamberge/blacksteel)
 
+/datum/supply_pack/rogue/Knight/SGaxeknight
+	name = "Steel Poleaxe"
+	cost = 100
+	contains = list(/obj/item/rogueweapon/greataxe/steel/knight)
+
+/datum/supply_pack/rogue/Knight/gmace
+	name = "Grand Mace"
+	cost = 100
+	contains = list(/obj/item/rogueweapon/mace/goden/steel)
+
+/datum/supply_pack/rogue/Knight/ebeak
+	name = "Eagle's Beak"
+	cost = 100
+	contains = list(/obj/item/rogueweapon/eaglebeak)
+
 /////////////
 // SHIELDS //
 /////////////

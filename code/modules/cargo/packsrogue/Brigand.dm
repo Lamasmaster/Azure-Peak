@@ -198,11 +198,6 @@
 	cost = 80
 	contains = list(/obj/item/rogueweapon/greataxe/steel/doublehead)
 
-/datum/supply_pack/rogue/Brigand/SGaxeknight
-	name = "Steel Poleaxe"
-	cost = 80
-	contains = list(/obj/item/rogueweapon/greataxe/steel/knight)
-
 /////////////
 // SHIELDS //
 /////////////

@@ -480,6 +480,8 @@
 	color = "#4D1E49"
 	detail_color = "#A95650"
 
+/obj/item/clothing/cloak/tabard/black
+	color = CLOTHING_BLACK
 
 //////////////////////////
 /// SOLDIER TABARD
