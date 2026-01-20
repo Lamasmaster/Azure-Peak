@@ -235,10 +235,3 @@
 	contains = list(
 					/obj/item/rogueweapon/sword/falx,
 				)
-
-/datum/supply_pack/rogue/steel_weapons/glaive
-	name = "Glaive"
-	cost = 105 // 3 Steel Ingot, 1 Small Log
-	contains = list(
-					/obj/item/rogueweapon/halberd/glaive,
-				)
