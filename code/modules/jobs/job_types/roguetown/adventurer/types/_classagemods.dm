@@ -41,7 +41,7 @@
 
 //--- BANDITS ---
 
-/datum/class_age_mod/bandit/sawbones
+/datum/class_age_mod/bandit/hedgealchemist
 	target_age = AGE_OLD
 	stat_mods = list(
 		STATKEY_SPD = -1,

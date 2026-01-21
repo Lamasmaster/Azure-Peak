@@ -32,12 +32,11 @@
 	cmode_music = 'sound/music/cmode/antag/combat_deadlyshadows.ogg'
 	job_subclasses = list(
 		/datum/advclass/brigand,
-		/datum/advclass/demolisher,
+		/datum/advclass/hedgealchemist,
 		/datum/advclass/hedgeknight,
 		/datum/advclass/hedgemage,
 		/datum/advclass/iconoclast,
 		/datum/advclass/knave,
-		/datum/advclass/sawbones,
 		/datum/advclass/sellsword
 	)
 
