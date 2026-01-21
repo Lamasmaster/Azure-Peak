@@ -41,7 +41,7 @@
 	..()
 	belt = /obj/item/storage/belt/rogue/leather
 	pants = /obj/item/clothing/under/roguetown/trou/leather
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(
@@ -51,8 +51,8 @@
 					)
 	mask = /obj/item/clothing/mask/rogue/facemask/steel
 	neck = /obj/item/clothing/neck/roguetown/coif
-	head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/hide
+	head = /obj/item/clothing/head/roguetown/helmet/kettle
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/iron
 	id = /obj/item/mattcoin
 	H.adjust_blindness(-3)
 	var/weapons = list("Battleaxe & Cudgel","Flail & Shield")
