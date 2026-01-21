@@ -52,16 +52,17 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather
 	id = /obj/item/mattcoin
 	H.adjust_blindness(-3)
-	var/weapons = list("Crossbow & Dagger", "Bow & Sword")
+	var/weapons = list("Rogue", "Poacher")
 	if(H.mind)
 		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 		H.set_blindness(0)
 		switch(weapon_choice)
-			if("Crossbow & Dagger") //Rogue
+			if("Rogue") //Rogue
 				backl= /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow //we really need to make this not a grenade launcher subtype
 				beltr = /obj/item/quiver/bolts
 				cloak = /obj/item/clothing/cloak/raincloak/mortus //cool cloak
-				beltl = /obj/item/rogueweapon/huntingknife/idagger/steel
+				l_hand = /obj/item/rogueweapon/sword/short
+				beltl = /obj/item/rogueweapon/scabbard/sword
 				backr = /obj/item/storage/backpack/rogue/satchel
 				backpack_contents = list(
 							/obj/item/needle/thorn = 1,
@@ -70,13 +71,15 @@
 							/obj/item/flashlight/flare/torch = 1,
 							/obj/item/rogueweapon/scabbard/sheath = 1
 							) //rogue gets lockpicks
-				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_LEVEL_EXPERT, TRUE)
-			if("Bow & Sword") //Poacher
+				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_EXP_MASTER, TRUE)
+				H.adjust_skillrank(/datum/skill/misc/sneaking, 1, TRUE)
+				H.adjust_skillrank(/datum/skill/misc/stealing, 1, TRUE)
+				H.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
+			if("Poacher") //Poacher
 				backl= /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
-				l_hand = /obj/item/rogueweapon/sword/short
-				beltl = /obj/item/rogueweapon/scabbard/sword
 				beltr = /obj/item/quiver/arrows
 				head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm //cool hat
+				beltl = /obj/item/rogueweapon/huntingknife/idagger/steel
 				backr = /obj/item/storage/backpack/rogue/satchel
 				backpack_contents = list(
 							/obj/item/needle/thorn = 1,
@@ -84,7 +87,9 @@
 							/obj/item/restraints/legcuffs/beartrap = 2,
 							/obj/item/flashlight/flare/torch = 1,
 							) //poacher gets mantraps
-				H.adjust_skillrank(/datum/skill/combat/bows, SKILL_LEVEL_EXPERT, TRUE)
+				H.adjust_skillrank(/datum/skill/combat/bows, SKILL_EXP_LEGENDARY, TRUE)
+				H.change_stat(STATKEY_PER, 2)
+				H.change_stat(STATKEY_SPD, -1)
 
 	if(!istype(H.patron, /datum/patron/inhumen/matthios))
 		var/inputty = input(H, "Would you like to change your patron to Matthios?", "The Transactor calls", "No") as anything in list("Yes", "No")
