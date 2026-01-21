@@ -52,11 +52,11 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/leather
 	id = /obj/item/mattcoin
 	H.adjust_blindness(-3)
-	var/weapons = list("Rogue", "Poacher")
+	var/subtype = list("Rogue", "Poacher")
 	if(H.mind)
-		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+		var/subtype_choice = input(H, "Choose your path.", "TAKE UP ARMS") as anything in subtype
 		H.set_blindness(0)
-		switch(weapon_choice)
+		switch(subtype_choice)
 			if("Rogue") //Rogue
 				backl= /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow //we really need to make this not a grenade launcher subtype
 				beltr = /obj/item/quiver/bolts
@@ -71,10 +71,10 @@
 							/obj/item/flashlight/flare/torch = 1,
 							/obj/item/rogueweapon/scabbard/sheath = 1
 							) //rogue gets lockpicks
-				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_EXP_MASTER, TRUE)
-				H.adjust_skillrank(/datum/skill/misc/sneaking, 1, TRUE)
-				H.adjust_skillrank(/datum/skill/misc/stealing, 1, TRUE)
-				H.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_LEVEL_MASTER, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/misc/sneaking, SKILL_LEVEL_MASTER, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/misc/stealing, SKILL_LEVEL_MASTER, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/misc/lockpicking, SKILL_LEVEL_MASTER, TRUE)
 			if("Poacher") //Poacher
 				backl= /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 				beltr = /obj/item/quiver/arrows
@@ -87,7 +87,7 @@
 							/obj/item/restraints/legcuffs/beartrap = 2,
 							/obj/item/flashlight/flare/torch = 1,
 							) //poacher gets mantraps
-				H.adjust_skillrank(/datum/skill/combat/bows, SKILL_EXP_LEGENDARY, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/bows, SKILL_LEVEL_LEGENDARY, TRUE)
 				H.change_stat(STATKEY_PER, 2)
 				H.change_stat(STATKEY_SPD, -1)
 
