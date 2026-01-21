@@ -1,9 +1,9 @@
-/datum/advclass/roguemage //mage class - like the adventurer mage, but more evil.
-	name = "Rogue Mage"
+/datum/advclass/hedgemage //mage class - like the adventurer mage, but more evil.
+	name = "Hedge Mage"
 	tutorial = "Those fools at the academy laughed at you and cast you from the ivory tower of higher learning and magickal practice. No matter - you will ascend to great power one day, but first you need wealth - vast amounts of it. Show those fools in the town what REAL magic looks like."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	outfit = /datum/outfit/job/roguetown/bandit/roguemage
+	outfit = /datum/outfit/job/roguetown/bandit/hedgemage
 	category_tags = list(CTAG_BANDIT)
 	cmode_music = 'sound/music/cmode/antag/combat_thewall.ogg'
 	maximum_possible_slots = 1 //Shadow wizard money gang
@@ -34,7 +34,7 @@
 		/datum/skill/craft/cooking = SKILL_LEVEL_NOVICE,
 	)
 
-/datum/outfit/job/roguetown/bandit/roguemage/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/bandit/hedgemage/pre_equip(mob/living/carbon/human/H)
 	..()
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
 	pants = /obj/item/clothing/under/roguetown/trou/leather

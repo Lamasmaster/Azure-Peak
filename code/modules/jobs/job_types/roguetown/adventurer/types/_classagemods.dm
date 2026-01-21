@@ -51,7 +51,7 @@
 
 //--- WRETCHES ---
 
-/datum/class_age_mod/wretch/hedge_mage
+/datum/class_age_mod/wretch/rogue_mage
 	target_age = AGE_OLD
 	skill_mods = list(
 		/datum/skill/magic/arcane = SKILL_LEVEL_MASTER
