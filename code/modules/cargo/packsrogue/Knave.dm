@@ -35,7 +35,7 @@
 /datum/supply_pack/rogue/Knave/coifheavy
 	name = "Padded Coif - Heavy"
 	cost = 40
-	contains = list(/obj/item/clothing/neck/roguetown/coif/padded)
+	contains = list(/obj/item/clothing/neck/roguetown/coif/heavypadding)
 
 ///////////
 // CHEST //
