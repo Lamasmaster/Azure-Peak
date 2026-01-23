@@ -122,6 +122,11 @@
 //  BOMBS  //
 /////////////
 
+/datum/supply_pack/rogue/Things/twstrap
+	name = "Bomb Bandolier"
+	cost = 15
+	contains = list(/obj/item/twstrap/bombstrap)
+
 /datum/supply_pack/rogue/Alchemist/botbomb
 	name = "Bottle bomb"
 	cost = 20

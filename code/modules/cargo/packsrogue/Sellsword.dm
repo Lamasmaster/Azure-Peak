@@ -18,14 +18,24 @@
 	cost = 50
 	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet/visored)
 
+/datum/supply_pack/rogue/Sellsword/steelmask
+	name = "Steel Mask"
+	cost = 30
+	contains = list(/obj/item/clothing/mask/rogue/facemask/steel)
+
 //////////
 // NECK //
 //////////
 
-/datum/supply_pack/rogue/Sellsword/coif/steel
+/datum/supply_pack/rogue/Sellsword/coif
 	name = "Steel Coif"
 	cost = 20
 	contains = list(/obj/item/clothing/neck/roguetown/chaincoif)
+
+/datum/supply_pack/rogue/Sellsword/coiffull
+	name = "Steel Coif - Full"
+	cost = 40
+	contains = list(/obj/item/clothing/neck/roguetown/chaincoif/full)
 
 /datum/supply_pack/rogue/Sellsword/Bevor
 	name = "Bevor"
@@ -88,15 +98,54 @@
 // WEAPONS - MELEE //
 /////////////////////
 
-/datum/supply_pack/rogue/Sellsword/lsword
-	name = "Longsword"
+/datum/supply_pack/rogue/Sellsword/shortsword
+	name = "Falchion"
 	cost = 30
-	contains = list(/obj/item/rogueweapon/sword/long)
+	contains = list(/obj/item/rogueweapon/sword/short/falchion)
+
+/datum/supply_pack/rogue/Sellsword/lsword
+	name = "Kriegmesser"
+	cost = 30
+	contains = list(/obj/item/rogueweapon/sword/long/kriegmesser)
+
+/datum/supply_pack/rogue/Sellsword/SZweihandersword
+	name = "Steel Zweihander"
+	cost = 100
+	contains = list(/obj/item/rogueweapon/greatsword/grenz)
+
+/datum/supply_pack/rogue/Sellsword/halberd
+	name = "Halberd"
+	cost = 60
+	contains = list(/obj/item/rogueweapon/halberd)
+
+/datum/supply_pack/rogue/Sellsword/partizan
+	name = "Partizan"
+	cost = 80
+	contains = list(/obj/item/rogueweapon/spear/partizan)
 
 /datum/supply_pack/rogue/Sellsword/ebeak
 	name = "Eagle's Beak"
 	cost = 80
 	contains = list(/obj/item/rogueweapon/eaglebeak)
+
+/datum/supply_pack/rogue/Sellsword/lance
+	name = "Lance"
+	cost = 120
+	contains = list(/obj/item/rogueweapon/spear/lance)
+
+/////////////
+// SHIELDS //
+/////////////
+
+/datum/supply_pack/rogue/Sellsword/buckler
+	name = "Buckler Shield"
+	cost = 10
+	contains = list(/obj/item/rogueweapon/shield/buckler)
+
+/datum/supply_pack/rogue/Sellsword/heatshield
+	name = "Heater Shield"
+	cost = 10
+	contains = list(/obj/item/rogueweapon/shield/heater)
 
 //////////////////////
 // WEAPONS - RANGED //
@@ -116,114 +165,82 @@
 	cost = 30
 	contains = list(/obj/item/quiver/bolts)
 
-/////////////
-// GRENZEL //
-/////////////
-
-/datum/supply_pack/rogue/Sellsword/Grenzelhofthat
-	name = "Grenzel Hat"
-	cost = 40
-	contains = list(/obj/item/clothing/head/roguetown/grenzelhofthat)
-
-/datum/supply_pack/rogue/Sellsword/bsteelcuirass
-	name = "Blacksteel Cuirass"
-	cost = 100
-	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/cuirass/blacksteel)
-
-/datum/supply_pack/rogue/Sellsword/Grenzelshirt
-	name = "Grenzel Shirt"
-	cost = 40
-	contains = list(/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/grenzelhoft)
-
-/datum/supply_pack/rogue/Sellsword/Grenzelpants
-	name = "Grenzel Pants"
-	cost = 40
-	contains = list(/obj/item/clothing/under/roguetown/heavy_leather_pants/grenzelpants)
-
-/datum/supply_pack/rogue/Sellsword/Grenzelshoes
-	name = "Grenzel Shoes"
-	cost = 40
-	contains = list(/obj/item/clothing/shoes/roguetown/grenzelhoft)
-
-/datum/supply_pack/rogue/Sellsword/halberd
-	name = "Halberd"
-	cost = 60
-	contains = list(/obj/item/rogueweapon/halberd)
-
-/datum/supply_pack/rogue/Sellsword/SZweihandersword
-	name = "Steel Zweihander"
-	cost = 100
-	contains = list(/obj/item/rogueweapon/greatsword/grenz)
-
 //////////////////////
-// RANESHEN - RIDER //
+// EQUIPMENT CRATES //
 //////////////////////
 
-/datum/supply_pack/rogue/Sellsword/driderhead
-	name = "Desert Rider Headdress"
-	cost = 15
-	contains = list(/obj/item/clothing/head/roguetown/roguehood/shalal)
+/datum/supply_pack/rogue/Sellsword/Grenzelcrate
+	name = "Grenzelhoft Equipment Crate"
+	cost = 260
+	contains = list(/obj/structure/closet/crate/chest/bandit/grenzel)
 
-/datum/supply_pack/rogue/Sellsword/sallet
-	name = "Desert Rider Sallet"
-	cost = 30
-	contains = list(/obj/item/clothing/head/roguetown/helmet/sallet/raneshen)
+/obj/structure/closet/crate/chest/bandit/grenzel/Initialize()
+	. = ..()
+	new /obj/item/clothing/head/roguetown/grenzelhofthat(src)
+	new /obj/item/clothing/suit/roguetown/armor/plate/cuirass/blacksteel(src)
+	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/grenzelhoft(src)
+	new /obj/item/clothing/gloves/roguetown/angle/grenzelgloves(src)
+	new /obj/item/clothing/under/roguetown/heavy_leather_pants/grenzelpants(src)
+	new /obj/item/clothing/shoes/roguetown/grenzelhoft(src)
+	new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/grenzelhoft(src)
 
-/datum/supply_pack/rogue/Sellsword/dridergambeson
-	name = "Desert Rider Gambeson"
-	cost = 30
-	contains = list(/obj/item/clothing/suit/roguetown/armor/gambeson/heavy/raneshen)
+/datum/supply_pack/rogue/Sellsword/Otavancrate
+	name = "Otavan Equipment Crate"
+	cost = 260
+	contains = list(/obj/structure/closet/crate/chest/bandit/otavan)
 
-/datum/supply_pack/rogue/Sellsword/scalemail
-	name = "Scalemail"
-	cost = 80
-	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/scale)
+/obj/structure/closet/crate/chest/bandit/otavan/Initialize()
+	. = ..()
+	new /obj/item/clothing/head/roguetown/helmet/otavan(src)
+	new /obj/item/clothing/suit/roguetown/armor/plate/otavan(src)
+	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan(src)
+	new /obj/item/clothing/gloves/roguetown/otavan(src)
+	new /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan(src)
+	new /obj/item/clothing/shoes/roguetown/boots/otavan(src)
+	new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/routier(src)
 
-/datum/supply_pack/rogue/Sellsword/shalalsaber
-	name = "Shalal Saber"
-	cost = 50
-	contains = list(/obj/item/rogueweapon/sword/long/marlin)
+/datum/supply_pack/rogue/Sellsword/Etruscancrate
+	name = "Etruscan Equipment Crate"
+	cost = 260
+	contains = list(/obj/structure/closet/crate/chest/bandit/etruscan)
 
-/datum/supply_pack/rogue/Sellsword/dridersword
-	name = "Shamshir"
-	cost = 50
-	contains = list(/obj/item/rogueweapon/sword/sabre/shamshir)
+/obj/structure/closet/crate/chest/bandit/etruscan/Initialize()
+	. = ..()
+	new /obj/item/clothing/head/roguetown/helmet/bascinet/etruscan(src)
+	new /obj/item/clothing/suit/roguetown/armor/brigandine(src)
+	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy(src)
+	new /obj/item/clothing/gloves/roguetown/plate(src)
+	new /obj/item/clothing/under/roguetown/heavy_leather_pants(src)
+	new /obj/item/clothing/shoes/roguetown/boots/armor/iron(src)
+	new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/condottiero(src)
 
-///////////////////////
-// RANESHEN - FORLON //
-///////////////////////
+/datum/supply_pack/rogue/Sellsword/Forlorncrate
+	name = "Forlorn Equipment Crate"
+	cost = 260
+	contains = list(/obj/structure/closet/crate/chest/bandit/forlorn)
 
-/datum/supply_pack/rogue/Sellsword/wolfhelm
-	name = "Forlon Volf Plate Helm"
-	cost = 60
-	contains = list(/obj/item/clothing/head/roguetown/helmet/heavy/volfplate)
+/obj/structure/closet/crate/chest/bandit/forlorn/Initialize()
+	. = ..()
+	new /obj/item/clothing/head/roguetown/helmet/heavy/volfplate(src)
+	new /obj/item/clothing/neck/roguetown/gorget/forlorncollar(src)
+	new /obj/item/clothing/suit/roguetown/armor/brigandine(src)
+	new /obj/item/clothing/wrists/roguetown/splintarms(src)
+	new /obj/item/clothing/under/roguetown/splintlegs(src)
+	new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/forlorn(src)
 
-/datum/supply_pack/rogue/Sellsword/forloncollar
-	name = "Forlon Collar"
-	cost = 20
-	contains = list(/obj/item/clothing/neck/roguetown/gorget/forlorncollar)
+/datum/supply_pack/rogue/Sellsword/Longswordcrate
+	name = "Longswordsman Equipment Crate"
+	cost = 350
+	contains = list(/obj/structure/closet/crate/chest/bandit/longsword)
 
-/datum/supply_pack/rogue/Sellsword/brigandine
-	name = "Brigandine"//They don't use medium or can't wear it either but eh it's bound to fool SOMEONE
-	cost = 80
-	contains = list(/obj/item/clothing/suit/roguetown/armor/brigandine)
-
-/datum/supply_pack/rogue/Sellsword/splintbracers
-	name = "Brigandine Rerebraces"
-	cost = 20
-	contains = list(/obj/item/clothing/wrists/roguetown/splintarms)
-
-/datum/supply_pack/rogue/Sellsword/splintlegs
-	name = "Brigandine Chausses"
-	cost = 20
-	contains = list(/obj/item/clothing/under/roguetown/splintlegs)
-
-/datum/supply_pack/rogue/Sellsword/steelwarhammer
-	name = "Steel Warhammer"
-	cost = 60
-	contains = list(/obj/item/rogueweapon/mace/warhammer/steel)
-
-/datum/supply_pack/rogue/Sellsword/heatshield
-	name = "Heater Shield"
-	cost = 10
-	contains = list(/obj/item/rogueweapon/shield/heater)
+/obj/structure/closet/crate/chest/bandit/longsword/Initialize()
+	. = ..()
+	new /obj/item/clothing/head/roguetown/helmet/sallet/visored(src)
+	new /obj/item/clothing/neck/roguetown/bevor(src)
+	new /obj/item/clothing/suit/roguetown/armor/plate(src)
+	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy(src)
+	new /obj/item/clothing/wrists/roguetown/bracers(src)
+	new /obj/item/clothing/gloves/roguetown/plate(src)
+	new /obj/item/clothing/under/roguetown/chainlegs(src)
+	new /obj/item/clothing/shoes/roguetown/boots/armor(src)
+	new /obj/item/rogueweapon/sword/long(src)
