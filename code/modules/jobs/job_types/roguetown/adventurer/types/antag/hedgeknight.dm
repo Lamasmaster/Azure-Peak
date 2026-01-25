@@ -53,7 +53,7 @@
 					)
 
 	H.adjust_blindness(-3)
-	var/weapons = list("Longsword", "Great Mace", "Battle Axe", "Eagle's Beak")
+	var/weapons = list("Flameberge", "Polemace", "Poleaxe", "Polehammer")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
 	switch(weapon_choice)//Knight Captain equivalent pmuch
@@ -61,14 +61,14 @@
 			beltr = /obj/item/rogueweapon/greatsword/grenz/flamberge
 			backl = /obj/item/rogueweapon/scabbard/gwstrap
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
-		if("Great Mace")
+		if("Polemace")
 			beltr = /obj/item/rogueweapon/mace/goden/steel
 			H.adjust_skillrank_up_to(/datum/skill/combat/maces, 5, TRUE)
 		if("Poleaxe")
 			beltr = /obj/item/rogueweapon/greataxe/steel/knight
 			backl = /obj/item/rogueweapon/scabbard/gwstrap
 			H.adjust_skillrank_up_to(/datum/skill/combat/axes, 5, TRUE)
-		if("Eagle's Beak")
+		if("Polehammer")
 			r_hand = /obj/item/rogueweapon/eaglebeak
 			backl = /obj/item/rogueweapon/scabbard/gwstrap
 			H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 5, TRUE) //This will NOT have any far reaching consequences
