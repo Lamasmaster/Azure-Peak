@@ -360,8 +360,8 @@
 	GLOB.lordcolor -= src
 	return ..()
 
-/obj/item/clothing/cloak/tabard/retinue/captain //Because of his other snowflake cloak we can't actually use the naming normally.
-	name = "captain's tabard"
+/obj/item/clothing/cloak/tabard/retinue/banneret //Because of his other snowflake cloak we can't actually use the naming normally.
+	name = "knight banneret's tabard"
 
 
 /obj/item/clothing/cloak/tabard/crusader
@@ -483,9 +483,9 @@
 /obj/item/clothing/cloak/tabard/black
 	color = CLOTHING_BLACK
 
-//////////////////////////
-/// SOLDIER TABARD
-////////////////////////
+//////////////////////
+/// SOLDIER TABARD ///
+//////////////////////
 
 
 /obj/item/clothing/cloak/tabard/stabard
@@ -502,7 +502,7 @@
 	name = "guard tabard"
 	desc = "A tabard with the lord's heraldic colors."
 	color = CLOTHING_AZURE
-	detail_tag = "_spl"
+	detail_tag = "_quad"
 	detail_color = CLOTHING_WHITE
 
 /obj/item/clothing/cloak/tabard/stabard/guard/Initialize()
@@ -565,9 +565,9 @@
 		L.update_inv_cloak()
 
 
-//////////////////////////
-/// SURCOATS
-////////////////////////
+////////////////
+/// SURCOATS ///
+////////////////
 
 
 /obj/item/clothing/cloak/tabard/stabard/surcoat
@@ -1576,8 +1576,8 @@
 	user.update_inv_cloak()
 	user.update_inv_armor()
 
-/obj/item/clothing/cloak/captain
-	name = "captain's cape"
+/obj/item/clothing/cloak/banneret
+	name = "knight banneret's cape"
 	desc = "A cape with a gold embroided heraldry of Azure."
 	icon = 'icons/roguetown/clothing/special/captain.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/captain.dmi'
@@ -1588,7 +1588,7 @@
 	alternate_worn_layer = CLOAK_BEHIND_LAYER
 	detail_color = "#39404d"
 
-/obj/item/clothing/cloak/captain/Initialize()
+/obj/item/clothing/cloak/banneret/Initialize()
 	. = ..()
 	if(GLOB.lordprimary)
 		lordcolor(GLOB.lordprimary, GLOB.lordsecondary)
@@ -1601,7 +1601,7 @@
 		var/mob/L = loc
 		L.update_inv_cloak()
 
-/obj/item/clothing/cloak/captain/Destroy()
+/obj/item/clothing/cloak/banneret/Destroy()
 	GLOB.lordcolor -= src
 	return ..()
 
