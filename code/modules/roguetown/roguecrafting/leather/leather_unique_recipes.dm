@@ -70,7 +70,8 @@
 	reqs = list(/obj/item/natural/hide/cured = 1,
 	            /obj/item/reagent_containers/food/snacks/tallow = 1,
 				/obj/item/natural/fur = 1,
-	            /obj/item/natural/fibers = 1)
+	            /obj/item/natural/fibers = 1,
+				/obj/item/natural/cloth = 1)
 	tools = list(/obj/item/needle)
 	craftdiff = 6
 	sellprice = 30
