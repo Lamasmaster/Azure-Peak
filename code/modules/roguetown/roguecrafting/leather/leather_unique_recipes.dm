@@ -42,9 +42,31 @@
 	craftdiff = 6
 	sellprice = 15
 
+/datum/crafting_recipe/roguetown/leather/unique/grenzelgloves
+	name = "grenzelhoftian gloves"
+	result = list(/obj/item/clothing/gloves/roguetown/angle/grenzelgloves)
+	reqs = list(/obj/item/natural/hide/cured = 1,
+	            /obj/item/reagent_containers/food/snacks/tallow = 1,
+				/obj/item/natural/fur = 1,
+	            /obj/item/natural/fibers = 1)
+	tools = list(/obj/item/needle)
+	craftdiff = 6
+	sellprice = 15
+
 /datum/crafting_recipe/roguetown/leather/unique/otavanleatherpants
 	name = "otavan leather trousers"
 	result = list(/obj/item/clothing/under/roguetown/heavy_leather_pants/otavan)
+	reqs = list(/obj/item/reagent_containers/food/snacks/tallow = 1,
+	            /obj/item/natural/fibers = 1,
+	            /obj/item/natural/hide/cured = 2,
+				/obj/item/natural/fur = 1)
+	tools = list(/obj/item/needle)
+	craftdiff = 6
+	sellprice = 30
+
+/datum/crafting_recipe/roguetown/leather/unique/otavanleathergloves
+	name = "otavan leather trousers"
+	result = list(/obj/item/clothing/gloves/roguetown/otavan)
 	reqs = list(/obj/item/reagent_containers/food/snacks/tallow = 1,
 	            /obj/item/natural/fibers = 1,
 	            /obj/item/natural/hide/cured = 2,
@@ -118,7 +140,37 @@
 	result = list(/obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi)
 	reqs = list(/obj/item/natural/hide/cured = 2,
 	            /obj/item/natural/fibers = 1,
-	            /obj/item/natural/cloth = 1)
+	            /obj/item/natural/fur = 1)
+	tools = list(/obj/item/needle)
+	craftdiff = 5
+	sellprice = 20
+
+/datum/crafting_recipe/roguetown/leather/unique/gronnpants
+	name = "fur pants"
+	result = list(/obj/item/clothing/under/roguetown/trou/leather/atgervi)
+	reqs = list(/obj/item/natural/hide/cured = 2,
+	            /obj/item/natural/fibers = 1,
+	            /obj/item/natural/fur = 1)
+	tools = list(/obj/item/needle)
+	craftdiff = 5
+	sellprice = 20
+
+/datum/crafting_recipe/roguetown/leather/unique/gronngloves
+	name = "fur-lined leather gloves"
+	result = list(/obj/item/clothing/gloves/roguetown/angle/atgervi)
+	reqs = list(/obj/item/natural/hide/cured = 2,
+	            /obj/item/natural/fibers = 1,
+	            /obj/item/natural/fur = 1)
+	tools = list(/obj/item/needle)
+	craftdiff = 5
+	sellprice = 20
+
+/datum/crafting_recipe/roguetown/leather/unique/gronnboots
+	name = "atgervi leather boots"
+	result = list(/obj/item/clothing/shoes/roguetown/boots/leather/atgervi)
+	reqs = list(/obj/item/natural/hide/cured = 2,
+	            /obj/item/natural/fibers = 1,
+	            /obj/item/natural/fur = 1)
 	tools = list(/obj/item/needle)
 	craftdiff = 5
 	sellprice = 20

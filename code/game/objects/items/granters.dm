@@ -192,10 +192,12 @@ UNDER NO CIRCUMSTANCE SHOULD ANY OF THE BOOKS BE GIVEN OUT INTO SPAWNERS OR TO B
 	desc = "A thick book containing details on how to outfit an army of mammon-seeking scoundrels in style. Something tells you the author mislead you with the title."
 	crafting_recipe_types = list(
 		/datum/crafting_recipe/roguetown/sewing/tailor/otavangambeson,
+		/datum/crafting_recipe/roguetown/leather/unique/otavanleathergloves,
 		/datum/crafting_recipe/roguetown/leather/unique/otavanleatherpants,
 		/datum/crafting_recipe/roguetown/leather/unique/otavanboots,//Otavan
 		/datum/crafting_recipe/roguetown/sewing/tailor/grenzelhat,
 		/datum/crafting_recipe/roguetown/sewing/tailor/grenzelshirt,
+		/datum/crafting_recipe/roguetown/leather/unique/grenzelgloves,
 		/datum/crafting_recipe/roguetown/sewing/tailor/grenzelpants,
 		/datum/crafting_recipe/roguetown/leather/unique/grenzelboots//Grenzel
 	)
@@ -212,7 +214,10 @@ UNDER NO CIRCUMSTANCE SHOULD ANY OF THE BOOKS BE GIVEN OUT INTO SPAWNERS OR TO B
 		/datum/crafting_recipe/roguetown/leather/unique/baggyleatherpants,//Naledi
 		/datum/crafting_recipe/roguetown/sewing/tailor/hgambeson/fencer,
 		/datum/crafting_recipe/roguetown/leather/unique/fencingbreeches,//Aanvr
-		/datum/crafting_recipe/roguetown/leather/unique/openrobes//Gronn
+		/datum/crafting_recipe/roguetown/leather/unique/openrobes,
+		/datum/crafting_recipe/roguetown/leather/unique/gronngloves,
+		/datum/crafting_recipe/roguetown/leather/unique/gronnpants,
+		/datum/crafting_recipe/roguetown/leather/unique/gronnboots//Gronn
 	)
 
 //! --BLACKSTONE SCROLLS-- !/

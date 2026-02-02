@@ -62,4 +62,3 @@
 				r_hand = /obj/item/book/granter/crafting_recipe/tailor/western
 			if("The Unfamiliar")
 				r_hand = /obj/item/book/granter/crafting_recipe/tailor/eastern
-

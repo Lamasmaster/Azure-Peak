@@ -77,15 +77,20 @@
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/sewing/tailor/desertgown)
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/baggyleatherpants)//Naledi
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/sewing/tailor/otavangambeson)
+		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/otavanleathergloves)
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/otavanleatherpants)
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/otavanboots)//Otavan
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/sewing/tailor/grenzelhat)
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/sewing/tailor/grenzelshirt)
+		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/grenzelgloves)
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/sewing/tailor/grenzelpants)
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/grenzelboots)//Grenzel
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/sewing/tailor/hgambeson/fencer)
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/fencingbreeches)//Aanvr
-		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/openrobes)//Gronn
+		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/openrobes)
+		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/gronngloves)
+		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/gronnpants)
+		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/gronnboots)//Gronn
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/furlinedjacket)
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/artipants)//Artificer
 		H.mind.teach_crafting_recipe(/datum/crafting_recipe/roguetown/leather/unique/buckleshoes)
