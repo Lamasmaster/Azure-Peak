@@ -65,12 +65,12 @@
 	sellprice = 30
 
 /datum/crafting_recipe/roguetown/leather/unique/otavanleathergloves
-	name = "otavan leather trousers"
+	name = "otavan leather gloves"
 	result = list(/obj/item/clothing/gloves/roguetown/otavan)
-	reqs = list(/obj/item/reagent_containers/food/snacks/tallow = 1,
-	            /obj/item/natural/fibers = 1,
-	            /obj/item/natural/hide/cured = 2,
-				/obj/item/natural/fur = 1)
+	reqs = list(/obj/item/natural/hide/cured = 1,
+	            /obj/item/reagent_containers/food/snacks/tallow = 1,
+				/obj/item/natural/fur = 1,
+	            /obj/item/natural/fibers = 1)
 	tools = list(/obj/item/needle)
 	craftdiff = 6
 	sellprice = 30
