@@ -929,7 +929,7 @@
 	ricochet_auto_aim_range = 5
 	ricochet_incidence_leeway = 40
 	ricochet_decay_chance = 1
-	ricochet_decay_damage = 2 /// stronger with every bounce, fuck it
+	ricochet_decay_damage = 1.5 /// stronger with every bounce, fuck it
 
 /obj/projectile/bullet/reusable/sling_bullet/on_hit(atom/target)
 	. = ..()
@@ -956,26 +956,26 @@
 /obj/projectile/bullet/reusable/sling_bullet/bronze
 	name = "bronze sling bullet"
 	damage = 35
-	armor_penetration = 20 //Slightly more damage, but with -33% AP.
+	armor_penetration = 15 //Slightly more damage, but with -33% AP.
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/sling_bullet/bronze
 	speed = 0.15 // Faster!
 
 /obj/projectile/bullet/reusable/sling_bullet/iron
 	name = "iron sling bullet"
 	damage = 30
-	armor_penetration = 30
+	armor_penetration = 25
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/sling_bullet/iron
 
 /obj/projectile/bullet/reusable/sling_bullet/steel
 	name = "steel sling bullet"
 	damage = 40 //Best-of-the-best. Harder to mass-produce, however.
-	armor_penetration = 40
+	armor_penetration = 35
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/sling_bullet/steel
 
 /obj/projectile/bullet/reusable/sling_bullet/paalloy
 	name = "ancient sling bullet"
 	damage = 35 // Best of both worlds 'cuz why not
-	armor_penetration = 30
+	armor_penetration = 25
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/sling_bullet/paalloy
 	ricochets_max = 6
 
