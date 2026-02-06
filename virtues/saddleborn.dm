@@ -28,7 +28,7 @@ GLOBAL_LIST_INIT(virtue_mount_choices_anthrax, (list(
 )))
 
 /datum/stressevent/precious_mob_died
-	timer = 1 HOUR
+	timer = 60 MINUTES
 	stressadd = 10
 	desc = span_red("There will never be another creature like them. They are lost, and so am I.")
 
