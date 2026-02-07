@@ -569,6 +569,16 @@
 	icon_state = "brownkey"
 	lockid = "townie_smith_extra"
 
+//////////////
+// SIDEFOLK //
+//////////////
+
+/obj/item/roguekey/veteran
+	name = "veteran's keys"
+	desc = "A key to the private residence of the town's grumpy battlemaster."
+	icon_state = "greenkey"
+	lockid = "veteran"
+
 /////////////////
 // INQUISITION //
 /////////////////
