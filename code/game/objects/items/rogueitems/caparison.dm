@@ -7,9 +7,7 @@
 	var/caparison_state = "caparison"
 	var/female_caparison_state = "caparison-f"
 	gender = NEUTER
-	var/list/valid_animal_types = list(
-		/mob/living/simple_animal/hostile/retaliate/rogue/saiga
-	)
+	var/list/valid_animal_types = list(/mob/living/simple_animal/hostile/retaliate/rogue/saiga)
 
 /obj/item/caparison/attack(mob/living/M, mob/living/user)
 	if(!issimple(M))
@@ -38,6 +36,10 @@
 	forceMove(animal)
 	animal.update_icon()
 	user.visible_message(span_notice("[user] fits a caparison onto [animal]."), span_notice("I fit a caparison onto [animal]."))
+
+//////////////////////
+// SUBTYPES - SAIGA //
+//////////////////////
 
 /obj/item/caparison/psy
 	name = "psydonite caparison"
@@ -68,3 +70,14 @@
 	desc = "A decorative piece of cloth meant to be used as a saddle decoration. It's adorned with the colours of Heartfelt. This one fits on a Saiga."
 	caparison_state = "heartfelt_caparison"
 	female_caparison_state = "heartfelt_caparison-f"
+
+/////////////////////////
+// SUBTYPES - FOGBEAST //
+/////////////////////////
+
+/obj/item/caparison/fogbeast
+	name = "caparison"
+	desc = "A decorative piece of cloth meant to be used as a saddle decoration. This one fits on a Fogbeast."
+	caparison_icon = 'icons/roguetown/mob/monster/fogbeast.dmi'
+	valid_animal_types = list(/mob/living/simple_animal/hostile/retaliate/rogue/fogbeast)
+	color = COLOR_PINK

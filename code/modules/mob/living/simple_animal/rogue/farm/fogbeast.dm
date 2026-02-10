@@ -50,6 +50,7 @@
 	can_saddle = TRUE
 	aggressive = TRUE
 	remains_type = /obj/effect/decal/remains/saiga
+	color = CLOTHING_AZURE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/fogbeast/tame
 	tame = TRUE
