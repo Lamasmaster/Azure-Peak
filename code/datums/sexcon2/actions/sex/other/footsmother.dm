@@ -1,4 +1,4 @@
-/datum/sex_action/sex/other/footsmother
+/datum/sex_action/sex/other/footsmother//Blame Pots for this existing.
 	name = "Smother them with feet"
 	check_same_tile = FALSE
 	intensity = 3
