@@ -37,7 +37,7 @@
 
 	if(iself(target) || ishalfelf(target) || isdarkelf(target))
 		sex_session.perform_sex_action(target, 5, 0, TRUE)
-		user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] rubs [target]'s ears..[target.p_their()] weakness.."))
+		user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] rubs [target]'s ears... [target.p_their()] weakness..."))
 	else
 		sex_session.perform_sex_action(target, 0.5, 0, TRUE)
 		user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] rubs [target]'s ears..."))
