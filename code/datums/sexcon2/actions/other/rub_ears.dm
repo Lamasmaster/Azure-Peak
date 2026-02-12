@@ -35,7 +35,7 @@
 	var/datum/sex_session/sex_session = get_sex_session(user, target)
 	user.make_sucking_noise()
 
-	if(iself(target) || ishalfelf(target) || isdarkelf(target))
+	if(iself(target) || ishalfelf(target) || isdarkelf(target)|| ishalforc(target))
 		sex_session.perform_sex_action(target, 5, 0, TRUE)
 		user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] rubs [target]'s ears... [target.p_their()] weakness..."))
 	else
