@@ -114,7 +114,7 @@ GLOBAL_LIST_EMPTY(locked_sex_objects)
 #define SHEATH_TYPE_SLIT 2
 
 #define EARS_NORMAL 0
-#define EARS_SENSITIVE 1 //Should this be used for ANYTHING else - move it.
+#define EARS_SENSITIVE 1 //Should this be used for ANYTHING else - move it. / Also only works on ANTHROS for some reason
 
 #define ERECT_STATE_NONE 0
 #define ERECT_STATE_PARTIAL 1

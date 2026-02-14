@@ -99,7 +99,6 @@
 	if(ears)
 		ears.minimumDeafTicks(value)
 
-
 /obj/item/organ/ears/cat
 	name = "cat ears"
 	icon = 'icons/obj/clothing/hats.dmi'

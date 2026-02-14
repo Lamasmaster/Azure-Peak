@@ -47,8 +47,8 @@
 	var/datum/sex_session/sex_session = get_sex_session(user, target)
 	user.make_sucking_noise()
 
-	if(has_sensitive_ears())
-		sex_session.perform_sex_action(target, 8, 0, TRUE)
+	if(has_sensitive_ears(target) == TRUE || iself(target) || ishalfelf(target) || isdarkelf(target) || ishalforc(target) || isgoblinp(target) || isgnoll(target))
+		sex_session.perform_sex_action(target, 10, 0, TRUE)
 		user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] licks [target]'s ear... [target.p_their()] weakness..."))
 	else
 		sex_session.perform_sex_action(target, 1, 0, TRUE)
