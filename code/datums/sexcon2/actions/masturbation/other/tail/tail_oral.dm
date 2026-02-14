@@ -1,6 +1,7 @@
 /datum/sex_action/masturbate/other/tailjob_oral
 	name = "Prod their throat with a tail"
 	check_same_tile = FALSE
+	debug_erp_panel_verb = FALSE
 
 /datum/sex_action/masturbate/other/tailjob_oral/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)

@@ -1,6 +1,7 @@
 /datum/sex_action/masturbate/other/tailjob_anal
 	name = "Prod their butt with a tail"
 	check_same_tile = FALSE
+	debug_erp_panel_verb = FALSE
 
 /datum/sex_action/masturbate/other/tailjob_anal/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
@@ -32,7 +33,7 @@
 
 /datum/sex_action/masturbate/other/tailjob_anal/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/datum/sex_session/sex_session = get_sex_session(user, target)
-	user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] prods [target]'s ass with [user.p_their()] tail..."))
+	user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] prods [target]'s butt with [user.p_their()] tail..."))
 	playsound(user, 'sound/misc/mat/fingering.ogg', 30, TRUE, -2, ignore_walls = FALSE)
 
 	sex_session.perform_sex_action(target, 2.4, 7, TRUE)

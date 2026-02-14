@@ -58,6 +58,8 @@
 	var/masturbation = FALSE
 	///Whenever or not you need to be adjacent to someone to use it
 	var/ranged_action = FALSE
+	///Whenever it should be actually displayed on the panel or not
+	var/debug_erp_panel_verb = TRUE
 
 /datum/sex_action/Destroy()
 	for(var/datum/sex_session_lock/lock in sex_locks)
@@ -67,6 +69,8 @@
 	return ..()
 
 /datum/sex_action/proc/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	if(debug_erp_panel_verb)
+		return FALSE
 	return TRUE
 
 /datum/sex_action/proc/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -133,6 +137,14 @@
 	if(!penis)
 		return FALSE
 	return penis.sheath_type == SHEATH_TYPE_SLIT
+
+/datum/sex_action/proc/has_sensitive_ears(mob/living/carbon/human/target)
+	if(!target)
+		return FALSE
+	var/obj/item/organ/ears/ears = target.getorganslot(ORGAN_SLOT_EARS)
+	if(!ears)
+		return FALSE
+	return ears.ear_sensitivity == EARS_SENSITIVE
 
 /datum/sex_action/proc/find_original_owner_by_ckey(target_ckey)
 	if(!target_ckey)

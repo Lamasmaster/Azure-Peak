@@ -1,14 +1,19 @@
 /datum/sex_action/sex/boobjob
 	name = "Use their tits to get off"
 	intensity = 3
+	debug_erp_panel_verb = FALSE //However truth is I spent too long on this.
 
 /datum/sex_action/sex/boobjob/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
+	if(!check_location_accessible(user, user, BODY_ZONE_PRECISE_GROIN, TRUE))
+		return FALSE
+	if(!check_location_accessible(user, target, BODY_ZONE_CHEST))
+		return FALSE
 	if(!user.getorganslot(ORGAN_SLOT_PENIS))
-		return
+		return FALSE
 	if(!target.getorganslot(ORGAN_SLOT_BREASTS))
-		return
+		return FALSE
 	return TRUE
 
 /datum/sex_action/sex/boobjob/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -30,10 +35,10 @@
 	return TRUE
 
 /datum/sex_action/sex/boobjob/get_start_message(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	return span_warning("[user] grabs [target]'s tits and shoves [user.p_their()] cock inbetween!")
+	return span_warning("[user] grabs [target]'s tits and shoves [user.p_their()] pintle inbetween!")
 
 /datum/sex_action/sex/boobjob/get_finish_message(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	return span_warning("[user] pulls [user.p_their()] cock out from inbetween [target]'s tits.")
+	return span_warning("[user] pulls [user.p_their()] pintle out from inbetween [target]'s tits.")
 
 /datum/sex_action/sex/boobjob/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/datum/sex_session/sex_session = get_sex_session(user, target)
