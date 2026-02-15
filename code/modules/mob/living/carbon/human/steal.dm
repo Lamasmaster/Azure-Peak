@@ -10,11 +10,14 @@
 	var/list/stealpos = list()
 	var/list/mobsbehind = list()
 	var/exp_to_gain = user_human.STAINT
-	var/minimum_steal_timer = 1.5 SECONDS
-	var/maximum_steal_timer = 5 SECONDS - (user.STASPD - target_human.STASPD)
+	var/steal_timer = 1 SECONDS
+	if(user.STASPD < target_human.STASPD)
+		steal_timer += ((target_human.STASPD - user.STASPD) * 5)
+	if(user.STAPER < target_human.STAPER)
+		steal_timer += ((target_human.STAPER - user.STAPER) * 3)
 	if(user.Adjacent(target))
 		to_chat(user, span_notice("I try to steal from [target_human]..."))	
-		if(do_after(user, CLAMP(10 SECONDS, minimum_steal_timer, maximum_steal_timer), target = target_human, progress = 0))
+		if(do_after(user, steal_timer, target = target_human, progress = 0))
 			if(!user.Adjacent(target))
 				return to_chat(user, span_warning("They moved away!"))	
 			if(stealroll > targetperception)
