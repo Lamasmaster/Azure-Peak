@@ -291,10 +291,27 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 	cut_overlays()
 	. = ..()
 	if(ccaparison && stat == CONSCIOUS && !resting)
-		var/caparison_overlay = ccaparison.female_caparison_state && gender == FEMALE ? ccaparison.female_caparison_state : ccaparison.caparison_state
-		var/mutable_appearance/caparison_above_overlay = mutable_appearance(ccaparison.caparison_icon, caparison_overlay + "-above", 4.31)
-		add_overlay(icon(ccaparison.caparison_icon, caparison_overlay))
+		var/caparison_overlay_string = ccaparison.female_caparison_state && gender == FEMALE ? ccaparison.female_caparison_state : ccaparison.caparison_state
+
+		var/mutable_appearance/caparison_overlay = mutable_appearance(ccaparison.caparison_icon, caparison_overlay_string)
+		caparison_overlay.color = ccaparison.color
+		caparison_overlay.appearance_flags = RESET_ALPHA|RESET_COLOR
+		add_overlay(caparison_overlay)
+		if(ccaparison.detail_state)
+			var/mutable_appearance/detail_overlay = mutable_appearance(ccaparison.caparison_icon, caparison_overlay_string + "_" + ccaparison.detail_state)
+			detail_overlay.color = ccaparison.detail_color
+			detail_overlay.appearance_flags = RESET_ALPHA|RESET_COLOR
+			add_overlay(detail_overlay)
+
+		var/mutable_appearance/caparison_above_overlay = mutable_appearance(ccaparison.caparison_icon, caparison_overlay_string + "-above", 4.31)
+		caparison_above_overlay.color = ccaparison.color
+		caparison_above_overlay.appearance_flags = RESET_ALPHA|RESET_COLOR
 		add_overlay(caparison_above_overlay)
+		if(ccaparison.detail_state)
+			var/mutable_appearance/detail_above_overlay = mutable_appearance(ccaparison.caparison_icon, caparison_overlay_string + "_" + ccaparison.detail_state + "-above", 4.31)
+			detail_above_overlay.color = ccaparison.detail_color
+			detail_above_overlay.appearance_flags = RESET_ALPHA|RESET_COLOR
+			add_overlay(detail_above_overlay)
 
 ///Extra effects to add when the mob is tamed, such as adding a riding component
 /mob/living/simple_animal/proc/tamed(mob/user)

@@ -68,8 +68,10 @@
 	if(stat != DEAD)
 		if(ssaddle)
 			var/mutable_appearance/saddlet = mutable_appearance(icon, "saddle-above", 4.3)
+			saddlet.appearance_flags = RESET_ALPHA|RESET_COLOR
 			add_overlay(saddlet)
 			saddlet = mutable_appearance(icon, "saddle")
+			saddlet.appearance_flags = RESET_ALPHA|RESET_COLOR
 			add_overlay(saddlet)
 		if(has_buckled_mobs())
 			var/mutable_appearance/mounted = mutable_appearance(icon, "[icon_state]_mounted", 4.3)
