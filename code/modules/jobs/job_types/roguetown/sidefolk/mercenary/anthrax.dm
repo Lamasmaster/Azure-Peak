@@ -12,7 +12,7 @@
 
 	cmode_music = 'sound/music/combat_delf.ogg'
 
-	traits_applied = list(TRAIT_DARKVISION, TRAIT_MEDIUMARMOR, TRAIT_ANTHRAXI)
+	traits_applied = list(TRAIT_DARKVISION, TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
 		STATKEY_STR = 2,
 		STATKEY_CON = 2,
@@ -66,8 +66,6 @@
 	beltr = /obj/item/rogueweapon/whip/spiderwhip	
 	beltl = /obj/item/rope/chain
 
-	H.faction += "spider_lowers"
-
 	if(H.mind)
 		var/riding = list("I'm a spider rider (your pet with you)", "I walk on my legs (+1 for athletics)")
 		var/ridingchoice = input(H, "Choose your faith", "FAITH") as anything in riding
@@ -83,7 +81,7 @@
 	name = "Anthrax Assassin"
 	tutorial = "Black Venom's infamous killers for hire, it is said a single cut from their poison tipped blades is enough to send their victim to an early grave. You are one of those assassins, use your trusty bow and arrow to bring your targets' demise from afar or take a second sabre and weave a beautiful dance of death. All that matters is that your contract is fulfilled and your pockets heavy with mammon."
 	outfit = /datum/outfit/job/roguetown/mercenary/anthrax/assasin
-	traits_applied = list(TRAIT_DARKVISION, TRAIT_DODGEEXPERT, TRAIT_ANTHRAXI)
+	traits_applied = list(TRAIT_DARKVISION, TRAIT_DODGEEXPERT)
 	subclass_stats = list(
 		STATKEY_WIL = 2,
 		STATKEY_PER = 2,
@@ -124,8 +122,6 @@
 	beltl = /obj/item/rogueweapon/scabbard/sword
 	r_hand = /obj/item/rogueweapon/sword/sabre/stalker
 
-	H.faction += "spider_lowers"
-
 	if(H.mind)
 		var/weapon = list("Bow and Arrow", "Dual Sabres")
 		var/weaponchoice = input(H, "Choose your WEAPON.", "PICK YOUR INSTRUMENTS.") as anything in weapon
@@ -141,4 +137,3 @@
 				ADD_TRAIT(H, TRAIT_DUALWIELDER, TRAIT_GENERIC)
 				
 	H.merctype = 15	
-
