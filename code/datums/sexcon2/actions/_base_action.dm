@@ -71,6 +71,8 @@
 /datum/sex_action/proc/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(debug_erp_panel_verb)
 		return FALSE
+	if(user.get_highest_grab_state_on(target) == GRAB_AGGRESSIVE)
+		return TRUE //Battlefuck buff
 	return TRUE
 
 /datum/sex_action/proc/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
@@ -99,6 +101,9 @@
 
 	if(!bodypart)
 		return FALSE
+
+	if(user.get_highest_grab_state_on(target) == GRAB_AGGRESSIVE)
+		return TRUE //Battlefuck buff
 
 	if(src.check_same_tile && (user != target || self_target))
 		var/same_tile = (get_turf(user) == get_turf(target))
