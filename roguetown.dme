@@ -837,6 +837,8 @@
 #include "code\datums\sexcon2\actions\masturbation\other\penis.dm"
 #include "code\datums\sexcon2\actions\masturbation\other\vagina.dm"
 #include "code\datums\sexcon2\actions\masturbation\other\magic\godhand.dm"
+#include "code\datums\sexcon2\actions\masturbation\other\magic\godhand_anal.dm"
+#include "code\datums\sexcon2\actions\masturbation\other\magic\godhand_vagina.dm"
 #include "code\datums\sexcon2\actions\masturbation\other\magic\mage.dm"
 #include "code\datums\sexcon2\actions\masturbation\other\magic\mage_anal.dm"
 #include "code\datums\sexcon2\actions\masturbation\other\magic\mage_vagina.dm"
