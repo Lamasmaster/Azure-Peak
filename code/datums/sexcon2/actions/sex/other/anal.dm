@@ -55,10 +55,10 @@
 
 	do_onomatopoeia(user)
 
+	sex_session.perform_sex_action(user, 2, 4, FALSE)
+
 	if(sex_session.considered_limp(target))
 		sex_session.perform_sex_action(target, 1.2, 4, TRUE)
 	else
 		sex_session.perform_sex_action(target, 2.4, 9, TRUE)
-	sex_session.handle_passive_ejaculation()
-
-	sex_session.perform_sex_action(target, 2, 4, FALSE)
+	sex_session.handle_passive_ejaculation(target)
