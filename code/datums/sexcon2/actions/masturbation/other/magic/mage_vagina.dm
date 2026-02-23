@@ -35,7 +35,7 @@
 
 /datum/sex_action/masturbate/other/magejob_vagina/on_start(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()
-	user.visible_message(span_warning("[user] starts finger [target]'s cunt with arcyne..."))
+	user.visible_message(span_warning("[user] starts to finger [target]'s cunt with arcyne..."))
 
 /datum/sex_action/masturbate/other/magejob_vagina/on_finish(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()
