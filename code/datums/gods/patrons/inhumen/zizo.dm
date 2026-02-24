@@ -6,13 +6,16 @@
 	mob_traits = list(TRAIT_CABAL, TRAIT_ZIZOSIGHT)
 	miracles = list(/obj/effect/proc_holder/spell/targeted/touch/orison					= CLERIC_ORI,
 					/obj/effect/proc_holder/spell/self/zizo_snuff						= CLERIC_T0,
+					/obj/effect/proc_holder/spell/invoked/projectile/profane/miracle 	= CLERIC_T0,
+					/obj/effect/proc_holder/spell/invoked/gravecall						= CLERIC_T0,
 					/obj/effect/proc_holder/spell/invoked/lesser_heal 					= CLERIC_T1,
 					/obj/effect/proc_holder/spell/invoked/blood_heal					= CLERIC_T1,
-					/obj/effect/proc_holder/spell/invoked/projectile/profane/miracle 	= CLERIC_T1,
+					/obj/effect/proc_holder/spell/invoked/zizo_drain					= CLERIC_T1,
 					/obj/effect/proc_holder/spell/invoked/raise_undead_formation/miracle= CLERIC_T2,
 					/obj/effect/proc_holder/spell/invoked/raise_undead_guard/miracle	= CLERIC_T2,
 					/obj/effect/proc_holder/spell/invoked/tame_undead/miracle			= CLERIC_T3,
 					/obj/effect/proc_holder/spell/invoked/rituos/miracle 				= CLERIC_T3,
+					/obj/effect/proc_holder/spell/targeted/zizo_churn					= CLERIC_T3,
 					/obj/effect/proc_holder/spell/invoked/resurrect/zizo				= CLERIC_T4
 	)
 	confess_lines = list(
@@ -80,3 +83,7 @@
 
 	*conditional_buff = TRUE
 	*situational_bonus = min(bonus, 5)
+
+	if((mob_biotypes == MOB_UNDEAD))//Deadites always get the full heal
+		*conditional_buff = TRUE
+		*situational_bonus = 2.5

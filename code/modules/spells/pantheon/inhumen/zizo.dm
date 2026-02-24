@@ -1,9 +1,46 @@
-// T1: (fires a bone splinter at a target for brute and bleeding if you're not holding bones in your other hand, fires a significantly stronger bone lance if you are)
+// T0: Extinquish lights/fires in area around you scaling on your HOLY skill.
+
+/obj/effect/proc_holder/spell/self/zizo_snuff
+	name = "Snuff Lights"
+	desc = "Extinguish all lights in range, with your Miracles skill increasing range."
+	releasedrain = 10
+	chargedrain = 0
+	chargetime = 0
+	chargedloop = /datum/looping_sound/invokeholy
+	invocations = list("exhales a dark grey smog, choking any lights nearby.")
+	invocation_type = "emote"
+	sound = 'sound/magic/zizo_snuff.ogg'
+	action_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_state = "snufflight"
+	associated_skill = /datum/skill/magic/holy
+	antimagic_allowed = FALSE
+	recharge_time = 20 SECONDS
+	miracle = TRUE
+	devotion_cost = 30
+	range = 2
+
+/obj/effect/proc_holder/spell/self/zizo_snuff/cast(list/targets, mob/user = usr)
+	. = ..()
+	if(!ishuman(user))
+		revert_cast()
+		return FALSE
+	var/checkrange = (range + user.get_skill_level(/datum/skill/magic/holy)) //+1 range per holy skill up to a potential of 8.
+	for(var/obj/O in range(checkrange, user))
+		O.extinguish()
+	for(var/mob/M in range(checkrange, user))
+		for(var/obj/O in M.contents)
+			O.extinguish()
+	return TRUE
+
+// T0: (fires a bone splinter at a target for brute and bleeding if you're not holding bones in your other hand, fires a significantly stronger bone lance if you are)
 
 /obj/effect/proc_holder/spell/invoked/projectile/profane
-	name = "Profane"
+	name = "Profane Bolt"
 	desc = "Fire forth a splinter of unholy bone, tearing flesh and causing bleeding. If you hold pieces of bone in your other hand, you will coax a much stronger lance of bone into being."
 	clothes_req = FALSE
+	action_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_icon = 'icons/mob/actions/zizomiracles.dmi'
 	overlay_state = "profane"
 	range = 8
 	associated_skill = /datum/skill/magic/arcane
@@ -56,15 +93,17 @@
 /obj/projectile/magic/profane
 	name = "profaned bone splinter"
 	icon_state = "chronobolt"
-	damage = 20
+	damage = 25
+	armor_penetration = 10
 	damage_type = BRUTE
 	nodamage = FALSE
-	var/embed_prob = 10
+	var/embed_prob = 20
 
 /obj/projectile/magic/profane/major
 	name = "profaned bone lance"
-	damage = 35
-	embed_prob = 30
+	damage = 50
+	armor_penetration = 20 //It's blunt so keep that in mind
+	embed_prob = 40
 
 /obj/projectile/magic/profane/on_hit(atom/target, blocked)
 	. = ..()
@@ -87,26 +126,209 @@
 	to_chat(user, span_danger("[src] crumbles into dust..."))
 	qdel(src)
 
-// T2: just use lesser animate undead for now
+// T0: Fires off a short ranged sticky projectile that immobilizes it's target - BUGGY VISUAL
 
-/obj/effect/proc_holder/spell/invoked/raise_undead_formation/miracle
+/obj/effect/proc_holder/spell/invoked/gravecall
+	name = "Gravecall"
+	desc = "Call forth skeletal hands to hold down your foes."
+	clothes_req = FALSE
+	action_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_state = "zizograsp"
+	range = 4
+	associated_skill = /datum/skill/magic/holy
+	chargedloop = /datum/looping_sound/invokeholy
+	invocation_type = "none"
+	releasedrain = 30
+	chargedrain = 0
+	chargetime = 15
+	recharge_time = 30 SECONDS
+	hide_charge_effect = TRUE // Left handed magick babe
+
+	var/delay = 14
+	var/damage = 60
+	var/area_of_effect = 2
+
+/obj/effect/temp_visual/trapskeleton
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "frost"
+	light_outer_range = 2
+	light_color = "#D02A3A"
+	duration = 11
+	layer = MASSIVE_OBJ_LAYER
+
+/obj/effect/temp_visual/gravecall
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "shieldsparkles"
+	name = "rising deadite hands"
+	desc = "Get out of the way!"
+	randomdir = FALSE
+	duration = 1 SECONDS
+	layer = MASSIVE_OBJ_LAYER
+
+/obj/effect/proc_holder/spell/invoked/gravecall/cast(list/targets, mob/user)
+	var/turf/T = get_turf(targets[1])
+
+	var/turf/source_turf = get_turf(user)
+	if(T.z > user.z)
+		source_turf = get_step_multiz(source_turf, UP)
+	if(T.z < user.z)
+		source_turf = get_step_multiz(source_turf, DOWN)
+
+	for(var/turf/affected_turf in get_hear(area_of_effect, T))
+		if(!(affected_turf in get_hear(range, source_turf)))
+			continue
+		new /obj/effect/temp_visual/trapskeleton(affected_turf)
+	playsound(T, 'sound/combat/wooshes/blunt/wooshhuge (2).ogg', 80, TRUE, soundping = TRUE) // it kinda sounds like cold wind idk
+
+	sleep(delay)
+	var/play_cleave = FALSE
+
+	for(var/turf/affected_turf in get_hear(area_of_effect, T))
+		new /obj/effect/temp_visual/gravecall(affected_turf)
+		if(!(affected_turf in get_hear(range, source_turf)))
+			continue
+		for(var/mob/living/L in affected_turf.contents)
+			if(L.anti_magic_check())
+				L.visible_message(span_warning("The grip fades away around [L]!"))
+				playsound(get_turf(L), 'sound/magic/magic_nulled.ogg', 100)
+				continue
+			if(spell_guard_check(L, TRUE))
+				L.visible_message(span_warning("[L] endures the grip!"))
+				continue
+			play_cleave = TRUE
+			if(ishuman(L))
+				L.adjustBruteLoss(damage)
+				L.Immobilize(4 SECONDS)
+				playsound(T, 'sound/combat/fracture/fracturedry (1).ogg', 80, TRUE, soundping = TRUE)
+			else
+				L.adjustBruteLoss(damage + 20)
+				L.Immobilize(8 SECONDS)
+				playsound(T, 'sound/combat/fracture/fracturedry (1).ogg', 80, TRUE, soundping = TRUE)
+			playsound(affected_turf, "genslash", 80, TRUE)
+			to_chat(L, "<span class='userdanger'>The hands grip against you!</span>")
+
+	if(play_cleave)
+		playsound(T, 'sound/combat/newstuck.ogg', 80, TRUE, soundping = TRUE) // this also kinda sounds like ice ngl
+
+	return TRUE
+
+// T1: Transfers blood from a person to yourself - reversed blood transfer miracle more or less - DOESN'T SEEM TO REDUCE TARGETS BLOOD POOL ON HIGH LEVELS
+
+/obj/effect/proc_holder/spell/invoked/zizo_drain
+	name = "Lyfe Transfer"
+	desc = "Transfers the blood from a victim to me with inhumen magycks. Ratio of transfer scales with holy skill."
+	action_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_state = "lyfedrain"
+	releasedrain = 30
+	chargedrain = 0
+	chargetime = 0
+	range = 4
+	ignore_los = FALSE
+	warnie = "sydwarning"
+	movement_interrupt = TRUE
+	sound = 'sound/magic/bloodheal.ogg'
+	invocation_type = "none"
+	associated_skill = /datum/skill/magic/holy
+	antimagic_allowed = FALSE
+	recharge_time = 1 MINUTES
 	miracle = TRUE
-	devotion_cost = 75
-	cabal_affine = TRUE
-	to_spawn = 1
+	devotion_cost = 50
+	var/blood_price = 5
+	var/blood_vol_restore = 7.5 //30 every 2 seconds.
+	var/vol_per_skill = 1	//54 with legendary
+	var/delay = 0.5 SECONDS
+
+/obj/effect/proc_holder/spell/invoked/zizo_drain/cast(list/targets, mob/user = usr)
+	if(ishuman(targets[1]))
+		var/mob/living/carbon/human/target = targets[1]
+		var/mob/living/carbon/human/UH = user
+		if(NOBLOOD in target.dna?.species?.species_traits)
+			to_chat(UH, span_warning("They have no blood to provide."))
+			revert_cast()
+			return FALSE
+
+		if(UH.blood_volume >= BLOOD_VOLUME_NORMAL)
+			to_chat(UH, span_warning("My lyfeblood is at capacity. There is no need."))
+			revert_cast()
+			return FALSE
+
+		if(HAS_TRAIT(target, TRAIT_PSYDONITE))
+			target.visible_message(span_info("[target] stirs for a moment, the miracle dissipates."), span_notice("A dull warmth swells in your heart, only to fade as quickly as it arrived."))
+			user.playsound_local(user, 'sound/magic/PSY.ogg', 100, FALSE, -1)
+			playsound(target, 'sound/magic/PSY.ogg', 100, FALSE, -1)
+			return FALSE
+
+		target.visible_message(span_warning("Tiny strands of red link between [target] and [UH], blood being transferred!"))
+		playsound(UH, 'sound/magic/bloodheal_start.ogg', 100, TRUE)
+		var/user_skill = UH.get_skill_level(associated_skill)
+		var/user_informed = FALSE
+		switch(user_skill)	//Bleeding happens every life(), which is every 2 seconds. Multiply these numbers by 4 to get the "bleedrate" equivalent values.
+			if(SKILL_LEVEL_APPRENTICE)
+				blood_price = 3.75
+			if(SKILL_LEVEL_JOURNEYMAN)
+				blood_price = 2.5
+			if(SKILL_LEVEL_EXPERT)
+				blood_price = 2
+			if(SKILL_LEVEL_MASTER)
+				blood_price = 1.625
+			if(SKILL_LEVEL_LEGENDARY)
+				blood_price = 1.25
+		if(user_skill > SKILL_LEVEL_NOVICE)
+			blood_vol_restore += vol_per_skill * user_skill
+		var/max_loops = round(target.blood_volume / blood_price, 1) * 2	// x2 just in case the user is trying to fill themselves up while using it.
+		var/datum/beam/bloodbeam = user.Beam(target,icon_state="blood",time=(max_loops * 5))
+		for(var/i in 1 to max_loops)
+			if(target.blood_volume > (BLOOD_VOLUME_SURVIVE / 2))
+				if(do_after(UH, delay))
+					UH.blood_volume = min((target.blood_volume + blood_vol_restore), BLOOD_VOLUME_NORMAL)
+					target.blood_volume = max((UH.blood_volume - blood_price), 0)
+					if(target.blood_volume >= BLOOD_VOLUME_NORMAL && !user_informed)
+						to_chat(UH, span_info("I'm at a healthy blood level, but I can keep going."))
+						user_informed = TRUE
+				else
+					target.visible_message(span_warning("Severs the bloodlink from [target]!"))
+					bloodbeam.End()
+					return TRUE
+			else
+				UH.visible_message(span_warning("Severs the bloodlink from [target]!"))
+				bloodbeam.End()
+				return TRUE
+		bloodbeam.End()
+		return TRUE
+	revert_cast()
+	return FALSE
 
 // T2: carbon spawn
 
 /obj/effect/proc_holder/spell/invoked/raise_undead_guard/miracle
 	name = "Raise Deadite"
 	desc = "Raises a singular, weak deadite."
+	action_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_state = "skeleton"
 	chargetime = 3 SECONDS
 	miracle = TRUE
 	devotion_cost = 75
 
+// T2: just use lesser animate undead for now
+
+/obj/effect/proc_holder/spell/invoked/raise_undead_formation/miracle
+	action_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_state = "skeleton_formation"
+	miracle = TRUE
+	devotion_cost = 75
+	cabal_affine = TRUE
+	to_spawn = 1
+
 // T3: tames bio_type = undead mobs
 
 /obj/effect/proc_holder/spell/invoked/tame_undead/miracle
+	action_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_state = "deadite_tame"
 	miracle = TRUE
 	devotion_cost = 100
 
@@ -116,6 +338,8 @@
 	name = "Rituos"
 	desc = "Do a zizoid ritual that skeletonises a part of your body, granting you one spell until your next rest. Once your whole body has become skeletonised, you gain full access to the Arcyne, bolstering your knowledge of spells with each additional ritual."
 	clothes_req = FALSE
+	action_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_icon = 'icons/mob/actions/zizomiracles.dmi'
 	overlay_state = "rituos"
 	associated_skill = /datum/skill/magic/arcane
 	chargedloop = /datum/looping_sound/invokeholy
@@ -226,33 +450,68 @@
 
 	user.update_body_parts()
 
-/obj/effect/proc_holder/spell/self/zizo_snuff
-	name = "Snuff Lights"
-	desc = "Extinguish all lights in range, with your Miracles skill increasing range."
-	releasedrain = 10
-	chargedrain = 0
-	chargetime = 0
-	chargedloop = /datum/looping_sound/invokeholy
-	invocations = list("exhales a dark grey smog, choking any lights nearby.")
-	invocation_type = "emote"
-	sound = 'sound/magic/zizo_snuff.ogg'
-	overlay_state = "rune2"
-	associated_skill = /datum/skill/magic/holy
-	antimagic_allowed = FALSE
-	recharge_time = 20 SECONDS
-	miracle = TRUE
-	devotion_cost = 30
-	range = 2
+// T3: Churn living more or less, don't look too deep into it, there isn't much else TO it - STILL NEEDS CLEANED UP CODE
 
-/obj/effect/proc_holder/spell/self/zizo_snuff/cast(list/targets, mob/user = usr)
-	. = ..()
-	if(!ishuman(user))
-		revert_cast()
-		return FALSE
-	var/checkrange = (range + user.get_skill_level(/datum/skill/magic/holy)) //+1 range per holy skill up to a potential of 8.
-	for(var/obj/O in range(checkrange, user))
-		O.extinguish()
-	for(var/mob/M in range(checkrange, user))
-		for(var/obj/O in M.contents)
-			O.extinguish()
+/obj/effect/proc_holder/spell/targeted/zizo_churn
+	name = "Churn Living"
+	desc = "Explode a living being by sundering their lux, greater effect for those already without it."
+	range = 7	//Entire screen, does not matter though since it uses something else to determine it
+	action_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_icon = 'icons/mob/actions/zizomiracles.dmi'
+	overlay_state = "churn_living"
+	releasedrain = 30
+	chargetime = 10 SECONDS //Seems long but scales with Holy skill
+	recharge_time = 60 SECONDS
+	max_targets = 0 //How many targets can we hit with each cast of this, scales with Holy skill.
+	cast_without_targets = TRUE
+	req_items = list(/obj/item/clothing/neck/roguetown/psicross)
+	sound = 'sound/magic/soulsteal.ogg'
+	associated_skill = /datum/skill/magic/holy
+	invocations = list("Your existence is forfeit!", "Kneel before Her might!", "Perish in Her name!", "Death hath come for thee!")
+	invocation_type = "shout"
+	miracle = TRUE
+	devotion_cost = 100
+
+/obj/effect/proc_holder/spell/targeted/zizo_churn/cast(list/targets,mob/living/user = usr)
+	if(user && user.mind)
+		for(var/i in 1 to user.get_skill_level(/datum/skill/magic/holy))
+			max_targets += 1
+			range += 1
+			chargetime -= 1 SECONDS
+	for(var/mob/living/L in targets)
+		/*if(!L.mind?)
+			return FALSE*/
+		if(L.stat == DEAD)
+			return FALSE
+		if((L.mob_biotypes |= MOB_UNDEAD))
+			if(spell_guard_check(L, TRUE))
+				L.visible_message(span_warning("[L] resists being churned!"))
+				return FALSE
+			if(istype(L.patron, /datum/patron/inhumen/zizo))
+				L.visible_message(span_warning("[L] resists being churned!"))
+				return FALSE
+			if(HAS_TRAIT(L, TRAIT_SILVER_BLESSED)) //This will always take precedence and is the most powerful effect it has
+				to_chat(L, "<font color='red'>ᛦ ZIZO GRIPS MY BLESSED HEART!! ᛦ</font>")
+				L.visible_message(span_warning("[L] writhes in pain!"))
+				L.emote("cry")
+				L.Stun(5 SECONDS)
+				explosion(get_turf(L), devastation_range = 1, heavy_impact_range = 2, light_impact_range = 1, flame_range = 2, smoke = FALSE)
+				return TRUE
+			if(L.has_status_effect(/datum/status_effect/debuff/devitalised))
+				to_chat(L, "<font color='red'>ᛦ ZIZO REACHES FOR MY SOUL!! ᛦ</font>")
+				L.visible_message(span_warning("[L] writhes in pain!"))
+				L.emote("whimper")
+				L.Stun(3 SECONDS)
+				explosion(get_turf(L), heavy_impact_range = 2, light_impact_range = 1, flame_range = 2, smoke = TRUE)//Placeholders for testing, should be direct damage.
+				return TRUE
+			if(!L.has_status_effect(/datum/status_effect/debuff/devitalised) && !HAS_TRAIT(L, TRAIT_SILVER_BLESSED))
+				to_chat(L, "<font color='red'>ᛦ ZIZO SUNDERS MY LUX APART!! ᛦ</font>")
+				L.visible_message(span_warning("[L] writhes in pain!"))
+				if(!L.has_status_effect(/datum/status_effect/debuff/devitalised/zizo))
+					L.apply_status_effect(/datum/status_effect/debuff/devitalised/zizo)
+				explosion(get_turf(L), heavy_impact_range = 1, light_impact_range = 1, flame_range = 1, smoke = FALSE)
+				return TRUE
+		else
+			L.visible_message(span_warning("[L] resists being churned!"))
+	..()
 	return TRUE
