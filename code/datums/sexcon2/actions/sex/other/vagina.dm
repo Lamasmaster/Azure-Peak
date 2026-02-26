@@ -1,5 +1,5 @@
 /datum/sex_action/sex/other/vagina
-	name = "Ride them"
+	name = "Ride them with cunt"
 	stamina_cost = 1.0
 	aggro_grab_instead_same_tile = FALSE
 	intensity = 4
@@ -56,7 +56,6 @@
 	if(istype(user.head, /obj/item/clothing/head/roguetown/jester))
 		playsound(user, SFX_JINGLE_BELLS, 30, TRUE, -2, ignore_walls = FALSE)
 	do_thrust_animate(user, target, sex_session)
-
 	do_onomatopoeia(user)
 
 	sex_session.perform_sex_action(user, 2, 4, FALSE)

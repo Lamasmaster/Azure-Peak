@@ -36,13 +36,13 @@
 	. = ..()
 	user.visible_message(span_warning("[user] stops jerking [target] off."))
 
-/datum/sex_action/masturbate/other/penis/lock_sex_object(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	. = ..()
-	sex_locks |= new /datum/sex_session_lock(target, ORGAN_SLOT_PENIS)
-
 /datum/sex_action/masturbate/other/penis/handle_climax_message(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	user.visible_message(span_love("[user] cums over [target]'s hand!"))
 	return "onto"
+
+/datum/sex_action/masturbate/other/penis/lock_sex_object(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	. = ..()
+	sex_locks |= new /datum/sex_session_lock(target, ORGAN_SLOT_PENIS)
 
 /datum/sex_action/masturbate/other/penis/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	var/datum/sex_session/sex_session = get_sex_session(user, target)

@@ -52,5 +52,4 @@
 	playsound(user, 'sound/misc/mat/fingering.ogg', 30, TRUE, -2, ignore_walls = FALSE)
 
 	sex_session.perform_sex_action(target, (2*skill_level), 0, TRUE)
-
 	sex_session.handle_passive_ejaculation(target)

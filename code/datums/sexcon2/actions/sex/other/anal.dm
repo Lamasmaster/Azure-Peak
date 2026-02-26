@@ -52,7 +52,6 @@
 	user.visible_message(sex_session.spanify_force("[user] [sex_session.get_generic_force_adjective()] rides [target]."))
 	playsound(target, sex_session.get_force_sound(), 50, TRUE, -2, ignore_walls = FALSE)
 	do_thrust_animate(user, target, sex_session)
-
 	do_onomatopoeia(user)
 
 	sex_session.perform_sex_action(user, 2, 4, FALSE)

@@ -36,6 +36,10 @@
 	. = ..()
 	user.visible_message(span_warning("[user] stops fingering [target]'s cunt."))
 
+/datum/sex_action/masturbate/other/vagina/handle_climax_message(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	user.visible_message(span_love("[user] cums over [target]'s hand!"))
+	return "onto"
+
 /datum/sex_action/masturbate/other/vagina/lock_sex_object(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	. = ..()
 	sex_locks |= new /datum/sex_session_lock(target, ORGAN_SLOT_VAGINA)
