@@ -98,6 +98,11 @@
 // WEAPONS - MELEE //
 /////////////////////
 
+/datum/supply_pack/rogue/Sellsword/Navaja
+	name = "Navaja"
+	cost = 40
+	contains = list(/obj/item/rogueweapon/huntingknife/idagger/navaja)
+
 /datum/supply_pack/rogue/Sellsword/shortsword
 	name = "Falchion"
 	cost = 30
@@ -107,6 +112,11 @@
 	name = "Kriegmesser"
 	cost = 30
 	contains = list(/obj/item/rogueweapon/sword/long/kriegmesser)
+
+/datum/supply_pack/rogue/Sellsword/steelwarhammer //Remove this if forlorn gets reworked into not using it anymore as default
+	name = "Steel Warhammer"
+	cost = 60
+	contains = list(/obj/item/rogueweapon/mace/warhammer/steel)
 
 /datum/supply_pack/rogue/Sellsword/SZweihandersword
 	name = "Steel Zweihander"

@@ -24,7 +24,7 @@
 		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/craft/sewing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/medicine = SKILL_LEVEL_JOURNEYMAN, // We can substitute for a sawbones, but aren't as good and dont have access to surgical tools
-		/datum/skill/misc/athletics = SKILL_LEVEL_MASTER, //We are the True Mathlete
+		/datum/skill/misc/athletics = SKILL_LEVEL_LEGENDARY, //We are the True Mathlete
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
 	)
 	cmode_music = 'sound/music/Iconoclast.ogg'
@@ -65,6 +65,7 @@
 				H.adjust_skillrank_up_to(/datum/skill/combat/shields, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, SKILL_LEVEL_JOURNEYMAN, TRUE)
 				H.adjust_skillrank_up_to(/datum/skill/combat/whipsflails, SKILL_LEVEL_EXPERT, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/magic/holy, SKILL_LEVEL_MASTER, TRUE)
 			if("Golden Serpent") //Pugilist
 				head = /obj/item/clothing/head/roguetown/headband/monk
 				mask = /obj/item/clothing/mask/rogue/eyepatch

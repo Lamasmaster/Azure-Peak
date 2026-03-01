@@ -1,0 +1,28 @@
+Bandit Design Guide - Lamasmaster
+
+# Preamble
+While it is for majority focused on Bandits, some of these ideas should be taken into consideration with Wretches as well. Being the direct opposition to eachother in design, Bandits should ALWAYS come out on top over Wretches in terms of everything. Both have a camp these days (which I'd argue Wretches win out in that regard), Bandits have an equipment printer however. This will go more so into thoughts behind every class and how they should be maintained going further and what they fullfill. Think of it as the PAYDAY team (how original), each class should be kept unique to itself with unique role to play out. To anyone wondering, they should NOT be available roundstart, they are not designed for it, they are overtuned to be able to stand odds most should not - being proper ANTAGONISTS that DRIVE THE ROUND.
+
+# Hoardmaster
+The equipment printer of the Bandits is what truly sets them apart from any other antagonist or even wretch, providing them with essentially limitless gear with no downtime, able to gear even their allies in times of need. What should be kept is mind is that the gear overlap as is now should be kept to MINIMUM outside of bare essentials as is right now to give each class more of a unique reason to be picked over the other. The prices should be steadily increased as the gear inflation continues and sources of money become easier to acquire - do be mindful that some purchase options could lead to duplicating favour (such as gems cannot be normally returned to idol but if turned into a ring they suddenly can).
+
+# Alchemist (Formerly Sawbones & Demolisher) - The Support - 2 SLOT
+The team doctor, drug supplier and support, meant to be more or less helpless in direct confrontation (that said he can hold his own if need be) and only indirectly affect fights. He is the only one with access to the highest tier of drugs (Herozium / Moondust) as well statpotions and replacement limbs should the need be there and recently arsenal of potent bombs he can fill with killer's ice or set entire rooms ablaze. Under no circumstances should this class ever be "solo" capable, it is something to round out the Bandits and give them a safety net especially against something nasty like Pestran Rot as those often lead to delayed death.
+
+# Brigand - The Muscle
+The melee guy, medium armour and some utility in ability to repair equipment for others, his entire existence and statline (+4 STR) is to bash down skulls with flails/maces/axes and to prop up the Iconoclast and Hedge Knight. On his own he should be a threat - not to a group but an individual should never feel like he can get the upper hand against this guy, proper goon as it would be - nothing fancy just good old Footman.
+
+# Hedge Knight - The Wall - 1 SLOT
+De facto second in command to the Iconoclast, full plated and with a master skills and rest in expert, only one with access to blacksteel armour, can be any ascendant too as one of the few instead of only Matthios. As the only Bandit he starts fully kitted and ready to go (if we don't count summoning heretic armour for Iconoclast) and should be the first to start a fight and last one to stay alive in it - amptly being The Wall that keeps the backline alive and everything else dead.
+
+# Hedge Mage - The Mage - 1 SLOT
+The only magic capable bandit, he is on par with Court Mage - with the caveat that he doesn't get last tier of spells (and he really SHOULDN'T) yet has massively increased longevity in combat compared to him. Secondary alchemist and medic his main gimmick is providing magical items such as stat rings, scrying for information or making enchantments for the Bandits as well full offensive support or propping up the heavy hitters.
+
+# Iconoclast - The Boss - 1 SLOT
+The Boss of the group, miracle capable heavy hitter that is best described as Wretch Heretic on steroids providing additonal support and frontlining to the team as well favour via his ritual. Depending on the loadout choice however there are two ways he can go about this - The Chosen of Matthios: The intended and original loadout for him, heavy plate, grand flail and punches, this is really what most should go for and how he SHOULD be balanced. The other choice is The Golden Serpent: eyepatch and bronze arm, fully sacrificing his plate and weapon skills for legendary wrestling & unarmed and regenerating skin armour, think of it as a monk more or less - yes he is a reference to certain someone.
+
+# Knave - The Rogue
+If brigand is the melee frontliner, this is the stealthy dexterity focused backline assassin. He does get the option to spec more into thievery to provide early favour for his team (intended) or more into his combat capacity with Bows serving as a proper archer. What he should not be able to do is pull his weight in a fight outside of that, he is not one that should be able to stand up to proper combat classes or even outshine the others, he is there to get money for them and counter snipe archers or assasinate high value targets.
+
+# Sellsword - The Wildcard
+Battlemaster of the team, able to specialize more into melee or range as situation demands it as well disguise for several Mercenary groups, while he doesn't excel in any particular field he is still exceedingly valuable to keep enemies at bay and wreck havoc. He has access to several unique weapons as well armours to provide for his team and himself. It should be kept up to date with latest mercenary class changes for the facade and intent of the role to persist but don't be afraid to add couple unique ones to him such as the Longswordsman.

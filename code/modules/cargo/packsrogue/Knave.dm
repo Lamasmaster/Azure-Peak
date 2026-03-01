@@ -23,6 +23,11 @@
 	cost = 30
 	contains = list(/obj/item/clothing/head/roguetown/helmet/kettle)
 
+/datum/supply_pack/rogue/Sellsword/steelmask
+	name = "Steel Mask"
+	cost = 30
+	contains = list(/obj/item/clothing/mask/rogue/facemask/steel)
+
 //////////
 // NECK //
 //////////
@@ -70,11 +75,6 @@
 // WRISTS/GLOVES //
 ///////////////////
 
-/datum/supply_pack/rogue/Knave/leather/Lbracers
-	name = "Leather Bracers"
-	cost = 10
-	contains = list(/obj/item/clothing/wrists/roguetown/bracers/leather)
-
 /datum/supply_pack/rogue/Knave/leather/hbracers
 	name = "Hardened Leather Bracers"
 	cost = 20
@@ -84,11 +84,6 @@
 	name = "Brigandine Rerebraces"
 	cost = 30
 	contains = list(/obj/item/clothing/wrists/roguetown/bracers/brigandine)
-
-/datum/supply_pack/rogue/Knave/leather/lgloves
-	name = "Leather Gloves"
-	cost = 10
-	contains = list(/obj/item/clothing/gloves/roguetown/leather)
 
 /datum/supply_pack/rogue/Knave/leather/hlgloves
 	name = "Heavy Leather Gloves"
@@ -104,11 +99,6 @@
 // LEGS/FEET //
 ///////////////
 
-/datum/supply_pack/rogue/Knave/leather/pants
-	name = "Leather Trousers"
-	cost = 10
-	contains = list(/obj/item/clothing/under/roguetown/trou/leather)
-
 /datum/supply_pack/rogue/Knave/leather/hpants
 	name = "Hardened Leather Trousers"
 	cost = 20
@@ -119,14 +109,14 @@
 	cost = 30
 	contains = list(/obj/item/clothing/under/roguetown/brigandinelegs)
 
+/datum/supply_pack/rogue/Knave/splintboots
+	name = "Iron Plated Boots"
+	cost = 20
+	contains = list(/obj/item/clothing/shoes/roguetown/boots/armor/iron)
+
 /////////////////////
 // WEAPONS - MELEE //
 /////////////////////
-
-/datum/supply_pack/rogue/Knave/dagger
-	name = "Iron Dagger"
-	cost = 10
-	contains = list(/obj/item/rogueweapon/huntingknife/idagger)
 
 /datum/supply_pack/rogue/Knave/daggerss
 	name = "Steel Dagger"
@@ -137,11 +127,6 @@
 	name = "Parry Dagger"
 	cost = 30
 	contains = list(/obj/item/rogueweapon/huntingknife/idagger/steel/parrying)
-
-/datum/supply_pack/rogue/Knave/Navaja
-	name = "Navaja"
-	cost = 40
-	contains = list(/obj/item/rogueweapon/huntingknife/idagger/navaja)
 
 /datum/supply_pack/rogue/Knave/elfdagger
 	name = "Elven Dagger"
@@ -232,10 +217,10 @@
 
 /datum/supply_pack/rogue/Knave/grappler
 	name = "Grappling Hook"
-	cost = 200
+	cost = 250
 	contains = list(/obj/item/grapplinghook)
 
 /datum/supply_pack/rogue/Knave/climbing_gear
 	name = "Climbing Gear"
-	cost = 150
+	cost = 200
 	contains = list(/obj/item/clothing/climbing_gear)

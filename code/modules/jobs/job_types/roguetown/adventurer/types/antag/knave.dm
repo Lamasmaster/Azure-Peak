@@ -16,29 +16,26 @@
 		STATKEY_CON = 1
 	)
 	subclass_skills = list(
-		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/axes = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/maces = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/whipsflails = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/knives = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/wrestling = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
-		/datum/skill/combat/whipsflails = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/knives = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/bows = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/combat/crossbows = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/craft/crafting = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/craft/carpentry = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
-		/datum/skill/craft/sewing = SKILL_LEVEL_NOVICE,
-		/datum/skill/misc/medicine = SKILL_LEVEL_NOVICE,
+		/datum/skill/craft/sewing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/sneaking = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/stealing = SKILL_LEVEL_EXPERT,
 		/datum/skill/misc/lockpicking = SKILL_LEVEL_EXPERT,
 		/datum/skill/craft/traps = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/tracking = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/athletics = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/swimming = SKILL_LEVEL_EXPERT//Skirmisher equal
+		/datum/skill/misc/athletics = SKILL_LEVEL_MASTER,
+		/datum/skill/misc/swimming = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/climbing = SKILL_LEVEL_LEGENDARY,
+		/datum/skill/misc/reading = SKILL_LEVEL_NOVICE,
+		/datum/skill/misc/medicine = SKILL_LEVEL_NOVICE
 	)
 
 /datum/outfit/job/roguetown/bandit/knave/pre_equip(mob/living/carbon/human/H)
@@ -74,10 +71,10 @@
 							/obj/item/flashlight/flare/torch = 1,
 							/obj/item/rogueweapon/scabbard/sheath = 1
 							) //rogue gets lockpicks
-				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_LEVEL_MASTER, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/misc/sneaking, SKILL_LEVEL_MASTER, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/misc/stealing, SKILL_LEVEL_MASTER, TRUE)
-				H.adjust_skillrank_up_to(/datum/skill/misc/lockpicking, SKILL_LEVEL_MASTER, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, SKILL_LEVEL_LEGENDARY, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/misc/sneaking, SKILL_LEVEL_LEGENDARY, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/misc/stealing, SKILL_LEVEL_LEGENDARY, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/misc/lockpicking, SKILL_LEVEL_LEGENDARY, TRUE)
 			if("Poacher") //Poacher
 				backl= /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 				beltr = /obj/item/quiver/arrows
@@ -91,5 +88,8 @@
 							/obj/item/flashlight/flare/torch = 1,
 							) //poacher gets mantraps
 				H.adjust_skillrank_up_to(/datum/skill/combat/bows, SKILL_LEVEL_LEGENDARY, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/misc/athletics, SKILL_LEVEL_LEGENDARY, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/misc/tracking, SKILL_LEVEL_LEGENDARY, TRUE)
 				H.change_stat(STATKEY_PER, 2)
+				H.change_stat(STATKEY_LCK, 1)
 				H.change_stat(STATKEY_SPD, -1)

@@ -66,6 +66,7 @@
 			if("I am a notorious criminal") //Extra challenge for those who want it
 				bandit_select_bounty(H)
 				ADD_TRAIT(H, TRAIT_KNOWNCRIMINAL, TRAIT_GENERIC)
+				H.change_stat(STATKEY_LCK, 2)//I guess we see what THIS does
 			if("I am a nobody") //Nothing ever happens
 				return
 
@@ -119,4 +120,3 @@
 	var/descriptor_voice = build_coalesce_description_nofluff(d_list, H, list(MOB_DESCRIPTOR_SLOT_VOICE), "%DESC1%")
 
 	add_bounty(H.real_name, race, gender, descriptor_height, descriptor_body, descriptor_voice, bounty_total, FALSE, my_crime, bounty_poster)
-
