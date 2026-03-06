@@ -478,6 +478,9 @@
 					H.update_inv_armor()
 
 
+/obj/item/clothing/suit/roguetown/armor/plate/otavan/sellsword
+	armor_class = ARMOR_CLASS_MEDIUM //Yeah dunno why it's heavy either when it's same otherwise as regular half plate - if that gets changed REMOVE THIS
+
 // MEDIUM
 /obj/item/clothing/suit/roguetown/armor/plate/bikini
 	name = "half-plate corslet"

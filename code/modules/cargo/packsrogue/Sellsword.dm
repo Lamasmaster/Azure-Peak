@@ -113,6 +113,11 @@
 	cost = 30
 	contains = list(/obj/item/rogueweapon/sword/long/kriegmesser)
 
+/datum/supply_pack/rogue/Sellsword/desertsword
+	name = "Shalal Sabre"
+	cost = 60
+	contains = list(/obj/item/rogueweapon/sword/long/marlin)
+
 /datum/supply_pack/rogue/Sellsword/steelwarhammer //Remove this if forlorn gets reworked into not using it anymore as default
 	name = "Steel Warhammer"
 	cost = 60
@@ -202,7 +207,7 @@
 /obj/structure/closet/crate/chest/bandit/otavan/Initialize()
 	. = ..()
 	new /obj/item/clothing/head/roguetown/helmet/otavan(src)
-	new /obj/item/clothing/suit/roguetown/armor/plate/otavan(src)
+	new /obj/item/clothing/suit/roguetown/armor/plate/otavan/sellsword(src)
 	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/otavan(src)
 	new /obj/item/clothing/gloves/roguetown/otavan(src)
 	new /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan(src)
@@ -237,6 +242,23 @@
 	new /obj/item/clothing/wrists/roguetown/bracers/brigandine(src)
 	new /obj/item/clothing/under/roguetown/brigandinelegs(src)
 	new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/forlorn(src)
+
+/datum/supply_pack/rogue/Sellsword/Raneshicrate
+	name = "Raneshi Equipment Crate"
+	cost = 280
+	contains = list(/obj/structure/closet/crate/chest/bandit/forlorn)
+
+/obj/structure/closet/crate/chest/bandit/forlorn/Initialize()
+	. = ..()
+	new /obj/item/clothing/head/roguetown/helmet/sallet/raneshen(src)
+	new /obj/item/clothing/neck/roguetown/chaincoif/full(src)
+	new /obj/item/clothing/suit/roguetown/armor/plate/scale(src)
+	new /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/raneshen(src)
+	new /obj/item/clothing/wrists/roguetown/bracers/brigandine(src)
+	new /obj/item/clothing/gloves/roguetown/chain(src)
+	new /obj/item/clothing/under/roguetown/brigandinelegs(src)
+	new /obj/item/rogueweapon/shield/tower/raneshen(src)
+	new /obj/item/clothing/neck/roguetown/luckcharm/mercmedal/desertrider(src)
 
 /datum/supply_pack/rogue/Sellsword/Longswordcrate
 	name = "Longswordsman Equipment Crate"

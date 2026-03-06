@@ -9,20 +9,48 @@ The equipment printer of the Bandits is what truly sets them apart from any othe
 # Alchemist (Formerly Sawbones & Demolisher) - The Support - 2 SLOT
 The team doctor, drug supplier and support, meant to be more or less helpless in direct confrontation (that said he can hold his own if need be) and only indirectly affect fights. He is the only one with access to the highest tier of drugs (Herozium / Moondust) as well statpotions and replacement limbs should the need be there and recently arsenal of potent bombs he can fill with killer's ice or set entire rooms ablaze. Under no circumstances should this class ever be "solo" capable, it is something to round out the Bandits and give them a safety net especially against something nasty like Pestran Rot as those often lead to delayed death.
 
-# Brigand - The Muscle
-The melee guy, medium armour and some utility in ability to repair equipment for others, his entire existence and statline (+4 STR) is to bash down skulls with flails/maces/axes and to prop up the Iconoclast and Hedge Knight. On his own he should be a threat - not to a group but an individual should never feel like he can get the upper hand against this guy, proper goon as it would be - nothing fancy just good old Footman.
+TRAITS = TRAIT_MEDICINE_EXPERT, TRAIT_NOSTINK, TRAIT_ALCHEMY_EXPERT, TRAIT_EXPLOSIVE_SUPPLY, TRAIT_BOMBER_EXPERT
+BASE STATS = INTELLIGENCE = 4, SPEED = 3, FORTUNE = 3
 
-# Hedge Knight - The Wall - 1 SLOT
-De facto second in command to the Iconoclast, full plated and with a master skills and rest in expert, only one with access to blacksteel armour, can be any ascendant too as one of the few instead of only Matthios. As the only Bandit he starts fully kitted and ready to go (if we don't count summoning heretic armour for Iconoclast) and should be the first to start a fight and last one to stay alive in it - amptly being The Wall that keeps the backline alive and everything else dead.
+# Brigand - The Wall
+The melee guy, he should NOT ever recieve any form of range (outside of greatweapons such as greataxes), he can repair gear for the other classes and as well has option to become a templar at cost of his combat abilities. He is intended to be a footman and frontliner for the others alongside the knight.
+
+TRAITS = TRAIT_MEDIUMARMOR, TRAIT_SQUIRE_REPAIR
+BASE STATS = STRENGTH = 3, CONSTITUTION = 2, WILLPOWER = 2
+
+SKULLBREAKER STATS = STRENGTH = 1, CONSTITUTION = 2, WILLPOWER = 1
+DEVOUT STATS = WILLPOWER = 1
 
 # Hedge Mage - The Mage - 1 SLOT
-The only magic capable bandit, he is on par with Court Mage - with the caveat that he doesn't get last tier of spells (and he really SHOULDN'T) yet has massively increased longevity in combat compared to him. Secondary alchemist and medic his main gimmick is providing magical items such as stat rings, scrying for information or making enchantments for the Bandits as well full offensive support or propping up the heavy hitters.
+The mage if that wasn't obvious, provides magical artifacts and ranged support for the bunch, playstyle varies a lot on the player from buff-support to AOE debuffer or simple siege-mage.
 
-# Iconoclast - The Boss - 1 SLOT
-The Boss of the group, miracle capable heavy hitter that is best described as Wretch Heretic on steroids providing additonal support and frontlining to the team as well favour via his ritual. Depending on the loadout choice however there are two ways he can go about this - The Chosen of Matthios: The intended and original loadout for him, heavy plate, grand flail and punches, this is really what most should go for and how he SHOULD be balanced. The other choice is The Golden Serpent: eyepatch and bronze arm, fully sacrificing his plate and weapon skills for legendary wrestling & unarmed and regenerating skin armour, think of it as a monk more or less - yes he is a reference to certain someone.
+UNDER NO CIRCUMSTANCE SHOULD THIS BE TURNED INTO A SPELLBLADE I BEG OF YOU.
+
+TRAITS = TRAIT_MAGEARMOR, TRAIT_ARCYNE_T3, TRAIT_ALCHEMY_EXPERT
+BASE STATS = PERCEPTION = 2, CONSTITUTION = 1, WILLPOWER = 3, INTELLIGENCE = 3, SPEED = 1, FORTUNE = 2
+
+# Iconoclast - The Cleric - 1 SLOT
+The battle priest, unlike brigand has full access to miracles and rituals as well plate armour as one of the two classes. Mostly responsible for cashing in noblemen for fat payout and keeping everyone alive during battle with his miracles, as well pinning down threats with wrestling when it comes to it.
+
+TRAITS = TRAIT_HEAVYARMOR, TRAIT_CIVILIZEDBARBARIAN, TRAIT_RITUALIST
+BASE STATS = STRENGTH = 2, CONSTITUTION = 2, WILLPOWER = 4, FORTUNE = 2
 
 # Knave - The Rogue
-If brigand is the melee frontliner, this is the stealthy dexterity focused backline assassin. He does get the option to spec more into thievery to provide early favour for his team (intended) or more into his combat capacity with Bows serving as a proper archer. What he should not be able to do is pull his weight in a fight outside of that, he is not one that should be able to stand up to proper combat classes or even outshine the others, he is there to get money for them and counter snipe archers or assasinate high value targets.
+The marksman and thief, crossbow or bow his entire purpose is to gather favour and scout out targets for the party, in combat more so providing support and picking off opposing marksmen.
+
+TRAITS = TRAIT_DODGEEXPERT
+BASE STATS = STRENGTH = 1, PERCEPTION = 2, CONSTITUTION = 1, WILLPOWER = 1, SPEED = 3, FORTUNE = 2
+
+# Robber Knight - The Knight - 1 SLOT
+The plate guy, capable of buying and riding a saiga and possesses master weapon skill of his choice with expert in rest. Doesn't get miracles as either brigand or iconoclast but is the only source of blacksteel for rest of the group.
+
+TRAITS = TRAIT_HEAVYARMOR, TRAIT_NOBLE
+BASE STATS = STRENGTH = 2, CONSTITUTION = 3, WILLPOWER = 3, INTELLIGENCE = 2, FORTUNE = 2
+
+POACHER STATS = PERCEPTION = 2, FORTUNE = 1, SPEED = -1
 
 # Sellsword - The Wildcard
-Battlemaster of the team, able to specialize more into melee or range as situation demands it as well disguise for several Mercenary groups, while he doesn't excel in any particular field he is still exceedingly valuable to keep enemies at bay and wreck havoc. He has access to several unique weapons as well armours to provide for his team and himself. It should be kept up to date with latest mercenary class changes for the facade and intent of the role to persist but don't be afraid to add couple unique ones to him such as the Longswordsman.
+The mercenary, hybrid between Brigand and Knave without excelling at either, able to blend in with companies and provide same disguises to other bandits at a hefty price.
+
+TRAITS = TRAIT_MEDIUMARMOR
+BASE STATS = STRENGTH = 2, CONSTITUTION = 1, WILLPOWER = 2, SPEED = 2, FORTUNE = 1

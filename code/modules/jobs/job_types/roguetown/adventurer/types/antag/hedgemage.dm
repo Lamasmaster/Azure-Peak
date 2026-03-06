@@ -1,6 +1,6 @@
-/datum/advclass/hedgemage //mage class - like the adventurer mage, but more evil.
+/datum/advclass/hedgemage
 	name = "Hedge Mage"
-	tutorial = "Those fools at the academy laughed at you and cast you from the ivory tower of higher learning and magickal practice. No matter - you will ascend to great power one day, but first you need wealth - vast amounts of it. Show those fools in the town what REAL magic looks like."
+	tutorial = "The brain is mightier than the sword and your wit is as sharp as it gets - not that the fools in the academy ever appreciated it. You will show them all what it means to be true master of Arcyne first hand."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/bandit/hedgemage

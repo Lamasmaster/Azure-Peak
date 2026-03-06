@@ -1,19 +1,19 @@
-/datum/advclass/hedgeknight //heavy knight class - just like black knight adventurer class. starts with heavy armor training and plate, but less weapon skills than brigand, sellsword and knave
-	name = "Hedge Knight"
-	tutorial = "A noble fallen from grace, your tarnished armor sits upon your shoulders as a heavy reminder of the life you've lost. Take back what is rightfully yours."
+/datum/advclass/robberknight
+	name = "Robber Knight"
+	tutorial = "A nobleman freed from shackles of Astrata, many might call you a Raubritter these daes but it's no matter - they will find fitting end under your foot all the same."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_NO_CONSTRUCT
-	outfit = /datum/outfit/job/roguetown/bandit/hedgeknight
+	outfit = /datum/outfit/job/roguetown/bandit/robberknight
 	category_tags = list(CTAG_BANDIT)
 	maximum_possible_slots = 1 //Boss, you killed a squire. AMAZING this right here is why you are the best Boss!
 	cmode_music = 'sound/music/cmode/antag/combat_thewall.ogg' // big chungus gets the wall too
 	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_NOBLE) //Heavy armour gives medium already
 	subclass_stats = list(
-		STATKEY_CON = 3,
 		STATKEY_STR = 2,
+		STATKEY_CON = 3,
 		STATKEY_WIL = 3,
-		STATKEY_LCK = 2,
 		STATKEY_INT = 2,
+		STATKEY_LCK = 2,
 	)
 	subclass_skills = list(
 		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
@@ -33,7 +33,7 @@
 		/datum/skill/misc/medicine = SKILL_LEVEL_NOVICE
 	)
 
-/datum/outfit/job/roguetown/bandit/hedgeknight/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/job/roguetown/bandit/robberknight/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
 	gloves = /obj/item/clothing/gloves/roguetown/chain

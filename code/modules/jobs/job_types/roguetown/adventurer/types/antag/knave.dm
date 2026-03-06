@@ -1,6 +1,7 @@
 /datum/advclass/knave //sneaky bastards - ranged classes of two flavors archers and rogues
 	name = "Knave"
-	tutorial = "Not all followers of Matthios take by force. Thieves, poachers, and ne'er-do-wells of all forms steal from others from the shadows, long gone before their marks realize their misfortune."
+	tutorial = "Cunning and deadly, cutpurse extraordinaire, you are the first thing anyone thinks of when Matthios is brought up."
+	extra_context = "Rogue provides legendary thieving skills and a crossbow. Poacher provides tracking, bows and +2 PER -1 SPD +1 FOR."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/bandit/knave

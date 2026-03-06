@@ -203,7 +203,7 @@
 
 /obj/effect/proc_holder/spell/invoked/matthios_equalize
 	name = "Equalize"
-	desc = "Create equality, with a thumb on the scales, with your target. Siphon strength, speed, and constitution from them."
+	desc = "Create equality, with a thumb on the scales, with your target. Siphon strength, speed, and fortune from them."
 	action_icon = 'icons/mob/actions/matthiosmiracles.dmi'
 	overlay_icon = 'icons/mob/actions/matthiosmiracles.dmi'
 	overlay_state = "equalize"
