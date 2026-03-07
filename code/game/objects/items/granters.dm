@@ -427,13 +427,6 @@ UNDER NO CIRCUMSTANCE SHOULD ANY OF THE BOOKS BE GIVEN OUT INTO SPAWNERS OR TO B
 	icon_state ="scrolldarkred"
 	dreamcost = 6
 
-/obj/item/book/granter/spell/blackstone/longstrider
-	name = "Scroll of Longstrider"
-	spell = /obj/effect/proc_holder/spell/invoked/longstrider
-	spellname = "Longstrider"
-	icon_state ="scrolldarkred"
-	dreamcost = 3
-
 /obj/item/book/granter/spell/blackstone/arcynebolt
 	name = "Scroll of Arcyne Bolt"
 	spell = /obj/effect/proc_holder/spell/invoked/projectile/arcynebolt

@@ -243,24 +243,6 @@ T1 Enchantments below here*/
 	else
 		to_chat(user, span_notice("Nothing happens. Perhaps you can't enchant [O] with this?"))
 
-/obj/item/enchantmentscroll/trekk
-	name = "enchanting scroll of longstriding"
-	desc = "A scroll imbued with an enchantment of longstriding. Provides easy movement through swamps."
-	component = /datum/magic_item/superior/trekk
-
-/obj/item/enchantmentscroll/trekk/attack_obj(obj/item/O, mob/living/user)
-	if(!..())
-		return
-	if(istype(O,/obj/item/clothing/shoes)||istype(O,/obj/item/clothing/ring))
-		to_chat(user, span_notice("You open [src] and place [O] within. Moments later, it flashes blue with arcana, and [src] crumbles to dust."))
-		var/magiceffect= new component
-		O.AddComponent(/datum/component/magic_item, magiceffect)
-		O.name += " of longstriding"
-		O.filters += filter(type="drop_shadow", x=0, y=0, size=1, offset=2, color=rgb(rand(1,255),rand(1,255),rand(1,255)))
-		qdel(src)
-	else
-		to_chat(user, span_notice("Nothing happens. Perhaps you can't enchant [O] with this?"))
-
 /obj/item/enchantmentscroll/smithing
 	name = "enchanting scroll of smithing"
 	desc = "A scroll imbued with an enchantment of smithing. Provides more effective hammer strikes on anvils."

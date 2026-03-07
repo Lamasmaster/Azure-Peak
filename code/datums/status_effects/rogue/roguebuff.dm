@@ -447,26 +447,6 @@
 	to_chat(owner, span_warning("The darkness returns to normal."))
 	REMOVE_TRAIT(owner, TRAIT_DARKVISION, MAGIC_TRAIT)
 
-/atom/movable/screen/alert/status_effect/buff/longstrider
-	name = "Longstrider"
-	desc = "I can easily walk through rough terrain."
-	icon_state = "longstrider"
-
-/datum/status_effect/buff/longstrider
-	id = "longstrider"
-	alert_type = /atom/movable/screen/alert/status_effect/buff/longstrider
-	duration = 15 MINUTES
-
-/datum/status_effect/buff/longstrider/on_apply()
-	. = ..()
-	to_chat(owner, span_warning("I am unburdened by the terrain."))
-	ADD_TRAIT(owner, TRAIT_LONGSTRIDER, MAGIC_TRAIT)
-
-/datum/status_effect/buff/longstrider/on_remove()
-	. = ..()
-	to_chat(owner, span_warning("The rough floors slow my travels once again."))
-	REMOVE_TRAIT(owner, TRAIT_LONGSTRIDER, MAGIC_TRAIT)
-
 /atom/movable/screen/alert/status_effect/buff/magearmor
 	name = "Weakened Barrier"
 	desc = "My magical barrier is weakened."
@@ -559,14 +539,6 @@
 	var/area/rogue/our_area = get_area(owner)
 	if(!(our_area.warden_area))
 		owner.remove_status_effect(/datum/status_effect/buff/wardenbuff)
-
-/datum/status_effect/buff/wardenbuff/on_apply()
-	. = ..()
-	ADD_TRAIT(owner, TRAIT_LONGSTRIDER, id)
-
-/datum/status_effect/buff/wardenbuff/on_remove()
-	. = ..()
-	REMOVE_TRAIT(owner, TRAIT_LONGSTRIDER, id)
 
 // Lesser Miracle effect
 /atom/movable/screen/alert/status_effect/buff/healing
@@ -1169,13 +1141,11 @@
 /datum/status_effect/buff/lesserwolf/on_apply()
 	. = ..()
 	to_chat(owner, span_warning("I feel my leg muscles grow taut, my teeth sharp, I am embued with the power of a predator. Branches and brush reach out for my soul..."))
-	ADD_TRAIT(owner, TRAIT_LONGSTRIDER, id)
 	ADD_TRAIT(owner, TRAIT_STRONGBITE, id)
 
 /datum/status_effect/buff/lesserwolf/on_remove()
 	. = ..()
 	to_chat(owner, span_warning("I feel Dendor's blessing leave my body..."))
-	REMOVE_TRAIT(owner, TRAIT_LONGSTRIDER, id)
 	REMOVE_TRAIT(owner, TRAIT_STRONGBITE, id)
 
 /atom/movable/screen/alert/status_effect/buff/pacify

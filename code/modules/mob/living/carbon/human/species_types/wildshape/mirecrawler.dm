@@ -42,7 +42,6 @@
 		TRAIT_WILD_EATER,
 		TRAIT_HARDDISMEMBER, //Decapping causes them to bug out, badly, and need admin intervention to fix. Bandaid fix.
 		TRAIT_PIERCEIMMUNE, //Prevents weapon dusting and caltrop effects due to them transforming when killed/stepping on shards.
-		TRAIT_LONGSTRIDER,
 		TRAIT_INFINITE_ENERGY, //It's a 7 strength spiderling, what's the worst that could happen?
 		TRAIT_PERFECT_TRACKER,
 		TRAIT_NIGHT_VISION,

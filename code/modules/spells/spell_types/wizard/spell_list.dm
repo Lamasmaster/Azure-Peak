@@ -15,7 +15,6 @@ GLOBAL_LIST_INIT(learnable_spells, (list(/obj/effect/proc_holder/spell/invoked/p
 		/obj/effect/proc_holder/spell/invoked/haste,
 		/obj/effect/proc_holder/spell/invoked/featherfall,
 		/obj/effect/proc_holder/spell/invoked/darkvision,
-		/obj/effect/proc_holder/spell/invoked/longstrider,
 		/obj/effect/proc_holder/spell/invoked/invisibility,
 		/obj/effect/proc_holder/spell/invoked/projectile/acidsplash,
 		/obj/effect/proc_holder/spell/invoked/projectile/fireball/greater,
@@ -92,7 +91,6 @@ GLOBAL_LIST_INIT(utility_spells, (list(
 GLOBAL_LIST_INIT(augmentation_spells, (list(
 		/obj/effect/proc_holder/spell/invoked/haste,
 		/obj/effect/proc_holder/spell/invoked/darkvision,
-		/obj/effect/proc_holder/spell/invoked/longstrider,
 		/obj/effect/proc_holder/spell/invoked/stoneskin,
 		/obj/effect/proc_holder/spell/invoked/hawks_eyes,
 		/obj/effect/proc_holder/spell/invoked/giants_strength,

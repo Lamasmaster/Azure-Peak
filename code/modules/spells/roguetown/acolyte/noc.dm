@@ -247,7 +247,6 @@ Somewhat fitting, considering the broadness of their domains. I also just think 
 	var/list/buff_bundle = list(	//Buffs! An Acolyte being a supportive caster is 100% what they already are, so this fits neatly. No debuffs -- every patron already has a plethora of those.
 		/obj/effect/proc_holder/spell/invoked/hawks_eyes::name 			= /obj/effect/proc_holder/spell/invoked/hawks_eyes,
 		/obj/effect/proc_holder/spell/invoked/giants_strength::name 	= /obj/effect/proc_holder/spell/invoked/giants_strength,
-		/obj/effect/proc_holder/spell/invoked/longstrider::name 		= /obj/effect/proc_holder/spell/invoked/longstrider,
 		/obj/effect/proc_holder/spell/invoked/guidance::name 			= /obj/effect/proc_holder/spell/invoked/guidance,
 		/obj/effect/proc_holder/spell/invoked/haste::name 				= /obj/effect/proc_holder/spell/invoked/haste,
 		/obj/effect/proc_holder/spell/invoked/stoneskin::name 			= /obj/effect/proc_holder/spell/invoked/stoneskin,
@@ -773,7 +772,6 @@ GLOBAL_LIST_INIT(noc_scrolls, (list(/obj/item/book/granter/spell/blackstone/fire
 		/obj/item/book/granter/spell/blackstone/repulse,
 		/obj/item/book/granter/spell/blackstone/blade_burst,
 		/obj/item/book/granter/spell/blackstone/haste,
-		/obj/item/book/granter/spell/blackstone/longstrider,
 		/obj/item/book/granter/spell/blackstone/arcynebolt,
 		/obj/item/book/granter/spell/blackstone/counterspell,
 		/obj/item/book/granter/spell/blackstone/blink,

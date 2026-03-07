@@ -144,7 +144,7 @@ GLOBAL_LIST_INIT(capstone_pool, list(
 
 	switch(ascend_stage)
 		if(1)
-			ADD_TRAIT(user, TRAIT_LONGSTRIDER, TRAIT_GENERIC)
+			ADD_TRAIT(user, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 			to_chat(user, span_danger("The first capstone. My mind opens. The world around me seems to get smaller. A corpse. We are living on a corpse. And this deadite must be dealt with the same as the rest. My pace stiffens."))
 			user.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/churn)
 			addomen(ASCEND_FIRST)
@@ -159,7 +159,6 @@ GLOBAL_LIST_INIT(capstone_pool, list(
 			to_chat(user, span_userdanger("GODISCOMINGGODISCOMING"))
 			new /obj/item/rogueweapon/sword/long/judgement/ascendant
 			addomen(ASCEND_WAKENING)
-			ADD_TRAIT(user, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 			ADD_TRAIT(user, TRAIT_ANTIMAGIC, TRAIT_GENERIC)
 			priority_announce("The sky begins to turn quicker - MAJOR ARCANA: THE HANGED MAN, REVERSED", "THE DREAMER ", 'sound/villain/dreamer_warning.ogg')
 		if(3)
