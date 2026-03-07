@@ -511,7 +511,7 @@
 	outfit = /datum/outfit/job/roguetown/vet/scout
 
 	category_tags = list(CTAG_VETERAN)
-	traits_applied = list(TRAIT_LONGSTRIDER, TRAIT_OUTDOORSMAN, TRAIT_STEELHEARTED) //No more dexpert. Fuck you.
+	traits_applied = list(TRAIT_RANGER, TRAIT_OUTDOORSMAN, TRAIT_STEELHEARTED) //No more dexpert. Fuck you.
 	subclass_stats = list(
 		STATKEY_PER = 3,// you are OLD you have OLD EYES. this is to counter that debuff so you can be OBSERVANT. You sacrifice your strength and armor, so.
 		STATKEY_INT = 2,

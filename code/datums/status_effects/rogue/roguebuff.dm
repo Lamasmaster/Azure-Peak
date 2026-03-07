@@ -467,6 +467,26 @@
 	to_chat(owner, span_warning("The rough floors slow my travels once again."))
 	REMOVE_TRAIT(owner, TRAIT_LONGSTRIDER, MAGIC_TRAIT)
 
+/atom/movable/screen/alert/status_effect/buff/trek
+	name = "Trek"
+	desc = "I am not as burdened by rough terrain."
+	icon_state = "longstrider"
+
+/datum/status_effect/buff/trek
+	id = "trek"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/trek
+	duration = 15 MINUTES
+
+/datum/status_effect/buff/trek/on_apply()
+	. = ..()
+	to_chat(owner, span_warning("I am unburdened by the terrain."))
+	ADD_TRAIT(owner, TRAIT_RANGER, MAGIC_TRAIT)
+
+/datum/status_effect/buff/trek/on_remove()
+	. = ..()
+	to_chat(owner, span_warning("The rough floors slow my travels once again."))
+	REMOVE_TRAIT(owner, TRAIT_RANGER, MAGIC_TRAIT)
+
 /atom/movable/screen/alert/status_effect/buff/magearmor
 	name = "Weakened Barrier"
 	desc = "My magical barrier is weakened."
@@ -515,7 +535,7 @@
 /datum/status_effect/buff/wardenbuff
 	id = "wardenbuff"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/wardenbuff
-	effectedstats = list(STATKEY_SPD = 1, STATKEY_PER = 3)
+	effectedstats = list(STATKEY_PER = 3)
 
 /datum/status_effect/buff/innkeeperbuff
 	id = "innkeeperbuff"
@@ -562,11 +582,11 @@
 
 /datum/status_effect/buff/wardenbuff/on_apply()
 	. = ..()
-	ADD_TRAIT(owner, TRAIT_LONGSTRIDER, id)
+	ADD_TRAIT(owner, TRAIT_RANGER, id)
 
 /datum/status_effect/buff/wardenbuff/on_remove()
 	. = ..()
-	REMOVE_TRAIT(owner, TRAIT_LONGSTRIDER, id)
+	REMOVE_TRAIT(owner, TRAIT_RANGER, id)
 
 // Lesser Miracle effect
 /atom/movable/screen/alert/status_effect/buff/healing

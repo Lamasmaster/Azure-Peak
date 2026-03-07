@@ -490,19 +490,24 @@
 /turf/open/floor/rogue/dirt/get_slowdown(mob/user)
 	. = ..()
 	var/negate_slowdown = FALSE
+	var/half_slowdown = FALSE
 
 	for(var/obj/item/stick in user.held_items)
 		if(stick.walking_stick && !stick.wielded && !user.cmode)
-			negate_slowdown = TRUE
+			half_slowdown = TRUE
 			break
 
 	if((isliving(user))&&(user?.movement_type == FLYING))
 		negate_slowdown = TRUE
-	if(HAS_TRAIT(user, TRAIT_LONGSTRIDER))
+	if(HAS_TRAIT(user, TRAIT_RANGER))
+		half_slowdown = TRUE
+	if(HAS_TRAIT(user, TRAIT_LONGSTRIDER))//Antag only
 		negate_slowdown = TRUE
 
 	if(negate_slowdown)
 		. -= 2
+	if(half_slowdown)
+		. -= 1
 	return max(., 0)
 
 

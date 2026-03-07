@@ -1,6 +1,6 @@
-/obj/effect/proc_holder/spell/invoked/longstrider
-	name = "Longstrider"
-	desc = "Grant yourself and any creatures adjacent to you free movement through rough terrain for 15 minutes."
+/obj/effect/proc_holder/spell/invoked/trek
+	name = "Trek"
+	desc = "Grant yourself and any creatures adjacent to you increased movement through rough terrain for 15 minutes."
 	overlay_state = "longstrider"
 	cost = 2
 	xp_gain = TRUE
@@ -11,7 +11,7 @@
 	recharge_time = 1.5 MINUTES
 	warnie = "spellwarning"
 	no_early_release = TRUE
-	spell_tier = 4 // Exceedingly good, sorry to burst your bubble.
+	spell_tier = 2 // Not direct combat useful but still good, replicated by polearm
 	invocations = list("Aranea Deambulatio")
 	invocation_type = "whisper"
 	glow_color = GLOW_COLOR_BUFF
@@ -27,6 +27,6 @@
 	user.visible_message("[user] mutters an incantation and a dim pulse of light radiates out from them.")
 
 	for(var/mob/living/L in range(range, usr))
-		L.apply_status_effect(/datum/status_effect/buff/longstrider)
+		L.apply_status_effect(/datum/status_effect/buff/trek)
 
 	return TRUE

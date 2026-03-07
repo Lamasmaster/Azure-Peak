@@ -141,7 +141,8 @@
 #define TRAIT_BETTER_SLEEP	"Better Sleep" //Recover more energy (blue bar) when sleeping
 #define TRAIT_LEECHIMMUNE "Unleechable" //leeches wont attach in bog squares + dendor boon.
 #define TRAIT_ASTRATAN_AFFINITY "Astratan Affinity" //Telling who's an Astratan on examine
-#define TRAIT_LONGSTRIDER "Longstrider"
+#define TRAIT_RANGER "Ranger" //Ignore half of terrain slowdown
+#define TRAIT_LONGSTRIDER "Longstrider" //Fully ignore terrain slowdown
 #define TRAIT_UNDIVIDED "The Ten Undivided"
 #define TRAIT_PSYDONIAN_GRIT "Psydonic Willpower" // Willpower-scaling boost to pain resistance. From X to XV, every point of WIL increases the chance of ignoring a paincrit check.
 #define TRAIT_PSYDONITE "Psydonic Devotion" // Passively heals wounds at a slow rate, but doesn't restore lost blood. Negates the effects of all non-Psydonian miracles, save for Anastasis and Cure Rot.
@@ -382,6 +383,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_WATERBREATHING = span_info("I do not drown in bodies of water."),
 	TRAIT_NUDE_SLEEPER = span_warning("I can't fall asleep unless I'm nude and in bed."),
 	TRAIT_ABYSSOR_SWIM = span_info("I get far less tired when swimming than my peers. I also find mirth in rain and in the midst of storms."),
+	TRAIT_RANGER = span_info("I can navigate difficult terrain easier than most."),
 	TRAIT_LONGSTRIDER = span_info("Each of my steps finds it's footing no matter how treacherous the terrain is."),
 	TRAIT_TRAINED_SMITH = span_info("I've spent long training, and with some more, I will be able to smith legendary items."),
 	TRAIT_CAUTIOUS_FISHER = span_info("I know my way around the dangers of fishing, and know how to avoid unwanted attention from the depths."),

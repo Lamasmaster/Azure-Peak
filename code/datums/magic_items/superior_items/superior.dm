@@ -162,7 +162,7 @@
 		to_chat(user, span_notice("I feel mundane once more"))
 
 /datum/magic_item/superior/trekk
-	name = "Longstriding"
+	name = "Trekking"
 	description = "It looks like it can be used to move through rough terrain"
 	var/active_item = FALSE
 
@@ -174,13 +174,13 @@
 		return
 	else
 		active_item = TRUE
-		ADD_TRAIT(user, TRAIT_LONGSTRIDER, "[type]")
+		ADD_TRAIT(user, TRAIT_RANGER, "[type]")
 		to_chat(user, span_notice("I feel like I can move through rough ground easily!"))
 
 /datum/magic_item/superior/trekk/on_drop(var/obj/item/i, var/mob/living/user)
 	if(active_item)
 		active_item = FALSE
-		REMOVE_TRAIT(user, TRAIT_LONGSTRIDER, "[type]")
+		REMOVE_TRAIT(user, TRAIT_RANGER, "[type]")
 		to_chat(user, span_notice("I feel mundane once more"))
 
 /datum/magic_item/superior/smithing
