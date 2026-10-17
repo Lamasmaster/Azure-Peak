@@ -196,8 +196,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 
 /datum/job/priest/vice //just used to change the priest title
-	title = "Vice Priest"
-	f_title = "Vice Priestess"
+	title = "Vice Bishop"
 	flag = BISHOP
 	department_flag = CHURCHMEN
 	total_positions = 0
