@@ -95,7 +95,7 @@
 	var/datum/patron/user_patron
 	if(istype(user, /mob/living))
 		user_patron = user.vars["patron"]
-	if(!iself(user) && !iswildkin(user) && user.job != "Druid" && !istype(user_patron, /datum/patron/divine/dendor))
+	if(!iself(user) && !iswildkin(user) && !istype(user_patron, /datum/patron/divine/dendor))
 		to_chat(user, span_warning("Only Elves, Wild-Kin, Druids, and followers of Dendor can master the art of natural wood walls."))
 		return FALSE
 	return ..()

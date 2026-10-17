@@ -18,6 +18,8 @@
 	max_pq = null
 	round_contrib_points = 5
 
+	spells = list(/datum/action/cooldown/spell/projectile/divine_bolt)
+
 	//No nobility for you, being a member of the clergy means you gave UP your nobility. It says this in many of the church tutorial texts.
 	virtue_restrictions = list(/datum/virtue/utility/noble)
 	quirk_restrictions = list(/datum/quirk/noble)
@@ -25,6 +27,7 @@
 	advclass_cat_rolls = list(CTAG_ACOLYTE = 2)
 	job_subclasses = list(
 		/datum/advclass/acolyte,
+		/datum/advclass/druid,
 		/datum/advclass/herald,
 	)
 
@@ -65,7 +68,7 @@
 	jobtype = /datum/job/roguetown/monk
 	has_loadout = TRUE
 	job_bitflag = BITFLAG_HOLY_WARRIOR
-	allowed_patrons = list(/datum/patron/divine/undivided, /datum/patron/divine/pestra, /datum/patron/divine/astrata, /datum/patron/divine/eora, /datum/patron/divine/noc, /datum/patron/divine/necra, /datum/patron/divine/abyssor, /datum/patron/divine/malum, /datum/patron/divine/ravox, /datum/patron/divine/xylix) // The whole Ten. Probably could delete this now, actually.
+	allowed_patrons = ALL_DIVINE_PATRONS
 
 /datum/outfit/job/roguetown/monk/basic/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -189,8 +192,6 @@
 			shoes = /obj/item/clothing/shoes/roguetown/sandals
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe/astrata
 	// -- End of section for god specific bonuses --
-	if(H.mind)
-		H.mind.AddSpell(new /datum/action/cooldown/spell/projectile/divine_bolt)
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_miracles(H, cleric_tier = CLERIC_T4, passive_gain = CLERIC_REGEN_MAJOR, start_maxed = TRUE)	//Starts off maxed out.
 	if(H.mind)
@@ -217,6 +218,11 @@
 		H.adjust_skillrank(/datum/skill/misc/swimming, SKILL_LEVEL_JOURNEYMAN, TRUE)
 		ADD_TRAIT(H, TRAIT_WATERBREATHING, TRAIT_GENERIC)
 		H.grant_language(/datum/language/abyssal)
+	if(H.patron?.type == /datum/patron/divine/dendor)
+		H.adjust_skillrank(/datum/skill/labor/farming, SKILL_LEVEL_NOVICE, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/climbing, SKILL_LEVEL_NOVICE, TRUE)
+		H.adjust_skillrank(/datum/skill/labor/butchering, SKILL_LEVEL_NOVICE, TRUE)
+		ADD_TRAIT(H, TRAIT_EXPERT_HUNTER, TRAIT_GENERIC)
 	if(H.patron?.type == /datum/patron/divine/necra) // Death and Moving on - grave diggers.
 		ADD_TRAIT(H, TRAIT_NOSTINK, TRAIT_GENERIC)
 		ADD_TRAIT(H, TRAIT_SOUL_EXAMINE, TRAIT_GENERIC)

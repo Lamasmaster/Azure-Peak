@@ -124,7 +124,6 @@ GLOBAL_LIST_INIT(church_positions, list( //Church of the Ten
 	"Martyr",
 	"Templar",
 	"Keeper",
-	"Druid",
 	"Acolyte",
 	"Sexton",
 	"Painter",

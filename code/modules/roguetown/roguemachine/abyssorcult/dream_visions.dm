@@ -38,7 +38,6 @@
 		"Bishop",
 		"Sexton",
 		"Martyr",
-		"Druid",
 		"Cook",
 		"Servant",
 		"Shophand",

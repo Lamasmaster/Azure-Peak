@@ -1,3 +1,4 @@
+/* Job Variant
 /datum/job/roguetown/druid
 	title = "Druid"
 	f_title = "Druidess"
@@ -32,16 +33,17 @@
 		/datum/advclass/druid
 	)
 	has_subprefs = FALSE // only one subclass
-
+*/
 /datum/advclass/druid
 	name = "Druid"
 	tutorial = "You have always been drawn to the wild, and the wild drawn to you. When your calling came, it was from Dendor. \
 	Your patron claims dominion over all nature--promising bounties to those who act in his name to bring balance to His domain. \
 	The forest is the most comfortable place for you, toiling alongside soilsons and soilbrides...although sometimes what lies beyond the gates fills your soul with a feral yearning."
 	outfit = /datum/outfit/job/roguetown/druid/basic
-	category_tags = list(CTAG_DRUID)
-	traits_applied = list(TRAIT_ALCHEMY_EXPERT)
-	subclass_languages = list(/datum/language/beast)
+	maximum_possible_slots = 2
+	category_tags = list(CTAG_ACOLYTE)
+	traits_applied = list(TRAIT_ALCHEMY_EXPERT, TRAIT_SEEDKNOW, TRAIT_OUTDOORSMAN, TRAIT_WOODWALKER, TRAIT_EXPERT_HUNTER)
+	subclass_languages = list(/datum/language/grenzelhoftian, /datum/language/beast)
 	subclass_stats = list(
 		STATKEY_INT = 2,
 		STATKEY_WIL = 2,
@@ -78,7 +80,7 @@
 
 /datum/outfit/job/roguetown/druid
 	name = "Druid"
-	jobtype = /datum/job/roguetown/druid
+	jobtype = /datum/job/roguetown/monk
 	allowed_patrons = list(/datum/patron/divine/dendor)
 	has_loadout = TRUE
 

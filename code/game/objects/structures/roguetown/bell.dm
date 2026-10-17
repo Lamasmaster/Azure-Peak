@@ -74,7 +74,7 @@
 			if(istype(localarea, /area/rogue/indoors/town/church/grim/infirmary))
 				rolestonotify = list("Head Physician", "Apothecary")
 			else if(istype(localarea, /area/rogue/indoors/town/church))
-				rolestonotify = list("Bishop", "Acolyte", "Druid", "Martyr", "Templar", "Sexton")
+				rolestonotify = list("Bishop", "Acolyte", "Martyr", "Templar", "Sexton")
 			else if(istype(localarea, /area/rogue/indoors/town/shop))
 				rolestonotify = list("Merchant", "Shophand")
 			else if(istype(localarea, /area/rogue/indoors/town/physician))
